@@ -16,9 +16,7 @@ public partial class Vn_Default : BasePage
     {
         if (!IsPostBack)
         {
-            List<TheLoai> lt = TheLoai.LayTatCa();
-            a.DataSource = lt;
-            a.DataBind();
+            
         }
     }
 }

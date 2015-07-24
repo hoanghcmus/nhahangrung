@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CofMaster.master.cs" Inherits="View_CofMaster" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="CofHeadCPH" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="CofForm" runat="server">
+        <div class="cof-container">
+            <asp:ContentPlaceHolder ID="CofMainCPH" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <asp:ContentPlaceHolder ID="CofFootCPH" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

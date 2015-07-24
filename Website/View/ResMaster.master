@@ -1,0 +1,321 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ResMaster.master.cs" Inherits="View_ResMaster" %>
+
+<%@ Register Src="~/View/UserControl/UC_SlideShow.ascx" TagPrefix="uc1" TagName="UC_SlideShow" %>
+<%@ Register Src="~/View/UserControl/UC_Menu.ascx" TagPrefix="uc1" TagName="UC_Menu" %>
+<%@ Register Src="~/View/UserControl/UC_Booking.ascx" TagPrefix="uc1" TagName="UC_Booking" %>
+<%@ Register Src="~/View/UserControl/UC_Choose_Language.ascx" TagPrefix="uc1" TagName="UC_Choose_Language" %>
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%= System.Configuration.ConfigurationManager.AppSettings["title"]%></title>
+
+    <meta name="Keywords" content="<%= System.Configuration.ConfigurationManager.AppSettings["keywords"]%>" />
+    <meta name="description" content="<%= System.Configuration.ConfigurationManager.AppSettings["description"]%>" />
+    <meta name="generator" content="<%= System.Configuration.ConfigurationManager.AppSettings["generator"]%>" />
+    <meta name="og:type" content="Nhà hàng" />
+    <meta name="og:url" content="nhahangrung.com" />
+    <meta name="og:title" content="Nhà Hàng Rừng tại Mũi Né" />
+    <meta name="og:description" content="Nhà hàng rừng tại Mũi Né" />
+
+    <link rel="Shurtcut Icon" href="/Design/favico.png" type="image/x-icon" />
+
+    <link href="/Styles/CSS/Reset.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Global.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Content.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Album.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Contact.css" rel="stylesheet" />
+
+    <%-- Fancybox --%>
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+
+    <link type="text/css" href="/Styles/flexslider/css/flexslider.css" rel="stylesheet" />
+    <link type="text/css" href="/Styles/highslide/highslide.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/Styles/JS/jquery-10.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="ResHeadCPH" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="RestaurantForm" runat="server">
+
+        <asp:ScriptManager ID="ResScriptManager" runat="server"></asp:ScriptManager>
+
+        <div class="r-container">
+            <div class="r-slideshow">
+                <uc1:UC_SlideShow runat="server" ID="UC_SlideShow" />
+            </div>
+            <%-- Top content --%>
+            <div class="r-header">
+                <div class="r-top">
+                    <div class="r-top-wrap">
+                        <div class="r-social-network-bar">
+                            <div class="r-social-item">
+                                <a href="https://facebook.com" target="_blank" class="link">
+                                    <img src="/Design/face.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                            <div class="r-social-item">
+                                <a href="https://facebook.com" target="_blank" class="link">
+                                    <img src="/Design/skype.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                            <div class="r-social-item">
+                                <a href="https://facebook.com" target="_blank" class="link">
+                                    <img src="/Design/twitter.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="r-lang-bar">
+                            <uc1:UC_Choose_Language runat="server" ID="UC_Choose_Language" />
+                        </div>
+                        <div class="r-top-nav">
+                            <ul>
+                                <li><a href="javascript:void()"><span>Trang chủ</span></a></li>
+                                <li><a href="javascript:void()"><span>Tuyển dụng</span></a></li>
+                                <li><a href="javascript:void()"><span>Video clips</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <%-- Main menu content --%>
+                <div class="r-virtical-menu ">
+                    <div class="r-virtical-wrap nav">
+                        <uc1:UC_Menu runat="server" ID="UC_Menu" />
+                    </div>
+                </div>
+            </div>
+            <%-- Logo --%>
+            <div class="r-logo">
+                <a href="javascript:void()" class="link">
+                    <img src="/Design/logo.png" alt="Logo" class="img" />
+                </a>
+            </div>
+            <%-- Booking content --%>
+            <div class="r-booking">
+                <div class="r-booking-wrap">
+                    <uc1:UC_Booking runat="server" ID="UC_Booking" />
+                </div>
+            </div>
+            <%-- Body content --%>
+            <div class="r-body">
+                <div class="line-fix-parent-width">
+                    <%-- Intro block --%>
+                    <div class="r-block-intro">
+                        <div class="r-block-intro-left">
+                            <a href="javasctipt:void()" class="link">
+                                <img src="/Design/logo.png" alt="Giới thiệu" class="img" />
+                                <div class="r-block-intro-left-title"></div>
+                            </a>
+                        </div>
+                        <div class="r-block-intro-right">
+                            <h1 class="r-block-intro-title">NHÀ HÀNG FOREST KÍNH CHÀO QUÝ KHÁCH</h1>
+                            <p class="r-block-intro-summary">
+                                Nhà hàng Forester – tọa lạc gần trung tâm thủ đô resort Mũi Né trên đường Nguyễn Đình Chiểu thuộc địa phận TP.Phan Thiết – Bình Thuận, được thiên nhiên ưu ái ban tặng những đặc sản biển dồi dào và phong phú bậc nhất cả nước về chất lượng, được thành lập cuối năm 2014 với tên gọi là "Nhà hàng Forest" Sau một vài tháng hoạt động và phát triển ...
+                            </p>
+                            <div class="r-block-intro-read-more">
+                                <a href="javascript:void()">Xem tiếp >></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="r-promotion">
+                        <img src="/Design/logo.png" alt="Promotion" class="img" />
+                    </div>
+                </div>
+                <%-- Gallery block --%>
+                <div class="r-main-gallery-block">
+                    <div class="r-main-gallery-pre"><</div>
+                    <div class="r-mian-gallery-content">
+                        <div class="r-main-gallery-item">
+                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
+                        </div>
+                        <div class="r-main-gallery-item">
+                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
+                        </div>
+                        <div class="r-main-gallery-item">
+                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
+                        </div>
+                        <div class="r-main-gallery-item">
+                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
+                        </div>
+                    </div>
+                    <div class="r-main-gallery-next">></div>
+                </div>
+                <%-- Cuisine content block --%>
+                <div class="cuisine">
+                    <div class="cuisine-item">
+                        <a href="javascript:void()" class="link">
+                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                            <div class="cuisine-content">
+                                <div class="cuisine-icon">
+                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
+                                </div>
+                                <div class="cuisine-title">
+                                    <h1>Món lẩu</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cuisine-item">
+                        <a href="javascript:void()" class="link">
+                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                            <div class="cuisine-content">
+                                <div class="cuisine-icon">
+                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
+                                </div>
+                                <div class="cuisine-title">
+                                    <h1>Món nướng</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cuisine-item">
+                        <a href="javascript:void()" class="link">
+                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                            <div class="cuisine-content">
+                                <div class="cuisine-icon">
+                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
+                                </div>
+                                <div class="cuisine-title">
+                                    <h1>Món chiên xào</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cuisine-item">
+                        <a href="javascript:void()" class="link">
+                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                            <div class="cuisine-content">
+                                <div class="cuisine-icon">
+                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
+                                </div>
+                                <div class="cuisine-title">
+                                    <h1>Món đặc biệt</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cuisine-item">
+                        <a href="javascript:void()" class="link">
+                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                            <div class="cuisine-content">
+                                <div class="cuisine-icon">
+                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
+                                </div>
+                                <div class="cuisine-title">
+                                    <h1>Món khác</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <%-- Footer content --%>
+            <div class="r-footer">
+                <p>© Copy right 2015 Forestmuine All right reserved.</p>
+                <p>Địa chỉ: 179 Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</p>
+                <p>Tel: (062) 39 39 399 - (062) 6 25 20 77  -  Email: info.forestmuine@gmail.com</p>
+                <p>Thiết kế bởi <a href="javascript:void()" target="_blank">Tính Thành</a></p>
+            </div>
+
+            <asp:ContentPlaceHolder ID="ResMainCPH" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%-- Script cho slideshow hinh anh --%>
+        <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    slideshowSpeed: 5000
+                });
+            });
+        </script>
+
+        <%-- Script cho html scrollbar --%>
+        <script src="/Styles/nicescroll/jquery.nicescroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("html").niceScroll();
+                $(".left-wrap").niceScroll();
+                $(".contact-wrapper").niceScroll();
+                $(".block-body").niceScroll();
+            });
+
+        </script>
+
+        <%-- FancyBox library --%>
+        <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-media.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+
+        <%-- Show anh dùng fancybox --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".imgshow").fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    helpers: {
+                        title: {
+                            type: 'outside'
+                        },
+                        thumbs: {
+                            width: 50,
+                            height: 50
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#shopping-cart").fancybox({
+                    maxWidth: 1349,
+                    maxHeight: 630,
+                    fitToView: false,
+                    width: '818px',
+                    height: '519px',
+                    autoSize: false,
+                    closeClick: false,
+                    openEffect: 'none',
+                    closeEffect: 'none'
+                });
+            });
+
+        </script>
+
+        <%-- Fancy for video popup --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.fancybox-media').fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    helpers: {
+                        media: {}
+                    }
+                });
+            });
+        </script>
+
+        <asp:ContentPlaceHolder ID="ResFootCPH" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

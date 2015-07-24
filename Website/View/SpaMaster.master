@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SpaMaster.master.cs" Inherits="View_SpaMaster" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="SpaHeadCPH" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="SpaForm" runat="server">
+        <div class="spa-container">
+            <asp:ContentPlaceHolder ID="SpaMainCPH" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <asp:ContentPlaceHolder ID="SpaFootCPH" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Culture="auto" meta:resourcekey="PageResource1" UICulture="auto" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,10 +7,12 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:Button ID="Button1" runat="server" Text="Button" meta:resourcekey="Button1Resource1" />
-    </div>
-    </form>
+    <script runat="server">
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            string lang = Session["lang"].ToString() ?? "vn";
+            Response.Redirect("/" + lang + "/home.html");
+        }
+    </script>
 </body>
 </html>

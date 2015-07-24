@@ -21,7 +21,7 @@ public partial class Vn_Vn_Control_Menu : System.Web.UI.UserControl
     protected StringBuilder BuildMenu(int id)
     {
         List<TheLoai> listTheLoai = TheLoai.TheLoai_GetByCategoryAndParentID("1", id);
-        string activeMenuID = Request.QueryString["MenuItemID"] ?? "";
+        string activeMenuID = Request.QueryString["MenuItemID"] ?? "2";
         if (activeMenuID.Equals("")) { activeMenuID = "12"; }
 
         StringBuilder sb = new StringBuilder();

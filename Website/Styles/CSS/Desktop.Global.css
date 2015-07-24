@@ -1,5 +1,4 @@
-﻿*
-{
+﻿* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,48 +7,52 @@
     outline: none;
 }
 
-@font-face
-{
+@font-face {
     font-family: RachGia;
     src: url("/Styles/CSS/Font/RachGia/RACHGIA.TTF");
 }
 
-@font-face
-{
+@font-face {
     font-family: Echinos;
     src: url("/Styles/CSS/Font/Echinos/ECHINOSPARKSCRIPT_PERSONAL_USE_ONLY.TTF");
 }
 
-@font-face
-{
+@font-face {
     font-family: GiaDinhHep;
     src: url("/Styles/CSS/Font/GiaDinhHep/UVNGIADINHHEP.TTF");
 }
 
-h1, h2, h3, h4, h5, h6
-{
+
+@font-face {
+    font-family: HongHaHep;
+    src: url("/Styles/CSS/Font/HongHaHep/UVNHONGHAHEP_R_0.TTF");
+}
+
+@font-face {
+    font-family: HongHaHepB;
+    src: url("/Styles/CSS/Font/HongHaHep/UVNHONGHAHEP_0.TTF");
+}
+
+h1, h2, h3, h4, h5, h6 {
     float: left;
     font-weight: normal;
 }
 
-html, body, #DefaultForm, .intro-container, .intro-head, .intro-body, .intro-foot, .line-fix-parent-width, .img, .link, .full
-{
+html, body, #DefaultForm, .intro-container, .intro-head, .intro-body, .intro-foot, .line-fix-parent-width, .img, .link, .full {
     float: left;
     width: 100%;
 }
 
-html, body, #DefaultForm, .intro-container, .img, .link, .full
-{
+html, body, #DefaultForm, .intro-container, .img, .link, .full {
     height: 100%;
 }
 
-.intro-container
-{
+/*CSS for intro page*/
+.intro-container {
     overflow: hidden;
 }
 
-.intro-head
-{
+.intro-head {
     height: 23.823%;
     overflow: hidden;
     border-bottom: 1px solid #c32828;
@@ -58,67 +61,58 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
     background-size: 100% 100%;
 }
 
-.intro-head-wrap, .intro-body-wrap, .intro-foot-wrap
-{
+.intro-head-wrap, .intro-body-wrap, .intro-foot-wrap {
     float: left;
     width: 73.2%;
     height: 100%;
     margin-left: 13.4%;
 }
 
-.intro-head-info
-{
+.intro-head-info {
     float: left;
     width: 48.7%;
     height: 100%;
     margin-left: 25.5%;
 }
 
-.intro-webname
-{
+.intro-webname {
     float: left;
     width: 100%;
     height: 90px;
     margin-top: -5px;
 }
 
-    .intro-webname h1, .intro-slogan h3
-    {
+    .intro-webname h1, .intro-slogan h3 {
         float: left;
         width: 100%;
         text-align: center;
         color: #FFF;
     }
 
-    .intro-webname h1
-    {
+    .intro-webname h1 {
         font-family: Rachgia;
         font-size: 100px;
     }
 
-.intro-hoavan
-{
+.intro-hoavan {
     float: left;
     width: 100%;
     height: 17px;
     margin-top: 9px;
 }
 
-.intro-slogan
-{
+.intro-slogan {
     float: left;
     width: 100%;
     margin-top: -3px;
 }
 
-    .intro-slogan h3
-    {
+    .intro-slogan h3 {
         font-family: Echinos;
         font-size: 30px;
     }
 
-.intro-body
-{
+.intro-body {
     height: 66.176%;
     /*height: 441px;*/
     overflow: hidden;
@@ -127,34 +121,29 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
     background-size: 100% 100%;
 }
 
-.intro-body-wrap
-{
+.intro-body-wrap {
 }
 
-.intro-main-block
-{
+.intro-main-block {
     float: left;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.intro-left-bottom-hv
-{
+.intro-left-bottom-hv {
     position: absolute;
     left: 0;
     bottom: 5px;
 }
 
-.intro-right-top-hv
-{
+.intro-right-top-hv {
     position: absolute;
     right: 0;
     top: 18px;
 }
 
-.intro-block
-{
+.intro-block {
     float: left;
     width: 28.5%;
     height: 85.7%;
@@ -166,18 +155,15 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
     z-index: 1;
 }
 
-    .intro-block:first-child
-    {
+    .intro-block:first-child {
         margin-left: 4.4%;
     }
 
-    .intro-block img
-    {
+    .intro-block img {
         border-radius: 12px;
     }
 
-    .intro-block > a
-    {
+    .intro-block > a {
         float: left;
         width: 150%;
         height: 150%;
@@ -192,8 +178,7 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
         transition: all .4s ease-in-out;
     }
 
-    .intro-block:hover > a
-    {
+    .intro-block:hover > a {
         left: 0;
         top: 0;
         opacity: 1;
@@ -201,16 +186,14 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
         height: 100%;
     }
 
-.intro-block-title
-{
+.intro-block-title {
     float: left;
     width: 100%;
     position: absolute;
     bottom: 10px;
 }
 
-    .intro-block-title h3
-    {
+    .intro-block-title h3 {
         float: left;
         width: 100%;
         margin-bottom: 3px;
@@ -219,15 +202,13 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
         text-align: center;
     }
 
-.intro-block-hoavan
-{
+.intro-block-hoavan {
     width: 56.8%;
     height: 10px;
     margin: 0 auto;
 }
 
-.intro-foot
-{
+.intro-foot {
     height: 9.705%;
     overflow: hidden;
     border-top: 1px solid #c32828;
@@ -236,39 +217,443 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full
     background-size: 100% 100%;
 }
 
-.intro-foot-wrap
-{
+.intro-foot-wrap {
     font-family: GiaDinhHep;
     font-size: 15px;
     color: #FFF;
 }
 
-.intro-foot-left
-{
+.intro-foot-left {
     float: left;
     width: 63%;
     height: 100%;
 }
 
-.intro-foot-right
-{
+.intro-foot-right {
     float: right;
     width: 36%;
     height: 100%;
     text-align: right;
 }
 
-    .intro-foot-right p:first-child, .intro-foot-left p:first-child
-    {
+    .intro-foot-right p:first-child, .intro-foot-left p:first-child {
         margin-top: 10px;
     }
 
-    .intro-foot-right a
-    {
+    .intro-foot-right a {
         color: #FFF;
     }
 
-        .intro-foot-right a:hover
-        {
+        .intro-foot-right a:hover {
             text-decoration: underline;
         }
+/*CSS for intro page - End*/
+
+/*CSS for Restaurant site*/
+.r-container {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.r-slideshow {
+    float: left;
+    width: 100%;
+    height: 554px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.r-header {
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 18px;
+}
+
+.r-top {
+    float: left;
+    width: 100%;
+    height: 32px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.r-top-wrap {
+    float: left;
+    /*width: 73.206%;*/
+    height: 100%;
+    /*margin-left: 13.397%;*/
+    width: 61.6%;
+    margin-left: 25%;
+}
+
+.r-social-network-bar {
+    float: left;
+    margin-left: 0.8%;
+}
+
+.r-social-item {
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+.r-top-nav {
+    float: right;
+    margin-top: 9px;
+}
+
+    .r-top-nav > ul {
+        float: left;
+    }
+
+        .r-top-nav > ul li {
+            float: left;
+            list-style: none;
+            font-family: HongHaHep;
+            font-size: 13px;
+            padding-left: 13px;
+            padding-right: 15px;
+            border-right: 1px solid #9d0909;
+        }
+
+        .r-top-nav > ul > li:last-child {
+            border: none;
+        }
+
+        .r-top-nav > ul > li > a {
+            float: left;
+            color: #9d0909;
+        }
+
+            .r-top-nav > ul > li > a > span {
+                float: left;
+            }
+
+
+.r-lang-bar {
+    float: right;
+}
+
+.lang-bar {
+    float: right;
+}
+
+.lang-item {
+    float: right;
+    width: 24px;
+    height: 27px;
+    margin-left: 2px;
+    background-image: url("/Design/lang-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lang-icon {
+    float: left;
+    width: 19px;
+    height: 12px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+/*CSS for main vertical menu*/
+.r-virtical-menu {
+    float: left;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(116, 4, 4, 0.8);
+}
+
+.r-virtical-wrap {
+    float: right;
+    width: 73.206%;
+    height: 100%;
+    margin-right: 13.297%;
+}
+
+.nav {
+}
+
+    .nav ul {
+        float: right;
+        height: 100%;
+        margin-left: 3%;
+    }
+
+
+        .nav ul li {
+            float: left;
+            height: 100%;
+            font-family: "HongHaHepB";
+        }
+
+.vnav-wrap > ul > li {
+    border-left: 1px solid #5bb7f0;
+    border-right: 1px solid #4da3ee;
+}
+
+    .vnav-wrap > ul > li:first-child {
+        border-left: none;
+    }
+
+    .vnav-wrap > ul > li:last-child {
+        border-right: none;
+    }
+
+.nav ul li a {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 32px;
+    padding-bottom: 18px;
+    color: #FFF;
+}
+
+
+
+.nav > ul > li > a {
+    font-size: 1vw;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+    float: left;
+}
+
+
+.nav > ul > li:first-child {
+}
+
+.nav > ul > li:last-child a {
+}
+
+
+.nav li.active {
+    background-color: rgba(1, 81, 133, 0.1);
+}
+
+    .nav li.active > a {
+        color: #FFF;
+    }
+
+.nav > ul > li:hover, .nav > ul > li.active {
+    background-image: url("/Design/li-hover.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav > ul li:hover a {
+}
+
+
+.nav > ul > li.has-sub > ul {
+    top: 101%;
+    left: -1px;
+    z-index: 10;
+}
+
+.nav > ul > li.has-sub {
+}
+
+.has-sub span.arrow {
+    text-align: center;
+    margin-left: 3px;
+}
+
+
+.has-sub {
+    position: relative;
+}
+
+    .has-sub > ul {
+        position: absolute;
+        width: 100%;
+        /*height: 0px;
+        overflow: hidden;*/
+        top: 49px;
+        transition: all .4s linear;
+    }
+
+        .has-sub > ul > li {
+            background-color: rgba(85, 179, 240, 1);
+            /*width: 200px !important;
+            height: 0px;
+            overflow: hidden;*/
+            width: 200px;
+            height: 40px;
+            border-top: 1px solid #C0C0C0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: left;
+        }
+
+            .has-sub > ul > li > a > span {
+                float: left;
+                width: 90%;
+                font-size: 14px;
+                text-align: left;
+                text-indent: 9px;
+            }
+
+            .has-sub > ul > li:first-child {
+                border-top: none;
+            }
+
+            .has-sub > ul > li:last-child {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            .has-sub > ul > li.active {
+                background-color: rgba(74, 155, 237, 0.8);
+            }
+
+        .has-sub > ul li a, .has-sub > ul li:hover a {
+            width: 100%;
+            color: #FFF;
+        }
+
+    .has-sub:hover > ul {
+        /*width: 200px;
+        height: auto;*/
+    }
+
+        .has-sub:hover > ul > li {
+            /*float: left;
+            width: 100%;
+            height: auto;*/
+        }
+
+    .has-sub > ul > li:hover {
+        background-color: rgba(74, 155, 237, 0.8);
+    }
+
+
+/*CSS for main vertical menu - End*/
+.r-logo {
+    float: left;
+    width: 11.347%;
+    height: 176px;
+    position: absolute;
+    top: 0;
+    left: 13.397%;
+}
+
+.r-booking {
+}
+
+.r-booking-wrap {
+}
+
+.r-body {
+}
+
+.r-block-intro {
+}
+
+.r-block-intro-left {
+}
+
+    .r-block-intro-left > a {
+    }
+
+.r-block-intro-left-title {
+}
+
+.r-block-intro-right {
+}
+
+.r-block-intro-title {
+}
+
+.r-block-intro-summary {
+}
+
+.r-block-intro-read-more {
+}
+
+.r-main-gallery-block {
+}
+
+.r-promotion {
+}
+
+.r-main-gallery-pre {
+}
+
+.r-main-gallery-next {
+}
+
+.r-mian-gallery-content {
+}
+
+.r-main-gallery-item {
+}
+
+.cuisine {
+}
+
+.cuisine-item {
+}
+
+.cuisine-content {
+}
+
+.cuisine-icon {
+}
+
+.cuisine-title {
+}
+
+.r-footer {
+}
+
+    .r-footer p {
+    }
+
+    .r-footer > p > a {
+    }
+
+/*. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}*/
+
+/*CSS for Restaurant site - End*/
+
+
+/*CSS for Spa site*/
+/*CSS for Spa site - End*/
+
+
+/*CSS for Coffee site*/
+/*CSS for Coffee site - End*/

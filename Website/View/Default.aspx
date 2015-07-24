@@ -23,11 +23,7 @@
             <div class="intro-head">
                 <div class="intro-head-wrap">
                     <div class="intro-head-info">
-                        <asp:Repeater ID="a" runat="server">
-                            <ItemTemplate>
-                                <div>Nguyen Ngoc Hoang: <%#Eval("TieuDe_Vn") %></div>
-                            </ItemTemplate>
-                        </asp:Repeater>
+
                         <div class="intro-webname">
                             <h1>Forestmuine</h1>
                         </div>
@@ -46,7 +42,7 @@
                         <div class="intro-block" style="">
 
                             <img src="/Design/i1.jpg" alt="Restaurant" class="img" />
-                            <a href="javascript:void()">
+                            <a href="/<%=Session["lang"].ToString() %>/home-1.html">
                                 <div class="intro-block-title">
                                     <h3>Restaurant</h3>
                                     <div class="intro-block-hoavan">
