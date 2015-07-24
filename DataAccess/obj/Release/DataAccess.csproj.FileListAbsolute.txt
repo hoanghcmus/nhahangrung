@@ -1,0 +1,6 @@
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\bin\Release\DataAccess.dll
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\bin\Release\DataAccess.pdb
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\bin\Release\Core.dll
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\obj\Release\DataAccess.dll
+G:\TinhThanh\Project Myself\NhaHangRung\DataAccess\obj\Release\DataAccess.pdb

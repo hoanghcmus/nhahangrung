@@ -1,0 +1,274 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+@font-face
+{
+    font-family: RachGia;
+    src: url("/Styles/CSS/Font/RachGia/RACHGIA.TTF");
+}
+
+@font-face
+{
+    font-family: Echinos;
+    src: url("/Styles/CSS/Font/Echinos/ECHINOSPARKSCRIPT_PERSONAL_USE_ONLY.TTF");
+}
+
+@font-face
+{
+    font-family: GiaDinhHep;
+    src: url("/Styles/CSS/Font/GiaDinhHep/UVNGIADINHHEP.TTF");
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    float: left;
+    font-weight: normal;
+}
+
+html, body, #DefaultForm, .intro-container, .intro-head, .intro-body, .intro-foot, .line-fix-parent-width, .img, .link, .full
+{
+    float: left;
+    width: 100%;
+}
+
+html, body, #DefaultForm, .intro-container, .img, .link, .full
+{
+    height: 100%;
+}
+
+.intro-container
+{
+    overflow: hidden;
+}
+
+.intro-head
+{
+    height: 23.823%;
+    overflow: hidden;
+    border-bottom: 1px solid #c32828;
+    background-image: url("/Design/intro-head-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.intro-head-wrap, .intro-body-wrap, .intro-foot-wrap
+{
+    float: left;
+    width: 73.2%;
+    height: 100%;
+    margin-left: 13.4%;
+}
+
+.intro-head-info
+{
+    float: left;
+    width: 48.7%;
+    height: 100%;
+    margin-left: 25.5%;
+}
+
+.intro-webname
+{
+    float: left;
+    width: 100%;
+    height: 90px;
+    margin-top: -5px;
+}
+
+    .intro-webname h1, .intro-slogan h3
+    {
+        float: left;
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .intro-webname h1
+    {
+        font-family: Rachgia;
+        font-size: 100px;
+    }
+
+.intro-hoavan
+{
+    float: left;
+    width: 100%;
+    height: 17px;
+    margin-top: 9px;
+}
+
+.intro-slogan
+{
+    float: left;
+    width: 100%;
+    margin-top: -3px;
+}
+
+    .intro-slogan h3
+    {
+        font-family: Echinos;
+        font-size: 30px;
+    }
+
+.intro-body
+{
+    height: 66.176%;
+    /*height: 441px;*/
+    overflow: hidden;
+    background-image: url("/Design/intro-body-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.intro-body-wrap
+{
+}
+
+.intro-main-block
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.intro-left-bottom-hv
+{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+.intro-right-top-hv
+{
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.intro-block
+{
+    float: left;
+    width: 28.5%;
+    height: 85.7%;
+    margin-right: 2.3%;
+    margin-top: 3%;
+    position: relative;
+    border: 2px solid #FFF;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+    .intro-block:first-child
+    {
+        margin-left: 4.4%;
+    }
+
+    .intro-block img
+    {
+        border-radius: 12px;
+    }
+
+    .intro-block > a
+    {
+        float: left;
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        background-image: url("/Design/hover-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #FFF;
+        left: -35%;
+        top: -35%;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    .intro-block:hover > a
+    {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+.intro-block-title
+{
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+    .intro-block-title h3
+    {
+        float: left;
+        width: 100%;
+        margin-bottom: 3px;
+        font-family: Echinos;
+        font-size: 39px;
+        text-align: center;
+    }
+
+.intro-block-hoavan
+{
+    width: 56.8%;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.intro-foot
+{
+    height: 9.705%;
+    overflow: hidden;
+    border-top: 1px solid #c32828;
+    background-image: url("/Design/intro-foot-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.intro-foot-wrap
+{
+    font-family: GiaDinhHep;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.intro-foot-left
+{
+    float: left;
+    width: 63%;
+    height: 100%;
+}
+
+.intro-foot-right
+{
+    float: right;
+    width: 36%;
+    height: 100%;
+    text-align: right;
+}
+
+    .intro-foot-right p:first-child, .intro-foot-left p:first-child
+    {
+        margin-top: 10px;
+    }
+
+    .intro-foot-right a
+    {
+        color: #FFF;
+    }
+
+        .intro-foot-right a:hover
+        {
+            text-decoration: underline;
+        }
