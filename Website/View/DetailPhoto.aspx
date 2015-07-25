@@ -35,6 +35,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="FootExtender">
+
     <%-- FancyBox library --%>
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
@@ -49,17 +50,15 @@
             $(".imgshow").fancybox({
                 openEffect: 'none',
                 closeEffect: 'none',
-                closeBtn: false,
-                helpers:
-                {
-                    title: { type: 'inside' },
-                    buttons: {},
+                helpers: {
+                    title: {
+                        type: 'outside'
+                    },
                     thumbs: {
                         width: 50,
                         height: 50
                     }
                 }
-
             });
         });
     </script>

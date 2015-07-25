@@ -26,7 +26,7 @@ public partial class Vn_Vn_Control_Menu : System.Web.UI.UserControl
 
         StringBuilder sb = new StringBuilder();
 
-        if (listTheLoai.Count() != 0)
+        if (listTheLoai != null && listTheLoai.Count() != 0)
         {
             sb.Append("<ul>");
             foreach (TheLoai theLoai in listTheLoai)

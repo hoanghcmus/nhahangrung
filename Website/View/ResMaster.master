@@ -59,12 +59,12 @@
                                 </a>
                             </div>
                             <div class="r-social-item">
-                                <a href="https://facebook.com" target="_blank" class="link">
+                                <a href="http://www.skype.com/" target="_blank" class="link">
                                     <img src="/Design/skype.png" alt="Facebook" class="img" />
                                 </a>
                             </div>
                             <div class="r-social-item">
-                                <a href="https://facebook.com" target="_blank" class="link">
+                                <a href="https://twitter.com" target="_blank" class="link">
                                     <img src="/Design/twitter.png" alt="Facebook" class="img" />
                                 </a>
                             </div>
@@ -101,133 +101,167 @@
                     <uc1:UC_Booking runat="server" ID="UC_Booking" />
                 </div>
             </div>
+
             <%-- Body content --%>
             <div class="r-body">
-                <div class="line-fix-parent-width">
-                    <%-- Intro block --%>
-                    <div class="r-block-intro">
-                        <div class="r-block-intro-left">
-                            <a href="javasctipt:void()" class="link">
-                                <img src="/Design/logo.png" alt="Giới thiệu" class="img" />
-                                <div class="r-block-intro-left-title"></div>
+                <div class="r-body-wrap">
+                    <div class="line-fix-parent-width">
+                        <%-- Intro block --%>
+                        <div class="r-block-intro">
+                            <div class="r-block-intro-left">
+                                <a href="javasctipt:void()" class="link">
+                                    <img src="/Design/gioithieu.jpg" alt="Giới thiệu" class="img" />
+                                    <div class="r-block-intro-left-title">
+                                        <h1>GIỚI THIỆU</h1>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="r-block-intro-right">
+                                <h1 class="r-block-intro-title">
+                                    <a href="javasctipt:void()">NHÀ HÀNG FOREST KÍNH CHÀO QUÝ KHÁCH
+                                    </a></h1>
+                                <p class="r-block-intro-summary">
+                                    Nhà hàng Forester – tọa lạc gần trung tâm thủ đô resort Mũi Né trên đường Nguyễn Đình Chiểu thuộc địa phận TP.Phan Thiết – Bình Thuận, được thiên nhiên ưu ái ban tặng những đặc sản biển dồi dào và phong phú bậc nhất cả nước về chất lượng, được thành lập cuối năm 2014 với tên gọi là "Nhà hàng Forest" Sau một vài tháng hoạt động và phát triển ...
+                                </p>
+                                <div class="r-block-intro-read-more">
+                                    <a href="javascript:void()">Xem tiếp >></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="r-promotion">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/promotion.jpg" alt="Promotion" class="img" />
                             </a>
                         </div>
-                        <div class="r-block-intro-right">
-                            <h1 class="r-block-intro-title">NHÀ HÀNG FOREST KÍNH CHÀO QUÝ KHÁCH</h1>
-                            <p class="r-block-intro-summary">
-                                Nhà hàng Forester – tọa lạc gần trung tâm thủ đô resort Mũi Né trên đường Nguyễn Đình Chiểu thuộc địa phận TP.Phan Thiết – Bình Thuận, được thiên nhiên ưu ái ban tặng những đặc sản biển dồi dào và phong phú bậc nhất cả nước về chất lượng, được thành lập cuối năm 2014 với tên gọi là "Nhà hàng Forest" Sau một vài tháng hoạt động và phát triển ...
-                            </p>
-                            <div class="r-block-intro-read-more">
-                                <a href="javascript:void()">Xem tiếp >></a>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="r-promotion">
-                        <img src="/Design/logo.png" alt="Promotion" class="img" />
-                    </div>
-                </div>
-                <%-- Gallery block --%>
-                <div class="r-main-gallery-block">
-                    <div class="r-main-gallery-pre"><</div>
-                    <div class="r-mian-gallery-content">
-                        <div class="r-main-gallery-item">
-                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
-                        </div>
-                        <div class="r-main-gallery-item">
-                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
-                        </div>
-                        <div class="r-main-gallery-item">
-                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
-                        </div>
-                        <div class="r-main-gallery-item">
-                            <img src="/Design/g.jpg" alt="Gallery item" class="img" />
-                        </div>
-                    </div>
-                    <div class="r-main-gallery-next">></div>
-                </div>
-                <%-- Cuisine content block --%>
-                <div class="cuisine">
-                    <div class="cuisine-item">
-                        <a href="javascript:void()" class="link">
-                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
-                            <div class="cuisine-content">
-                                <div class="cuisine-icon">
-                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
-                                </div>
-                                <div class="cuisine-title">
-                                    <h1>Món lẩu</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cuisine-item">
-                        <a href="javascript:void()" class="link">
-                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
-                            <div class="cuisine-content">
-                                <div class="cuisine-icon">
-                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
-                                </div>
-                                <div class="cuisine-title">
-                                    <h1>Món nướng</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cuisine-item">
-                        <a href="javascript:void()" class="link">
-                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
-                            <div class="cuisine-content">
-                                <div class="cuisine-icon">
-                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
-                                </div>
-                                <div class="cuisine-title">
-                                    <h1>Món chiên xào</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cuisine-item">
-                        <a href="javascript:void()" class="link">
-                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
-                            <div class="cuisine-content">
-                                <div class="cuisine-icon">
-                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
-                                </div>
-                                <div class="cuisine-title">
-                                    <h1>Món đặc biệt</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cuisine-item">
-                        <a href="javascript:void()" class="link">
-                            <img src="/Design/m.jpg" alt="cuisine" class="img" />
-                            <div class="cuisine-content">
-                                <div class="cuisine-icon">
-                                    <img src="/Design/s-white-logo" alt="Cuisine icon" class="img" />
-                                </div>
-                                <div class="cuisine-title">
-                                    <h1>Món khác</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <div class="r-sp"></div>
 
+                    <%-- Gallery block --%>
+
+                    <div class="r-main-gallery-block">
+                        <div class="r-main-gallery-pre">
+                            <a href="javascript:void();" class="nextpre pre" id="gallery-forward">< </a>
+                        </div>
+                        <div class="r-mian-gallery-content scroll-img" id="r-gallery">
+
+                            <ul>
+                                <li>
+                                    <a href="/Design/ss1.jpg" class="imgshow link" rel="main-gallery">
+                                        <img src="/Design/s1.jpg" alt="Gallery item" class="img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Design/m.jpg" class="imgshow link" rel="main-gallery">
+                                        <img src="/Design/m.jpg" alt="Gallery item" class="img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Design/g.jpg" class="imgshow link" rel="main-gallery">
+                                        <img src="/Design/g.jpg" alt="Gallery item" class="img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Design/m.jpg" class="imgshow link" rel="main-gallery">
+                                        <img src="/Design/m.jpg" alt="Gallery item" class="img" />
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="r-main-gallery-next">
+                            <a href="javascript:void();" class="nextpre next" id="gallery-backward">> </a>
+                        </div>
+
+                    </div>
+                    <%-- Cuisine content block --%>
+                    <div class="cuisine">
+                        <div class="cuisine-item">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                                <div class="cuisine-content">
+                                    <div class="cuisine-icon">
+                                        <img src="/Design/s-white-logo.png" alt="Cuisine icon" class="img" />
+                                    </div>
+                                    <div class="cuisine-title">
+                                        <h1>Món lẩu</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cuisine-item">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                                <div class="cuisine-content">
+                                    <div class="cuisine-icon">
+                                        <img src="/Design/s-white-logo.png" alt="Cuisine icon" class="img" />
+                                    </div>
+                                    <div class="cuisine-title">
+                                        <h1>Món nướng</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cuisine-item">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                                <div class="cuisine-content">
+                                    <div class="cuisine-icon">
+                                        <img src="/Design/s-white-logo.png" alt="Cuisine icon" class="img" />
+                                    </div>
+                                    <div class="cuisine-title">
+                                        <h1>Món chiên xào</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cuisine-item">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                                <div class="cuisine-content">
+                                    <div class="cuisine-icon">
+                                        <img src="/Design/s-white-logo.png" alt="Cuisine icon" class="img" />
+                                    </div>
+                                    <div class="cuisine-title">
+                                        <h1>Món đặc biệt</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cuisine-item">
+                            <a href="javascript:void()" class="link">
+                                <img src="/Design/m.jpg" alt="cuisine" class="img" />
+                                <div class="cuisine-content">
+                                    <div class="cuisine-icon">
+                                        <img src="/Design/s-white-logo.png" alt="Cuisine icon" class="img" />
+                                    </div>
+                                    <div class="cuisine-title">
+                                        <h1>Món khác</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
             <%-- Footer content --%>
             <div class="r-footer">
-                <p>© Copy right 2015 Forestmuine All right reserved.</p>
-                <p>Địa chỉ: 179 Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</p>
-                <p>Tel: (062) 39 39 399 - (062) 6 25 20 77  -  Email: info.forestmuine@gmail.com</p>
-                <p>Thiết kế bởi <a href="javascript:void()" target="_blank">Tính Thành</a></p>
+                <div class="r-footer-wrap">
+                    <p>© Copy right 2015 Forestmuine All right reserved.</p>
+                    <p>Địa chỉ: 65A Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</p>
+                    <p>Điện thoại: 098.399.8749  -  Email: forest_muine@yahoo.com</p>
+                    <p>Thiết kế bởi <a href="http://tinhthanh.com" target="_blank">Tính Thành</a></p>
+                </div>
             </div>
-
-            <asp:ContentPlaceHolder ID="ResMainCPH" runat="server">
-            </asp:ContentPlaceHolder>
         </div>
+        <asp:ContentPlaceHolder ID="ResMainCPH" runat="server">
+        </asp:ContentPlaceHolder>
+
 
         <%-- Script cho slideshow hinh anh --%>
         <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider-min.js"></script>
@@ -246,9 +280,6 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 $("html").niceScroll();
-                $(".left-wrap").niceScroll();
-                $(".contact-wrapper").niceScroll();
-                $(".block-body").niceScroll();
             });
 
         </script>
@@ -280,23 +311,6 @@
             });
         </script>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#shopping-cart").fancybox({
-                    maxWidth: 1349,
-                    maxHeight: 630,
-                    fitToView: false,
-                    width: '818px',
-                    height: '519px',
-                    autoSize: false,
-                    closeClick: false,
-                    openEffect: 'none',
-                    closeEffect: 'none'
-                });
-            });
-
-        </script>
-
         <%-- Fancy for video popup --%>
         <script type="text/javascript">
             $(document).ready(function () {
@@ -307,6 +321,21 @@
                         media: {}
                     }
                 });
+            });
+        </script>
+
+        <script src="/Styles/ScrollBox/jquery.scrollbox.js"></script>
+        <script type="text/javascript">
+            $('#r-gallery').scrollbox({
+                direction: 'h',
+                distance: 140,
+                autoPlay: true
+            });
+            $('#gallery-backward').click(function () {
+                $('#r-gallery').trigger('backward');
+            });
+            $('#gallery-forward').click(function () {
+                $('#r-gallery').trigger('forward');
             });
         </script>
 
