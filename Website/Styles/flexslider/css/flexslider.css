@@ -115,7 +115,7 @@ html[xmlns] .slides {
 /* Direction Nav */
 .flex-direction-nav {
     *height: 0;
-    display: none;
+    /*display: none;*/
 }
 
     .flex-direction-nav a {
@@ -187,6 +187,7 @@ html[xmlns] .slides {
     position: absolute;
     bottom: 0;
     right: 12.935%;
+    display: none;
 }
 
     .flex-control-nav li {

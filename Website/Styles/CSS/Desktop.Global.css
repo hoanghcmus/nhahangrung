@@ -1,4 +1,5 @@
-﻿* {
+﻿*
+{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,52 +8,62 @@
     outline: none;
 }
 
-@font-face {
+@font-face
+{
     font-family: RachGia;
     src: url("/Styles/CSS/Font/RachGia/RACHGIA.TTF");
 }
 
-@font-face {
+@font-face
+{
     font-family: Echinos;
     src: url("/Styles/CSS/Font/Echinos/ECHINOSPARKSCRIPT_PERSONAL_USE_ONLY.TTF");
 }
 
-@font-face {
+@font-face
+{
     font-family: GiaDinhHep;
     src: url("/Styles/CSS/Font/GiaDinhHep/UVNGIADINHHEP.TTF");
 }
 
 
-@font-face {
+@font-face
+{
     font-family: HongHaHep;
     src: url("/Styles/CSS/Font/HongHaHep/UVNHONGHAHEP_R_0.TTF");
 }
 
-@font-face {
+@font-face
+{
     font-family: HongHaHepB;
     src: url("/Styles/CSS/Font/HongHaHep/UVNHONGHAHEP_0.TTF");
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6
+{
     float: left;
     font-weight: normal;
 }
 
-html, body, #DefaultForm, .intro-container, .intro-head, .intro-body, .intro-foot, .line-fix-parent-width, .img, .link, .full {
+html, body, #DefaultForm, .intro-container, .intro-head, .intro-body, .intro-foot, .line-fix-parent-width, .img, .link, .full
+{
     float: left;
     width: 100%;
 }
 
-html, body, #DefaultForm, .intro-container, .img, .link, .full {
+html, body, #DefaultForm, .intro-container, .img, .link, .full
+{
     height: 100%;
 }
 
 /*CSS for intro page*/
-.intro-container {
+.intro-container
+{
     overflow: hidden;
 }
 
-.intro-head {
+.intro-head
+{
     height: 23.823%;
     overflow: hidden;
     border-bottom: 1px solid #c32828;
@@ -61,58 +72,67 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     background-size: 100% 100%;
 }
 
-.intro-head-wrap, .intro-body-wrap, .intro-foot-wrap {
+.intro-head-wrap, .intro-body-wrap, .intro-foot-wrap
+{
     float: left;
     width: 73.2%;
     height: 100%;
     margin-left: 13.4%;
 }
 
-.intro-head-info {
+.intro-head-info
+{
     float: left;
     width: 48.7%;
     height: 100%;
     margin-left: 25.5%;
 }
 
-.intro-webname {
+.intro-webname
+{
     float: left;
     width: 100%;
     height: 90px;
     margin-top: -5px;
 }
 
-    .intro-webname h1, .intro-slogan h3 {
+    .intro-webname h1, .intro-slogan h3
+    {
         float: left;
         width: 100%;
         text-align: center;
         color: #FFF;
     }
 
-    .intro-webname h1 {
+    .intro-webname h1
+    {
         font-family: Rachgia;
         font-size: 100px;
     }
 
-.intro-hoavan {
+.intro-hoavan
+{
     float: left;
     width: 100%;
     height: 17px;
     margin-top: 9px;
 }
 
-.intro-slogan {
+.intro-slogan
+{
     float: left;
     width: 100%;
     margin-top: -3px;
 }
 
-    .intro-slogan h3 {
+    .intro-slogan h3
+    {
         font-family: Echinos;
         font-size: 30px;
     }
 
-.intro-body {
+.intro-body
+{
     height: 66.176%;
     /*height: 441px;*/
     overflow: hidden;
@@ -121,29 +141,34 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     background-size: 100% 100%;
 }
 
-.intro-body-wrap {
+.intro-body-wrap
+{
 }
 
-.intro-main-block {
+.intro-main-block
+{
     float: left;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.intro-left-bottom-hv {
+.intro-left-bottom-hv
+{
     position: absolute;
     left: 0;
     bottom: 5px;
 }
 
-.intro-right-top-hv {
+.intro-right-top-hv
+{
     position: absolute;
     right: 0;
     top: 18px;
 }
 
-.intro-block {
+.intro-block
+{
     float: left;
     width: 28.5%;
     height: 85.7%;
@@ -155,15 +180,18 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     z-index: 1;
 }
 
-    .intro-block:first-child {
+    .intro-block:first-child
+    {
         margin-left: 4.4%;
     }
 
-    .intro-block img {
+    .intro-block img
+    {
         border-radius: 12px;
     }
 
-    .intro-block > a {
+    .intro-block > a
+    {
         float: left;
         width: 150%;
         height: 150%;
@@ -178,7 +206,8 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
         transition: all .4s ease-in-out;
     }
 
-    .intro-block:hover > a {
+    .intro-block:hover > a
+    {
         left: 0;
         top: 0;
         opacity: 1;
@@ -186,14 +215,16 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
         height: 100%;
     }
 
-.intro-block-title {
+.intro-block-title
+{
     float: left;
     width: 100%;
     position: absolute;
     bottom: 10px;
 }
 
-    .intro-block-title h3 {
+    .intro-block-title h3
+    {
         float: left;
         width: 100%;
         margin-bottom: 3px;
@@ -202,13 +233,15 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
         text-align: center;
     }
 
-.intro-block-hoavan {
+.intro-block-hoavan
+{
     width: 56.8%;
     height: 10px;
     margin: 0 auto;
 }
 
-.intro-foot {
+.intro-foot
+{
     height: 9.705%;
     overflow: hidden;
     border-top: 1px solid #c32828;
@@ -217,46 +250,54 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     background-size: 100% 100%;
 }
 
-.intro-foot-wrap {
+.intro-foot-wrap
+{
     font-family: GiaDinhHep;
     font-size: 15px;
     color: #FFF;
 }
 
-.intro-foot-left {
+.intro-foot-left
+{
     float: left;
     width: 63%;
     height: 100%;
 }
 
-.intro-foot-right {
+.intro-foot-right
+{
     float: right;
     width: 36%;
     height: 100%;
     text-align: right;
 }
 
-    .intro-foot-right p:first-child, .intro-foot-left p:first-child {
+    .intro-foot-right p:first-child, .intro-foot-left p:first-child
+    {
         margin-top: 10px;
     }
 
-    .intro-foot-right a {
+    .intro-foot-right a
+    {
         color: #FFF;
     }
 
-        .intro-foot-right a:hover {
+        .intro-foot-right a:hover
+        {
             text-decoration: underline;
         }
 /*CSS for intro page - End*/
 
 /*CSS for Restaurant site*/
-.r-container {
+.r-container
+{
     float: left;
     width: 100%;
     position: relative;
 }
 
-.r-slideshow {
+.r-slideshow
+{
     float: left;
     width: 100%;
     height: 554px;
@@ -265,7 +306,8 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     left: 0;
 }
 
-.r-header {
+.r-header
+{
     float: left;
     width: 100%;
     position: absolute;
@@ -273,14 +315,16 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     top: 18px;
 }
 
-.r-top {
+.r-top
+{
     float: left;
     width: 100%;
     height: 32px;
     background-color: rgba(255,255,255,0.8);
 }
 
-.r-top-wrap {
+.r-top-wrap
+{
     float: left;
     /*width: 73.206%;*/
     height: 100%;
@@ -289,12 +333,14 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     margin-left: 25%;
 }
 
-.r-social-network-bar {
+.r-social-network-bar
+{
     float: left;
     margin-left: 0.8%;
 }
 
-.r-social-item {
+.r-social-item
+{
     float: left;
     width: 22px;
     height: 22px;
@@ -302,16 +348,19 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     margin-top: 5px;
 }
 
-.r-top-nav {
+.r-top-nav
+{
     float: right;
     margin-top: 9px;
 }
 
-    .r-top-nav > ul {
+    .r-top-nav > ul
+    {
         float: left;
     }
 
-        .r-top-nav > ul li {
+        .r-top-nav > ul li
+        {
             float: left;
             list-style: none;
             font-family: HongHaHep;
@@ -321,29 +370,35 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
             border-right: 1px solid #9d0909;
         }
 
-        .r-top-nav > ul > li:last-child {
+        .r-top-nav > ul > li:last-child
+        {
             border: none;
         }
 
-        .r-top-nav > ul > li > a {
+        .r-top-nav > ul > li > a
+        {
             float: left;
             color: #9d0909;
         }
 
-            .r-top-nav > ul > li > a > span {
+            .r-top-nav > ul > li > a > span
+            {
                 float: left;
             }
 
 
-.r-lang-bar {
+.r-lang-bar
+{
     float: right;
 }
 
-.lang-bar {
+.lang-bar
+{
     float: right;
 }
 
-.lang-item {
+.lang-item
+{
     float: right;
     width: 24px;
     height: 27px;
@@ -353,7 +408,8 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     background-size: 100% 100%;
 }
 
-.lang-icon {
+.lang-icon
+{
     float: left;
     width: 19px;
     height: 12px;
@@ -362,50 +418,59 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
 }
 
 /*CSS for main vertical menu*/
-.r-virtical-menu {
+.r-virtical-menu
+{
     float: left;
     width: 100%;
     height: 70px;
     background-color: rgba(116, 4, 4, 0.8);
 }
 
-.r-virtical-wrap {
+.r-virtical-wrap
+{
     float: right;
     width: 73.206%;
     height: 100%;
     margin-right: 13.297%;
 }
 
-.nav {
+.nav
+{
 }
 
-    .nav ul {
+    .nav ul
+    {
         float: right;
         height: 100%;
         margin-left: 3%;
     }
 
 
-        .nav ul li {
+        .nav ul li
+        {
             float: left;
             height: 100%;
             font-family: "HongHaHepB";
         }
 
-.vnav-wrap > ul > li {
+.vnav-wrap > ul > li
+{
     border-left: 1px solid #5bb7f0;
     border-right: 1px solid #4da3ee;
 }
 
-    .vnav-wrap > ul > li:first-child {
+    .vnav-wrap > ul > li:first-child
+    {
         border-left: none;
     }
 
-    .vnav-wrap > ul > li:last-child {
+    .vnav-wrap > ul > li:last-child
+    {
         border-right: none;
     }
 
-.nav ul li a {
+.nav ul li a
+{
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 32px;
@@ -415,7 +480,8 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
 
 
 
-.nav > ul > li > a {
+.nav > ul > li > a
+{
     font-size: 1vw;
     width: auto;
     text-align: center;
@@ -425,73 +491,86 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
 }
 
 
-.nav > ul > li:first-child {
+.nav > ul > li:first-child
+{
 }
 
-.nav > ul > li:last-child a {
+.nav > ul > li:last-child a
+{
 }
 
 
-.nav li.active {
+.nav li.active
+{
     background-color: rgba(1, 81, 133, 0.1);
 }
 
-    .nav li.active > a {
+    .nav li.active > a
+    {
         color: #FFF;
     }
 
-.nav > ul > li:hover, .nav > ul > li.active {
+.nav > ul > li:hover, .nav > ul > li.active
+{
     background-image: url("/Design/li-hover.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-.nav > ul li:hover a {
+.nav > ul li:hover a
+{
 }
 
 
-.nav > ul > li.has-sub > ul {
+.nav > ul > li.has-sub > ul
+{
     top: 101%;
-    left: -1px;
+    left: -3px;
     z-index: 10;
 }
 
-.nav > ul > li.has-sub {
+.nav > ul > li.has-sub
+{
 }
 
-.has-sub span.arrow {
+.has-sub span.arrow
+{
     text-align: center;
     margin-left: 3px;
 }
 
 
-.has-sub {
+.has-sub
+{
     position: relative;
 }
 
-    .has-sub > ul {
+    .has-sub > ul
+    {
         position: absolute;
         width: 100%;
-        /*height: 0px;
-        overflow: hidden;*/
+        height: 0px;
+        overflow: hidden;
         top: 49px;
         transition: all .4s linear;
     }
 
-        .has-sub > ul > li {
-            background-color: rgba(85, 179, 240, 1);
-            /*width: 200px !important;
+        .has-sub > ul > li
+        {
+            background-color: rgba(116, 4, 4, 0.8);
+            width: 200px !important;
             height: 0px;
-            overflow: hidden;*/
-            width: 200px;
-            height: 40px;
-            border-top: 1px solid #C0C0C0;
+            overflow: hidden;
+            /*width: 200px;
+            height: 40px;*/
+            border-top: 1px solid rgba(255,255,255, 0.5);
             padding-left: 0;
             padding-right: 0;
             text-align: left;
         }
 
-            .has-sub > ul > li > a > span {
+            .has-sub > ul > li > a > span
+            {
                 float: left;
                 width: 90%;
                 font-size: 14px;
@@ -499,42 +578,50 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
                 text-indent: 9px;
             }
 
-            .has-sub > ul > li:first-child {
+            .has-sub > ul > li:first-child
+            {
                 border-top: none;
             }
 
-            .has-sub > ul > li:last-child {
+            .has-sub > ul > li:last-child
+            {
                 border-bottom-left-radius: 3px;
                 border-bottom-right-radius: 3px;
             }
 
-            .has-sub > ul > li.active {
-                background-color: rgba(74, 155, 237, 0.8);
+            .has-sub > ul > li.active
+            {
+                background-color: rgba(116, 4, 4, 0.9);
             }
 
-        .has-sub > ul li a, .has-sub > ul li:hover a {
+        .has-sub > ul li a, .has-sub > ul li:hover a
+        {
             width: 100%;
             color: #FFF;
         }
 
-    .has-sub:hover > ul {
-        /*width: 200px;
-        height: auto;*/
+    .has-sub:hover > ul
+    {
+        width: 200px;
+        height: auto;
     }
 
-        .has-sub:hover > ul > li {
-            /*float: left;
+        .has-sub:hover > ul > li
+        {
+            float: left;
             width: 100%;
-            height: auto;*/
+            height: 40px;
         }
 
-    .has-sub > ul > li:hover {
-        background-color: rgba(74, 155, 237, 0.8);
+    .has-sub > ul > li:hover
+    {
+        background-color: rgba(116, 4, 4, 0.9);
     }
 
 
 /*CSS for main vertical menu - End*/
-.r-logo {
+.r-logo
+{
     float: left;
     width: 11.347%;
     height: 176px;
@@ -543,79 +630,197 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     left: 13.397%;
 }
 
-.r-booking {
+.r-booking
+{
+    float: left;
+    width: 73.306%;
+    margin-left: 13.397%;
+    height: 434px;
+    position: absolute;
+    top: 120px;
 }
 
-.r-booking-wrap {
+.r-booking-wrap
+{
+    float: right;
+    width: 29.1%;
+    height: 74.4%;
+    margin-top: 54px;
+    border: 1px solid #585858;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255,255,255, 0.6);
 }
 
-.r-body {
+.booking
+{
+    float: left;
+    width: 79.725%;
+    margin-left: 7.56%;
+    margin-top: 10%;
 }
 
-.r-block-intro {
+.booking-header
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
-.r-block-intro-left {
-}
-
-    .r-block-intro-left > a {
+    .booking-header h1
+    {
+        float: left;
+        width: 100%;
+        font-family: HongHaHep;
+        font-size: 20px;
+        font-weight: bold;
+        color: #b50303;
     }
 
-.r-block-intro-left-title {
+.booking-info
+{
 }
 
-.r-block-intro-right {
+.booking-mess
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: UTM_Facebook;
+    color: orange;
+    position: absolute;
+    top: 9px;
 }
 
-.r-block-intro-title {
+.info-input
+{
+    float: left;
+    width: 100%;
+    height: 27px;
+    margin-top: 8px;
+    /*outline: 1px solid #FFF;*/
+    background-color: rgba(255,255,255,1);
+    -webkit-box-shadow: 1px 1px 0px 0px rgba(169,169,169,0.9);
+    -moz-box-shadow: 1px 1px 0px 0px rgba(169,169,169,0.9);
+    box-shadow: 1px 1px 0px 0px rgba(169,169,169,0.9);
 }
 
-.r-block-intro-summary {
+.input
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #4b4b4b;
+    background-color: transparent;
 }
 
-.r-block-intro-read-more {
+.btnBooking
+{
+    float: right;
+    margin-top: 9px;
+    margin-left: 5px;
+    padding: 6px 10px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #9b0000;
+    color: #FFF;
 }
 
-.r-main-gallery-block {
+.r-body
+{
 }
 
-.r-promotion {
+.r-block-intro
+{
 }
 
-.r-main-gallery-pre {
+.r-block-intro-left
+{
 }
 
-.r-main-gallery-next {
-}
-
-.r-mian-gallery-content {
-}
-
-.r-main-gallery-item {
-}
-
-.cuisine {
-}
-
-.cuisine-item {
-}
-
-.cuisine-content {
-}
-
-.cuisine-icon {
-}
-
-.cuisine-title {
-}
-
-.r-footer {
-}
-
-    .r-footer p {
+    .r-block-intro-left > a
+    {
     }
 
-    .r-footer > p > a {
+.r-block-intro-left-title
+{
+}
+
+.r-block-intro-right
+{
+}
+
+.r-block-intro-title
+{
+}
+
+.r-block-intro-summary
+{
+}
+
+.r-block-intro-read-more
+{
+}
+
+.r-main-gallery-block
+{
+}
+
+.r-promotion
+{
+}
+
+.r-main-gallery-pre
+{
+}
+
+.r-main-gallery-next
+{
+}
+
+.r-mian-gallery-content
+{
+}
+
+.r-main-gallery-item
+{
+}
+
+.cuisine
+{
+}
+
+.cuisine-item
+{
+}
+
+.cuisine-content
+{
+}
+
+.cuisine-icon
+{
+}
+
+.cuisine-title
+{
+}
+
+.r-footer
+{
+}
+
+    .r-footer p
+    {
+    }
+
+    .r-footer > p > a
+    {
     }
 
 /*. {
