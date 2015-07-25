@@ -5,10 +5,6 @@
 <%@ Register Src="~/View/UserControl/UC_Booking.ascx" TagPrefix="uc1" TagName="UC_Booking" %>
 <%@ Register Src="~/View/UserControl/UC_Choose_Language.ascx" TagPrefix="uc1" TagName="UC_Choose_Language" %>
 
-
-
-
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">

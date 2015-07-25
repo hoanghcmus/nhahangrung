@@ -26,7 +26,7 @@ public partial class En_En_Control_UC_CheckRate : System.Web.UI.UserControl
 
         data.Ten = custumerName.Text;
         data.DiaChi = Address.Text;
-        data.Email = Email.Text;
+        data.Email = String.Empty;
         data.SDT = Convert.ToInt32(Phone.Text.Trim());
         data.SoNguoi = Amount.Text;
 
@@ -49,12 +49,16 @@ public partial class En_En_Control_UC_CheckRate : System.Web.UI.UserControl
         }
 
     }
-    
+
+    protected void btnFormat_Click(object sender, EventArgs e)
+    {
+        refesh();
+    }
+
     protected void refesh()
     {
         custumerName.Text = String.Empty;
         Address.Text = String.Empty;
-        Email.Text = String.Empty;
         Phone.Text = String.Empty;
         Amount.Text = String.Empty;
         Date.Text = String.Empty;
