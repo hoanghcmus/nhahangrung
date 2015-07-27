@@ -160,7 +160,7 @@
     <value>Description</value>
   </data>
   <data name="design" xml:space="preserve">
-    <value>Design by &lt;b&gt;&lt;a href="http://www.tinhthanh.com" target="_blank"&gt;Tinh Thanh&lt;/a&gt;&lt;/b&gt;</value>
+    <value>Design by &lt;a href="http://www.tinhthanh.com" target="_blank"&gt;Tinh Thanh&lt;/a&gt;</value>
   </data>
   <data name="design_by" xml:space="preserve">
     <value>Design Website by</value>
@@ -242,5 +242,17 @@
   </data>
   <data name="please_contact" xml:space="preserve">
     <value>Please contact</value>
+  </data>
+  <data name="intro" xml:space="preserve">
+    <value>INTRODUCTION</value>
+  </data>
+  <data name="footer_line1" xml:space="preserve">
+    <value>© Copy right 2015 Forestmuine All right reserved.</value>
+  </data>
+  <data name="footer_line2" xml:space="preserve">
+    <value>Address: 65A Nguyen Dinh Chieu st, Ham Tien ward, PhanThiet city, Binh Thuan province</value>
+  </data>
+  <data name="footer_line3" xml:space="preserve">
+    <value>Phone: 098.399.8749  -  Email: forest_muine@yahoo.com</value>
   </data>
 </root>

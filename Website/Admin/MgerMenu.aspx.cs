@@ -123,7 +123,7 @@ public partial class Admin_MgerMenu : System.Web.UI.Page
         switch (colunmName)
         {
             case "ID":
-                if (data.ID == 16 || data.ID == 17 ||data.ID == 18 || data.ID == 1 )//Thuoc xu ly cua he thong
+                if (data.ID == 6 || data.ID == 1 )//Thuoc xu ly cua he thong
                     return String.Format("<input type='button' class='lock' title='Thể loại này thuộc quản lý của hệ thống' />");
                 else
                     return String.Format("<input type='checkbox' name='cid' value='{0}'/>", data.ID);

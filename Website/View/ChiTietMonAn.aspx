@@ -1,11 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true" CodeFile="ChiTietMonAn.aspx.cs" Inherits="View_ChiTietMonAn" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true" CodeFile="ChiTietMonAn.aspx.cs" Inherits="View_ChiTietMonAn" %>
 
-<asp:Content ID="Header" ContentPlaceHolderID="HeadExtender" runat="Server">
+<asp:Content ID="Header" ContentPlaceHolderID="ResHeadCPH" runat="Server">
     <link href="/Styles/Magiczoom/magiczoom.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Left" ContentPlaceHolderID="LeftBlockContentPlaceHolder" runat="Server">
-</asp:Content>
-<asp:Content ID="Main" ContentPlaceHolderID="MainContent" runat="Server">
+
+<asp:Content ID="Main" ContentPlaceHolderID="ResMainCPH" runat="Server">
     <div class="galery-title-bar">
         <div class="gallery-title">
             <div class="galery-title-bar-icon">
@@ -98,7 +97,7 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Footer" ContentPlaceHolderID="FootExtender" runat="Server">
+<asp:Content ID="Footer" ContentPlaceHolderID="ResFootCPH" runat="Server">
     <script src="/Styles/Magiczoom/magiczoomplus.js"></script>
     <%-- Load page content when click item on the right --%>
     <script type="text/javascript">

@@ -117,7 +117,7 @@
                                         CssClass="red">( * )</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
-                           
+
                             <tr>
                                 <td class="text" valign="top">
                                     <br />
@@ -157,7 +157,7 @@
                                         CssClass="red">( * )</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
-                           
+
                             <tr>
                                 <td class="text" valign="top">
                                     <br />
@@ -197,7 +197,7 @@
                                         CssClass="red">( * )</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
-                          
+
                             <tr>
                                 <td class="text" valign="top">Vị trí:
                                 </td>
@@ -207,6 +207,21 @@
                                         Operator="DataTypeCheck" ControlToValidate="txtViTri" Type="Integer">&nbsp;(Chỉ nhập số)</asp:CompareValidator>
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td class="text" valign="top">Thuộc website:
+                                </td>
+                                <td>
+                                    <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl">
+                                        <asp:ListItem Value="0">- Chọn website -</asp:ListItem>
+                                        <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                        <asp:ListItem Value="2">Spa</asp:ListItem>
+                                        <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="BaseOnWebsiteRequiredFieldValidator" ControlToValidate="drlWebsite" SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Vui lòng chọn website)</asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+
                             <tr class="text">
                                 <td valign="top">Chèn ảnh cho menu:
                                 </td>
@@ -216,7 +231,7 @@
                                         type="button" value="Duy&#7879;t file" class="btnedit" />
                                 </td>
                             </tr>
-                         
+
                             <tr>
                                 <td colspan="2">
                                     <asp:Button ID="btnLuu" runat="server" Text="Lưu menu" CssClass="btnedit" />

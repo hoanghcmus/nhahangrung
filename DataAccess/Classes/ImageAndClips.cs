@@ -26,6 +26,7 @@ namespace DataAccess.Classes
         public string HinhAnh { get; set; }
         public string ImgOrClip { get; set; }
         public int IDTheLoai { get; set; }
+        public int Website { get; set; }
         public ImageAndClips() { }
         #endregion
 
@@ -88,6 +89,17 @@ namespace DataAccess.Classes
             try
             {
                 return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("ImageAndClips_DemTheLoai", ConvertType.ToInt32(theloai)));
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+        public static int ImageAndClips_GetLastID()
+        {
+            try
+            {
+                return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("ImageAndClips_GetLastID"));
             }
             catch
             {

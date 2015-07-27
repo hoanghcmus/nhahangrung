@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true" CodeFile="ArticleByCatgory.aspx.cs" Inherits="En_ArticleByCatgory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true" CodeFile="ArticleByCatgory.aspx.cs" Inherits="En_ArticleByCatgory" %>
 
 <%@ Import Namespace="DataAccess.Help" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadExtender" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ResHeadCPH" runat="Server">
     <link href="/Styles/CSS/Desktop.Module.css" rel="stylesheet" />
     <link href="/Styles/CSS/SmartPhone.Module.css" rel="stylesheet" />
     <link href="/Styles/CSS/Tablet.Module.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
 
     <div class="galery-title-bar">
         <div class="gallery-title">
@@ -72,6 +72,6 @@
     </div>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="FootExtender" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ResFootCPH" runat="Server">
 </asp:Content>
 

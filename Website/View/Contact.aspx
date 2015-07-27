@@ -1,15 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
     CodeFile="Contact.aspx.cs" Inherits="Vn_Contact" %>
 
 <%@ Register Src="~/View/UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc1" %>
-<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="HeadExtender">
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="ResHeadCPH">
     <link href="/Styles/CSS/Desktop.Contact.css" rel="stylesheet" />
 
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="Server">
+<asp:Content ID="ContentMain" ContentPlaceHolderID="ResMainCPH" runat="Server">
 
 
     <div class="galery-title-bar">
@@ -142,7 +142,7 @@
 
 </asp:Content>
 
-<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="FootExtender">
+<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="ResFootCPH">
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>

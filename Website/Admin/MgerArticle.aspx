@@ -66,7 +66,7 @@
                                     <AlternatingItemTemplate>
                                         <tr class="eventop">
                                             <td class="id">
-                                                <input type="checkbox" name='cid' value='<%#Eval("ID") %>' />
+                                                <%#ShowCategory(Container.DataItem,"ID") %>
                                             </td>
                                             <td align="center">
                                                 <asp:Image runat="server" ID="img" ImageUrl='<%# DataAccess.Connect.Link.Toimages(Eval("HinhAnh").ToString()) %>'
@@ -93,7 +93,7 @@
                                     <ItemTemplate>
                                         <tr class="evenbottom">
                                             <td class="id">
-                                                <input type="checkbox" name='cid' value='<%#Eval("ID") %>' />
+                                                <%#ShowCategory(Container.DataItem,"ID") %>
                                             </td>
                                             <td align="center">
                                                 <asp:Image runat="server" ID="img" ImageUrl='<%# DataAccess.Connect.Link.Toimages(Eval("HinhAnh").ToString()) %>'

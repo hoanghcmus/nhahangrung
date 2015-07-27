@@ -649,6 +649,10 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
     margin-top: 42px;
 }
 
+    .r-body-wrap img {
+        max-width: 100%;
+    }
+
 .r-block-intro {
     float: left;
     width: 74.6%;
@@ -958,6 +962,95 @@ a.nextpre {
             text-decoration: underline;
         }
 
+
+.menu-wrap {
+    float: left;
+    width: 100%;    
+    overflow: hidden;
+}
+
+.menu-item {
+    float: left;
+    width: 23.5%;
+    height: 152px;
+    margin-right: 1.5%;
+    margin-bottom: 20px;
+}
+
+    .menu-item > a {
+        position: relative;
+    }
+
+.menu-figure {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-price {
+    float: left;
+    width: 100%;
+    height: 59px;
+    background-color: rgba(90, 103, 88, 0.3);
+    border-bottom: 1px solid #98694f;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+
+    .menu-price span {
+        float: left;
+        width: 100%;
+        margin-top: 27px;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+    }
+
+.menu-item:hover .menu-price {
+    background-color: rgba(90, 103, 88, 0.6);
+    bottom: 29px;
+    visibility: visible;
+}
+
+.menu-title {
+    float: left;
+    width: 100%;
+    height: 29px;
+    background-color: rgba(146, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
+}
+
+    .menu-title h1 {
+        float: left;
+        width: 100%;
+        margin-top: 4px;
+        font-family: HongHaHepB;
+        font-size: 17px;
+        text-align: center;
+        color: #FFF;
+    }
+
+.body-right-content {
+    float: left;
+    width: 102.5%;
+    margin-top: 10px;
+    font-family: Tahoma;
+    font-size: 15px;
+    color: #4b4b4b;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.menu-wrap {
+    float: left;
+    width: 100%;    
+    overflow: hidden;
+}
 
 
 /*CSS for Restaurant site - End*/

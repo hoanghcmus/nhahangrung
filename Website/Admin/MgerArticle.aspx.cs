@@ -46,7 +46,7 @@ public partial class Admin_MgerArticle : System.Web.UI.Page
         {
             Label1.Text = "Kết quả tìm kiếm tin tức cho chuỗi '" + chuoiTimKiem + "'";
             txtTimKiem.Text = chuoiTimKiem.ToString();
-            repProd.DataSource = BaiViet.TimTheoModule("1",chuoiTimKiem, Trang, out howManyPages);
+            repProd.DataSource = BaiViet.TimTheoModule("1", chuoiTimKiem, Trang, out howManyPages);
             repProd.DataBind();
             firstPageUrl = DataAccess.Connect.Link.EditArticleToSreach(chuoiTimKiem);
             pagerUrl = DataAccess.Connect.Link.EditArticleToSreach(chuoiTimKiem, "{0}");
@@ -112,6 +112,20 @@ public partial class Admin_MgerArticle : System.Web.UI.Page
         int chon = Convert.ToInt32(ddlTheLoai.SelectedValue);
         if (chon != 0)
             Response.Redirect("~/Admin/MgerArticle.aspx?MenuID=" + chon.ToString());
+    }
+    public string ShowCategory(object input, string colunmName)
+    {
+        BaiViet data = input as BaiViet;
+        switch (colunmName)
+        {
+            case "ID":
+                if (data.ID == 14 || data.ID == 15)//Thuoc xu ly cua he thong
+                    return String.Format("<input type='button' class='lock' title='Bài viết này thuộc quản lý của hệ thống' />");
+                else
+                    return String.Format("<input type='checkbox' name='cid' value='{0}'/>", data.ID);
+            default:
+                return "";
+        }
     }
     #endregion
 

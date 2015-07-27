@@ -173,6 +173,7 @@ public partial class Admin_EditMenu : System.Web.UI.Page
         ddlParent.SelectedValue = data.IDParent.ToString();
         ddlLoadMenu.SelectedValue = data.IDLoaiMenu.ToString();
         ddlModule.SelectedValue = data.IDModule.ToString();
+        drlWebsite.SelectedValue = data.Website.ToString();
     }
     #endregion
 
@@ -222,6 +223,7 @@ public partial class Admin_EditMenu : System.Web.UI.Page
         if (idparent > 0)
             data.IDParent = idparent;
         data.Footer = true;
+        data.Website = Convert.ToInt32(drlWebsite.SelectedValue);
         return data;
     }
     protected override void OnInit(EventArgs e)

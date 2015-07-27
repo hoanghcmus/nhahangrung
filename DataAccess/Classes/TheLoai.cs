@@ -29,6 +29,7 @@ namespace DataAccess.Classes
         public int IDModule { get; set; }
         public int ViTri { get; set; }
         public Boolean Footer { get; set; }
+        public int Website { get; set; }
         //Anh xa bang ngoai
         public string TenLoaiMenu { get; set; }
         public string TenLoaiModule { get; set; }
@@ -42,7 +43,7 @@ namespace DataAccess.Classes
             {
                 object rs = DataProvider.Instance.ExecuteNonQueryWithOutput("@ID", "TheLoai_ThemYesIDParent",
                     theLoai.ID, theLoai.TieuDe_Vn, theLoai.TieuDe_En, theLoai.TieuDe_Ru, theLoai.MoTa_Vn, theLoai.MoTa_En, theLoai.MoTa_Ru
-                    , theLoai.HinhAnh, theLoai.IDParent, theLoai.IDLoaiMenu, theLoai.IDModule, theLoai.DuongDan_Vn, theLoai.DuongDan_En, theLoai.DuongDan_Ru, theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn);
+                    , theLoai.HinhAnh, theLoai.IDParent, theLoai.IDLoaiMenu, theLoai.IDModule, theLoai.DuongDan_Vn, theLoai.DuongDan_En, theLoai.DuongDan_Ru, theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn, theLoai.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -56,7 +57,7 @@ namespace DataAccess.Classes
                     theLoai.ID, theLoai.TieuDe_Vn, theLoai.TieuDe_En, theLoai.TieuDe_Ru
                     , theLoai.MoTa_Vn, theLoai.MoTa_En, theLoai.MoTa_Ru, theLoai.HinhAnh
                     , theLoai.IDLoaiMenu, theLoai.IDModule, theLoai.DuongDan_Vn, theLoai.DuongDan_En
-                    , theLoai.DuongDan_Ru, theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn);
+                    , theLoai.DuongDan_Ru, theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn, theLoai.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -80,7 +81,7 @@ namespace DataAccess.Classes
                     , theLoai.TieuDe_Vn, theLoai.TieuDe_En, theLoai.TieuDe_Ru, theLoai.MoTa_Vn
                     , theLoai.MoTa_En, theLoai.MoTa_Ru, theLoai.HinhAnh, theLoai.IDLoaiMenu
                     , theLoai.IDModule, theLoai.DuongDan_Vn, theLoai.DuongDan_En, theLoai.DuongDan_Ru
-                    , theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn);
+                    , theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn, theLoai.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -94,7 +95,7 @@ namespace DataAccess.Classes
                     , theLoai.TieuDe_Vn, theLoai.TieuDe_En, theLoai.TieuDe_Ru, theLoai.MoTa_Vn
                     , theLoai.MoTa_En, theLoai.MoTa_Ru, theLoai.HinhAnh, theLoai.IDParent
                     , theLoai.IDLoaiMenu, theLoai.IDModule, theLoai.DuongDan_Vn, theLoai.DuongDan_En, theLoai.DuongDan_Ru
-                    , theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn);
+                    , theLoai.ViTri, theLoai.Footer, theLoai.TieuDe_Cn, theLoai.MoTa_Cn, theLoai.DuongDan_Cn, theLoai.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -223,6 +224,16 @@ namespace DataAccess.Classes
             try
             {
                 return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_GetByCategoryAndParentID", ConvertType.ToInt32(idLoaiMenu), parentID));
+            }
+            catch
+            { return null; }
+        }
+
+        public static List<TheLoai> TheLoai_GetByCategoryAndParentIDAndWebsite(string idLoaiMenu, int parentID, int Website)
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_GetByCategoryAndParentIDAndWebsite", ConvertType.ToInt32(idLoaiMenu), parentID, Website));
             }
             catch
             { return null; }

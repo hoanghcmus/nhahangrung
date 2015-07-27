@@ -160,7 +160,7 @@
     <value>Oписание</value>
   </data>
   <data name="design" xml:space="preserve">
-    <value>Разработано &lt;b&gt;&lt;a href="http://www.tinhthanh.com" target="_blank"&gt;Tinh Thanh&lt;/a&gt;&lt;/b&gt;</value>
+    <value>Разработано &lt;a href="http://www.tinhthanh.com" target="_blank"&gt;Tinh Thanh&lt;/a&gt;</value>
   </data>
   <data name="design_by" xml:space="preserve">
     <value>Дизайн веб-сайта</value>
@@ -242,5 +242,17 @@
   </data>
   <data name="please_contact" xml:space="preserve">
     <value>Пожалуйста свяжитесь</value>
+  </data>
+  <data name="intro" xml:space="preserve">
+    <value>ВВОДИТЬ</value>
+  </data>
+  <data name="footer_line1" xml:space="preserve">
+    <value>Авторское право © 2015 Forestmuine Все права защищены.</value>
+  </data>
+  <data name="footer_line2" xml:space="preserve">
+    <value>Адрес: 65A Нгуен Динь ТЬЕН Улица, Хам Тянь, Фантхиет</value>
+  </data>
+  <data name="footer_line3" xml:space="preserve">
+    <value>Телефон: 098.399.8749 - E-mail: forest_muine@yahoo.com</value>
   </data>
 </root>

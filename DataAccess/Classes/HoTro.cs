@@ -17,6 +17,7 @@ namespace DataAccess.Classes
         public string Ten_Cn { get; set; }
         public string Khac { get; set; }
         public string SDT { get; set; }
+        public int Website { get; set; }
         public HoTro() { }
         #endregion
 

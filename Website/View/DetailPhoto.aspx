@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
     CodeFile="DetailPhoto.aspx.cs" Inherits="Vn_DetailPhoto" %>
 
-<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="HeadExtender">
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="ResHeadCPH">
     <%-- Fancybox --%>
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
@@ -9,7 +9,7 @@
 
     <link href="/Styles/highslide/highslide.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
     <div class="galery-title-bar">
         <div class="gallery-title">
             <div class="galery-title-bar-icon">
@@ -34,7 +34,7 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="FootExtender">
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ResFootCPH">
 
     <%-- FancyBox library --%>
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
