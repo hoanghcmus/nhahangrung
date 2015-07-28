@@ -16,6 +16,8 @@ public partial class View_ResMaster : System.Web.UI.MasterPage
 
             UC_MenuChung.MenuType = "2";
             UC_MenuChung.Website = 1;
+
+            UC_SlideShow.Website = 1;
         }
     }
 }

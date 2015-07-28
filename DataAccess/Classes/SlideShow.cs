@@ -16,6 +16,7 @@ namespace DataAccess.Classes
         public string HinhAnh { get; set; }
         public string MoTa { get; set; }
         public int ViTri { get; set; }
+        public int Website { get; set; }
         public int HienThi { get; set; }
         public SlideShow() { }
         #endregion
@@ -26,7 +27,7 @@ namespace DataAccess.Classes
             try
             {
                 object rs = DataProvider.Instance.ExecuteNonQueryWithOutput("@ID", "SlideShow_Them",
-                    slideshow.ID, slideshow.TieuDe_Vn, slideshow.TieuDe_En, slideshow.TieuDe_Ru, slideshow.HinhAnh, slideshow.MoTa, slideshow.ViTri, slideshow.HienThi);
+                    slideshow.ID, slideshow.TieuDe_Vn, slideshow.TieuDe_En, slideshow.TieuDe_Ru, slideshow.HinhAnh, slideshow.MoTa, slideshow.ViTri, slideshow.HienThi, slideshow.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -40,7 +41,7 @@ namespace DataAccess.Classes
             try
             {
                 object rs = DataProvider.Instance.ExecuteNonQuery("SlideShow_Sua",
-                    slideshow.ID, slideshow.TieuDe_Vn, slideshow.TieuDe_En, slideshow.TieuDe_Ru, slideshow.HinhAnh, slideshow.MoTa, slideshow.ViTri, slideshow.HienThi);
+                    slideshow.ID, slideshow.TieuDe_Vn, slideshow.TieuDe_En, slideshow.TieuDe_Ru, slideshow.HinhAnh, slideshow.MoTa, slideshow.ViTri, slideshow.HienThi, slideshow.Website);
                 return Convert.ToInt32(rs) > 0;
             }
             catch
@@ -100,7 +101,18 @@ namespace DataAccess.Classes
         {
             try
             {
-                return CBO.FillCollection<SlideShow>(DataProvider.Instance.ExecuteReader("SlideShow_LayTheoHienThi",hienthi));
+                return CBO.FillCollection<SlideShow>(DataProvider.Instance.ExecuteReader("SlideShow_LayTheoHienThi", hienthi));
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static List<SlideShow> LayTheoHienThiVaWebsite(int hienthi, int Website)
+        {
+            try
+            {
+                return CBO.FillCollection<SlideShow>(DataProvider.Instance.ExecuteReader("SlideShow_LayTheoHienThiVaWebsite", hienthi, Website));
             }
             catch
             {

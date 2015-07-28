@@ -37,7 +37,8 @@
             <div class="row-fluid">
                 <div class="block">
                     <p class="block-heading">
-                        <asp:Label ID="lbtitle" runat="server" Text="Thêm Video-Clips" /></p>
+                        <asp:Label ID="lbtitle" runat="server" Text="Thêm Video-Clips" />
+                    </p>
                     <div class="toolbar">
                         <table class="Edit">
                             <tr>
@@ -49,8 +50,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <h4>
-                                        Nhập thông tin video</h4>
+                                    <h4>Nhập thông tin video</h4>
                                 </td>
                             </tr>
                             <tr>
@@ -93,8 +93,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text" valign="top">
-                                    Mô tả (Tiếng việt):
+                                <td class="text" valign="top">Mô tả (Tiếng việt):
                                 </td>
                                 <td>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtmoTaVn"
@@ -105,8 +104,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text" valign="top">
-                                    Mô tả (EngLish):
+                                <td class="text" valign="top">Mô tả (EngLish):
                                 </td>
                                 <td>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtmoTaEn"
@@ -117,8 +115,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text" valign="top">
-                                    Mô tả (Russia):
+                                <td class="text" valign="top">Mô tả (Russia):
                                 </td>
                                 <td>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtmoTaRu"
@@ -129,12 +126,11 @@
                                 </td>
                             </tr>
                             <tr class="text">
-                                <td valign="top">
-                                    Ảnh đại diện:
+                                <td valign="top">Ảnh đại diện:
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtAnhDaiDien" runat="server" Text="" CssClass="txtNewMin"></asp:TextBox>
-                                    <input id="btnanhdaidien" onclick="BrowseServer( 'Mger_Design:/','<%=txtAnhDaiDien.ClientID%>');"
+                                    <input id="btnanhdaidien" onclick="BrowseServer( 'Mger_Design:/','<%=txtAnhDaiDien.ClientID%>    ');"
                                         type="button" value="Duy&#7879;t file" class="btnedit" /><br />
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtAnhDaiDien"
                                         ErrorMessage="->Nhập tiêu đề" CssClass="red">(Chọn ảnh đại diện)</asp:RequiredFieldValidator>
@@ -143,16 +139,32 @@
                                 </td>
                             </tr>
                             <tr class="text">
-                                <td valign="top">
-                                    Link Video-Clips:
+                                <td valign="top">Link Video-Clips:
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtHinhAnh" runat="server" Text="" CssClass="txtNewMin"></asp:TextBox>
-                                    <input id="btnDuyet" onclick="BrowseServer( 'Mger_Design:/','<%=txtHinhAnh.ClientID%>');"
+                                    <input id="btnDuyet" onclick="BrowseServer( 'Mger_Design:/','<%=txtHinhAnh.ClientID%>    ');"
                                         type="button" value="Duy&#7879;t file" class="btnedit" /><br />
                                     <asp:Label ID="lblinkandvideo" runat="server" Text="(Vui lòng chọn file .flv hoặc chuột phải vào file -> chọn rename file thành .flv)" />
                                 </td>
                             </tr>
+
+
+                            <tr>
+                                <td class="text" valign="top">Thuộc website:
+                                </td>
+                                <td>
+                                    <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl">
+                                        <asp:ListItem Value="0">- Chọn website -</asp:ListItem>
+                                        <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                        <asp:ListItem Value="2">Spa</asp:ListItem>
+                                        <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="BaseOnWebsiteRequiredFieldValidator" ControlToValidate="drlWebsite" SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Vui lòng chọn website)</asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+
+
                             <tr>
                                 <td colspan="2">
                                     <asp:Button ID="btnLuu" runat="server" Text="Lưu Video" CssClass="btnedit" />

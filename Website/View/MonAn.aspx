@@ -76,7 +76,13 @@
                 closeEffect: 'none'
             });
         });
+    </script>
 
+    <%--Scroll down ...px  --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scrollTop(400);
+        });
     </script>
 </asp:Content>
 

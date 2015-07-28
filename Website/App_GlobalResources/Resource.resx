@@ -255,4 +255,13 @@
   <data name="footer_line3" xml:space="preserve">
     <value>Điện thoại: 098.399.8749  -  Email: forest_muine@yahoo.com</value>
   </data>
+  <data name="r_footer_line2" xml:space="preserve">
+    <value>Địa chỉ: 179 Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</value>
+  </data>
+  <data name="r_footer_line3" xml:space="preserve">
+    <value>Tel: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lâm)  -  Email: forest_muine@yahoo.com</value>
+  </data>
+  <data name="spa_booking" xml:space="preserve">
+    <value>Đặt phòng Spa</value>
+  </data>
 </root>

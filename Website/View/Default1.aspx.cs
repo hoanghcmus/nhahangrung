@@ -27,25 +27,25 @@ public partial class View_Default1 : BasePage
                 {
                     ltrTieuDeBaiViet.Text = baiviet.TieuDe_Vn;
                     ltBaiVietGioiThieu.Text = baiviet.TomTat_Vn;
-                    hlReadMore.NavigateUrl = "/vn/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore.NavigateUrl = "/vn/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore1.NavigateUrl = "/vn/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
+                    hlReadMore.NavigateUrl = "/vn/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore.NavigateUrl = "/vn/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore1.NavigateUrl = "/vn/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
                 }
                 else if (Session["lang"].ToString().Equals("en"))
                 {
                     ltrTieuDeBaiViet.Text = baiviet.TieuDe_En;
                     ltBaiVietGioiThieu.Text = baiviet.TomTat_En;
-                    hlReadMore.NavigateUrl = "/en/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore.NavigateUrl = "/en/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore1.NavigateUrl = "/en/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
+                    hlReadMore.NavigateUrl = "/en/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore.NavigateUrl = "/en/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore1.NavigateUrl = "/en/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
                 }
                 else if (Session["lang"].ToString().Equals("ru"))
                 {
                     ltrTieuDeBaiViet.Text = baiviet.TieuDe_Ru;
                     ltBaiVietGioiThieu.Text = baiviet.TomTat_Ru;
-                    hlReadMore.NavigateUrl = "/ru/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore.NavigateUrl = "/ru/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
-                    hlMore1.NavigateUrl = "/ru/article/introduction-nhu-bao-restaurant-" + baiviet.ID + "-1.html";
+                    hlReadMore.NavigateUrl = "/ru/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore.NavigateUrl = "/ru/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
+                    hlMore1.NavigateUrl = "/ru/article/introduction-forest-restaurant-" + baiviet.ID + "-1.html";
                 }
 
                 desImage.ImageUrl = baiviet.HinhAnh;

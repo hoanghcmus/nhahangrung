@@ -255,4 +255,13 @@
   <data name="footer_line3" xml:space="preserve">
     <value>Телефон: 098.399.8749 - E-mail: forest_muine@yahoo.com</value>
   </data>
+  <data name="r_footer_line2" xml:space="preserve">
+    <value>Адрес: 179 Нгуен Динь ТЬЕН Улица, Хам Тянь, Фантхиет</value>
+  </data>
+  <data name="r_footer_line3" xml:space="preserve">
+    <value>Тел: 0918 821 699 (Mr.Hưng) - 098 399 8749 (Mr.Lam) - E-mail: forest_muine@yahoo.c</value>
+  </data>
+  <data name="spa_booking" xml:space="preserve">
+    <value>Бронирование Спа</value>
+  </data>
 </root>

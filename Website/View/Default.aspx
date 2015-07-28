@@ -54,7 +54,7 @@
                         <div class="intro-block">
 
                             <img src="/Design/i2.jpg" alt="Spa" class="img" />
-                            <a href="javascript:void()">
+                            <a href="/<%=Session["lang"].ToString() %>/home-2.html">
                                 <div class="intro-block-title">
                                     <h3>Spa</h3>
                                     <div class="intro-block-hoavan">
@@ -66,7 +66,7 @@
                         <div class="intro-block">
 
                             <img src="/Design/i3.jpg" alt="Coffee" class="img" />
-                            <a href="javascript:void()">
+                            <a href="/<%=Session["lang"].ToString() %>/home-3.html">
                                 <div class="intro-block-title">
                                     <h3>Coffee</h3>
                                     <div class="intro-block-hoavan">

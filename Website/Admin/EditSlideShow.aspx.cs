@@ -61,6 +61,7 @@ public partial class Admin_EditSlideShow : System.Web.UI.Page
         txtHinhAnh.Text = data.HinhAnh;
         txtViTri.Text = data.ViTri.ToString();
         ddlLoadMenu.SelectedValue = data.HienThi.ToString();
+        drlWebsite.SelectedValue = data.Website.ToString();
     }
     #endregion
 
@@ -86,6 +87,7 @@ public partial class Admin_EditSlideShow : System.Web.UI.Page
         data.MoTa = txtMota.Text;
         data.ViTri = ConvertType.ToInt32(txtViTri.Text);
         data.HienThi = ConvertType.ToInt32(ddlLoadMenu.SelectedValue.Trim());
+        data.Website = Convert.ToInt32(drlWebsite.SelectedValue);
         return data;
     }
     protected override void OnInit(EventArgs e)

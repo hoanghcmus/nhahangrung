@@ -31,7 +31,8 @@
             <div class="row-fluid">
                 <div class="block">
                     <p class="block-heading">
-                        <asp:Label ID="lbtitle" runat="server" Text="Thêm thông tin hình ảnh" /></p>
+                        <asp:Label ID="lbtitle" runat="server" Text="Thêm thông tin hình ảnh" />
+                    </p>
                     <div class="toolbar">
                         <table class="Edit">
                             <tr>
@@ -43,13 +44,11 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <h4>
-                                        Nhập thông tin Hình ảnh hiển thị trang chủ</h4>
+                                    <h4>Nhập thông tin Hình ảnh hiển thị trang chủ</h4>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="title">
-                                    Chọn trang hiển thị:
+                                <td class="title">Chọn trang hiển thị:
                                 </td>
                                 <td>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="ddlLoadMenu"
@@ -90,8 +89,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text" valign="top">
-                                    Vị trí:
+                                <td class="text" valign="top">Vị trí:
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtViTri" runat="server" Text="" CssClass="txtsmall"></asp:TextBox>
@@ -109,10 +107,26 @@
                                         Ảnh hiển thị đẹp nhất ở kích thước: (913x386)
                                     </p>
                                     <asp:TextBox ID="txtHinhAnh" runat="server" Text="" CssClass="txtNewMin"></asp:TextBox>
-                                    <input id="btnDuyet" onclick="BrowseServer( 'Mger_Design:/','<%=txtHinhAnh.ClientID%>');"
+                                    <input id="btnDuyet" onclick="BrowseServer( 'Mger_Design:/','<%=txtHinhAnh.ClientID%>    ');"
                                         type="button" value="Duy&#7879;t file" class="btnedit" />
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td class="text" valign="top">Thuộc website:
+                                </td>
+                                <td>
+                                    <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl">
+                                        <asp:ListItem Value="0">- Chọn website -</asp:ListItem>
+                                        <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                        <asp:ListItem Value="2">Spa</asp:ListItem>
+                                        <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="BaseOnWebsiteRequiredFieldValidator" ControlToValidate="drlWebsite" SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Vui lòng chọn website)</asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+
+
                             <tr>
                                 <td colspan="2">
                                     <asp:Button ID="btnLuu" runat="server" Text="Lưu" CssClass="btnedit" />

@@ -85,6 +85,7 @@ public partial class Admin_EditPhoto : System.Web.UI.Page
         }
         dlListImg.DataSource = album;
         dlListImg.DataBind();
+        drlWebsite.SelectedValue = data.Website.ToString();
     }
     private ImageAndClips GetData()
     {
@@ -109,6 +110,7 @@ public partial class Admin_EditPhoto : System.Web.UI.Page
         foreach (var item in album)
             datalistimg += item.HinhAnh + "'";
         data.ImgOrClip = datalistimg;
+        data.Website = Convert.ToInt32(drlWebsite.SelectedValue);
         return data;
     }
     #endregion

@@ -11,7 +11,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title><%= System.Configuration.ConfigurationManager.AppSettings["title"]%></title>
+    <title>Forest Restaurant</title>
 
     <meta name="Keywords" content="<%= System.Configuration.ConfigurationManager.AppSettings["keywords"]%>" />
     <meta name="description" content="<%= System.Configuration.ConfigurationManager.AppSettings["description"]%>" />

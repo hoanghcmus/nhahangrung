@@ -255,4 +255,13 @@
   <data name="footer_line3" xml:space="preserve">
     <value>Phone: 098.399.8749  -  Email: forest_muine@yahoo.com</value>
   </data>
+  <data name="r_footer_line2" xml:space="preserve">
+    <value>Address: 179 Nguyen Đinh Chieu st, Ham Tien ward, Phan Thiet city, Binh Thuan.</value>
+  </data>
+  <data name="r_footer_line3" xml:space="preserve">
+    <value>Tel: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lam)  -  Email: forest_muine@yahoo.com</value>
+  </data>
+  <data name="spa_booking" xml:space="preserve">
+    <value>Booking spa room</value>
+  </data>
 </root>

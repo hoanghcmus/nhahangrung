@@ -37,7 +37,7 @@
 
         <div class="r-promotion">
             <asp:HyperLink ID="hlPromotion" runat="server" CssClass="link">
-                <asp:Image ID="PromtionImage" runat="server" CssClass="img" alt="Promotion" />
+                <asp:Image ID="PromtionImage" runat="server" CssClass="img" alt="Promotion" Style="border-top-left-radius: 5px; border-top-right-radius: 5px;" />
             </asp:HyperLink>
         </div>
     </div>
@@ -48,7 +48,9 @@
 
     <div class="r-main-gallery-block">
         <div class="r-main-gallery-pre">
-            <a href="javascript:void();" class="nextpre pre" id="gallery-forward">< </a>
+            <a href="javascript:void();" class="nextpre pre" id="gallery-forward">
+                <img src="/Design/pre.png" class="img" alt="Previous" />
+            </a>
         </div>
         <div class="r-mian-gallery-content scroll-img" id="r-gallery">
 
@@ -69,7 +71,9 @@
         </div>
 
         <div class="r-main-gallery-next">
-            <a href="javascript:void();" class="nextpre next" id="gallery-backward">> </a>
+            <a href="javascript:void();" class="nextpre next" id="gallery-backward">
+                <img src="/Design/next.png" class="img" alt="Next" />
+            </a>
         </div>
 
     </div>

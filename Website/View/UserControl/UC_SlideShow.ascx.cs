@@ -8,6 +8,7 @@ using DataAccess.Classes;
 
 public partial class UserControl_UC_SlideShow : System.Web.UI.UserControl
 {
+    public int Website { get; set; }
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -18,7 +19,7 @@ public partial class UserControl_UC_SlideShow : System.Web.UI.UserControl
     private void PopulateControls()
     {
 
-        repslideshow.DataSource = SlideShow.LayTheoHienThi(2);
+        repslideshow.DataSource = SlideShow.LayTheoHienThiVaWebsite(2, Website);
         repslideshow.DataBind();
     }
 }

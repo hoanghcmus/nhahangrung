@@ -5,15 +5,10 @@
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="ResMainCPH" runat="Server">
-    <div class="galery-title-bar">
-        <div class="gallery-title">
-            <div class="galery-title-bar-icon">
-                <img src="/Design/cachua.png" alt="pic" class="img" />
-            </div>
-            <h1>
-                <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,list_article %>"></asp:Literal>
-            </h1>
-        </div>
+    <div class="article-category-title">
+        <h1 style="text-align: left; text-transform: uppercase;">
+            <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal>
+        </h1>
     </div>
     <div class="body-right-content">
         <div class="product-detail">
@@ -22,7 +17,7 @@
                 <div class="figure">
                     <div class="figure-wrapper">
 
-                        <a href="/img/r6-mix-1000.jpg" class="MagicZoom link" id="figureLarge" rel="zoom-width:400px; zoom-height:400px; zoom-distance:40" runat="server">
+                        <a href="/img/r6-mix-1000.jpg" class="MagicZoom link" id="figureLarge" rel="zoom-width:0px; zoom-height:0px; zoom-distance:40" runat="server">
                             <img src="/img/r6-mix-290.jpg" id="figureThumb" class="" runat="server" /></a>
                     </div>
 
@@ -71,7 +66,7 @@
                 </div>
 
                 <div class="related-product">
-                    <div class="detail-title" style="border-top: 1px dotted #C0C0C0;">
+                    <div class="detail-title" sss>
                         <h1 style="text-transform: uppercase;"><%=Resources.Resource.related_cuisine %></h1>
                     </div>
                     <div class="related-product-wraper">
@@ -106,6 +101,12 @@
                 $(".thumb-active").removeClass("thumb-active");
                 $(this).parent().addClass("thumb-active");
             });
+        });
+    </script>
+    <%--Scroll down ...px  --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scrollTop(400);
         });
     </script>
 </asp:Content>
