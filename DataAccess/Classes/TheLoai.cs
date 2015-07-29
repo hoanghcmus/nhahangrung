@@ -165,6 +165,28 @@ namespace DataAccess.Classes
             catch
             { return null; }
         }
+
+
+        public static List<TheLoai> LayTheoModuleVaWebsite(string idLoaiModule, int website)
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_LayTheoModuleVaWebsite", ConvertType.ToInt32(idLoaiModule), website));
+            }
+            catch
+            { return null; }
+        }
+
+        public static List<TheLoai> LayTheoWebsite(int website)
+        {
+            try
+            {
+                return CBO.FillCollection<TheLoai>(DataProvider.Instance.ExecuteReader("TheLoai_LayTheoWebsite", website));
+            }
+            catch
+            { return null; }
+        }
+
         public static List<TheLoai> LayTheoModuleVaParentNoNull(string idLoaiMenu)
         {
             try

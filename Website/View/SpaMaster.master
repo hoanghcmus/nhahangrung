@@ -20,7 +20,7 @@
     <meta name="og:title" content="Forest Spa tại Mũi Né" />
     <meta name="og:description" content="Forest Spa tại Mũi Né" />
 
-    <link rel="Shurtcut Icon" href="/Design/favico.png" type="image/x-icon" />
+    <link rel="Shurtcut Icon" href="/Design/favico.ico" type="image/x-icon" />
 
     <link href="/Styles/CSS/Reset.css" rel="stylesheet" />
     <link href="/Styles/CSS/Desktop.Global.css" rel="stylesheet" />

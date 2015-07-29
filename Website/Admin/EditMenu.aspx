@@ -57,13 +57,37 @@
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="ddlLoadMenu"
                                                 SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Chọn loại menu)</asp:RequiredFieldValidator>
                                             <br />
-                                            <asp:DropDownList runat="server" ID="ddlLoadMenu" AppendDataBoundItems="true" AutoPostBack="true"
-                                                OnSelectedIndexChanged="ddlLoadMenu_SelectedIndexChanged" CssClass="drl">
+
+
+
+
+
+
+
+                                            <asp:DropDownList runat="server" ID="ddlLoadMenu" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="ddlLoadMenu_SelectedIndexChanged" CssClass="drl">
+
                                                 <asp:ListItem Value="0">----- Chọn loại menu -----</asp:ListItem>
                                             </asp:DropDownList>
+
+
+
                                             <asp:DropDownList runat="server" ID="ddlParent" AppendDataBoundItems="true" CssClass="drl">
                                                 <asp:ListItem Value="0">----- Chọn menu parent -----</asp:ListItem>
                                             </asp:DropDownList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                         </ContentTemplate>
                                     </asp:UpdatePanel>
                                 </td>

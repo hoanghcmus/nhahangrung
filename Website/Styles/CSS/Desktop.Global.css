@@ -656,6 +656,23 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
         max-width: 100%;
     }
 
+.c-body-wrap {
+    margin-top: -36px;
+    margin-bottom: -36px;
+    background-color: #e2e2e2;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.c-body-wrap-inside {
+    float: left;
+    width: 94%;
+    margin: 2.8%;
+}
+
 
 .r-block-intro {
     float: left;
@@ -742,6 +759,8 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
 }
 
 .s-block-intro-summary {
+    width: 79%;
+    margin-left: 10.5%;
     text-align: center;
 }
 
@@ -959,10 +978,18 @@ a.nextpre {
     background-size: 100% 100%;
 }
 
+.c-footer {
+    height: 145px;
+}
+
 .r-footer-wrap {
     float: left;
     width: 73.206%;
     margin-left: 13.297%;
+}
+
+.c-footer-wrap {
+    margin-top: 36px;
 }
 
 .r-footer p {
@@ -1247,66 +1274,537 @@ a.nextpre {
 
 
 /*CSS for Spa site*/
-/*. {
+.spa-main-block {
+    float: left;
+    width: 100%;
 }
 
-. {
+.spa-main-block-wrap {
+    float: left;
+    width: 88.4%;
+    margin-left: 7.3%;
 }
 
-. {
+.spa-block {
+    float: left;
+    width: 21.6%;
+    height: 191px;
+    margin-right: 3.4%;
+    margin-bottom: 45px;
+    margin-top: 63px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-. {
+
+    .spa-block img {
+        border-radius: 50%;
+    }
+
+    .spa-block > a {
+        float: left;
+        width: 150%;
+        height: 150%;
+        border-radius: 50%;
+        position: absolute;
+        background-image: url("/Design/s-hover-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #FFF;
+        left: -35%;
+        top: -35%;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    .spa-block:hover > a {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+.spa-block-title {
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 27px;
 }
 
-. {
+    .spa-block-title h3 {
+        float: left;
+        width: 100%;
+        margin-bottom: 3px;
+        font-family: HongHaHepB;
+        font-size: 20px;
+        text-align: center;
+    }
+
+.spa-block-hoavan {
+    width: 75%;
+    height: 10px;
+    margin: 0 auto 3px;
 }
 
-. {
-}
 
-. {
-}
-
-. {
-}
-
-. {
-}
-
-. {
-}*/
 /*CSS for Spa site - End*/
 
 
 /*CSS for Coffee site*/
-/*. {
+
+.c-left {
+    float: left;
+    width: 24.787%;
+    margin-right: 2.127%;
 }
 
-. {
+.c-right {
+    float: left;
+    width: 73.085%;
 }
 
-. {
+.c-block {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-. {
+.c-block-head {
+    float: left;
+    width: 100%;
+    height: 37px;
+    overflow: hidden;
 }
 
-. {
+.c-block-icon {
+    float: left;
+    width: 15.84%;
+    height: 100%;
 }
 
-. {
+.c-block-title {
+    float: left;
+    width: 84%;
+    height: 100%;
 }
 
-. {
+    .c-block-title h1 {
+        float: left;
+        width: 100%;
+        margin-top: 9px;
+        text-indent: 9px;
+        font-family: HongHaHepB;
+        font-size: 20px;
+        color: #920000;
+    }
+
+.c-block-content {
+    float: left;
+    width: 100%;
 }
 
-. {
+.cv-navigation {
+    float: left;
+    width: 100%;
+    margin-top: 1px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #740404;
 }
 
-. {
+.cv-navigation-wrap {
+    float: left;
+    width: 92.276%;
+    margin-left: 3.862%;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
-. {
-}*/
+
+.v-nav {
+}
+
+    .v-nav ul {
+        float: left;
+        width: 100%;
+    }
+
+
+        .v-nav ul li {
+            float: left;
+            width: 100%;
+            height: auto;
+            font-family: Arial;
+            font-size: 13px;
+            border-bottom: 1px solid #FFF;
+        }
+
+            .v-nav ul li:last-child {
+                border-bottom: none;
+            }
+
+            .v-nav ul li a {
+                float: left;
+                width: 100%;
+                color: #FFF;
+            }
+
+                .v-nav ul li a span {
+                    float: left;
+                    width: 95%;
+                    padding: 7px 0;
+                    color: #FFF;
+                    text-indent: 5px;
+                }
+
+.li-icon {
+    float: left;
+    width: 4px;
+    height: 9px;
+    margin-top: 11px;
+    margin-right: 2px;
+    background-image: url("/Design/li-icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.v-nav > ul > li > a {
+    float: left;
+    width: 100%;
+}
+
+
+.v-nav > ul > li:first-child {
+}
+
+.v-nav > ul > li:last-child a {
+}
+
+
+.v-nav li.active {
+    background-color: rgba(1, 81, 133, 0.1);
+}
+
+    .v-nav li.active > a {
+        color: #FFF;
+    }
+
+.v-nav > ul > li:hover, .v-nav > ul > li.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.v-nav > ul li:hover a {
+}
+
+
+.v-nav > ul > li.v-nav .has-sub > ul {
+    top: 101%;
+    left: -3px;
+    z-index: 10;
+}
+
+.v-nav > ul > li.v-nav .has-sub {
+}
+
+.v-nav .has-sub span.arrow {
+    text-align: center;
+    margin-left: 3px;
+}
+
+
+.v-nav .has-sub {
+    position: relative;
+}
+
+    .v-nav .has-sub > ul {
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        top: 49px;
+        transition: all .4s linear;
+    }
+
+        .v-nav .has-sub > ul > li {
+            background-color: rgba(116, 4, 4, 0.8);
+            width: 200px !important;
+            height: 0px;
+            overflow: hidden;
+            /*width: 200px;
+            height: 40px;*/
+            border-top: 1px solid rgba(255,255,255, 0.5);
+            padding-left: 0;
+            padding-right: 0;
+            text-align: left;
+        }
+
+            .v-nav .has-sub > ul > li > a > span {
+                float: left;
+                width: 90%;
+                font-size: 14px;
+                text-align: left;
+                text-indent: 9px;
+            }
+
+            .v-nav .has-sub > ul > li:first-child {
+                border-top: none;
+            }
+
+            .v-nav .has-sub > ul > li:last-child {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            .v-nav .has-sub > ul > li.active {
+                background-color: rgba(116, 4, 4, 0.9);
+            }
+
+        .v-nav .has-sub > ul li a, .v-nav .has-sub > ul li:hover a {
+            width: 100%;
+            color: #FFF;
+        }
+
+.has-sub:hover > ul {
+    width: 200px;
+    height: auto;
+}
+
+    .has-sub:hover > ul > li {
+        float: left;
+        width: 100%;
+        height: 40px;
+    }
+
+.v-nav .has-sub > ul > li:hover {
+    background-color: rgba(116, 4, 4, 0.9);
+}
+
+.search-bar {
+    float: left;
+    width: 90%;
+    height: 30px;
+    margin-left: 4.5%;
+    margin-bottom: 21px;
+    border: 1px solid #400202;
+    border-radius: 4px;
+}
+
+.search {
+    float: left;
+    width: 87%;
+    background-color: transparent;
+    text-indent: 9px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #FFF;
+}
+
+.search-btn {
+    float: left;
+    width: 8.571%;
+    margin-left: 2%;
+    margin-top: 7px;
+    background-color: transparent;
+    background-image: url("/Design/search-icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cl-gallery {
+    float: left;
+    width: 98%;
+    margin-top: 1px;
+    border: 1px solid #d6d6d6;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #FFF;
+}
+
+.cl-gallery-wrap {
+    float: left;
+    width: 95%;
+    height: 219px;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.cl-gallery-item {
+    float: left;
+    width: 30%;
+    height: 68px;
+    margin-right: 3%;
+    margin-bottom: 7px;
+}
+
+.cl-gallery-wrap img {
+    border-radius: 4px;
+}
+
+.qc {
+    height: 186px;
+}
+
+.qa-block-wrap {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.qa-block-item {
+    float: left;
+    width: 100%;
+    padding-bottom: 9px;
+    margin-bottom: 6px;
+    font-family: Arial;
+    font-size: 13px;
+    text-align: justify;
+    border-bottom: 1px solid #afafaf;
+}
+
+    .qa-block-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+.qa-block-q {
+    float: left;
+    width: 100%;
+    color: #740404;
+    font-style: italic;
+    margin-bottom: 9px;
+}
+
+    .qa-block-q p a {
+        color: #740404;
+    }
+
+.qa-block-a {
+    float: left;
+    width: 100%;
+    color: #3b3b3b;
+}
+
+.qa-block-meta {
+    color: #740404;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.c-block-intro {
+    float: left;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.c-block-intro-wrap {
+    float: left;
+    width: 95%;
+    height: 181px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-left: 2.5%;
+}
+
+.c-block-intro-left {
+    float: left;
+    width: 41.248%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+    .c-block-intro-left > a {
+        position: relative;
+        color: #940000;
+        font-family: HongHaHepB;
+        font-size: 20px;
+    }
+
+        .c-block-intro-left > a > img {
+            border-radius: 7px;
+        }
+
+.c-block-intro-left-title {
+    float: left;
+    width: 100%;
+    height: 29.74%;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    .c-block-intro-left-title h1 {
+        float: left;
+        width: 100%;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+.c-block-intro-right {
+    float: left;
+    width: 57%;
+    margin-left: 1.746%;
+}
+
+.c-block-intro-title {
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #920000;
+}
+
+    .c-block-intro-title a {
+        font-family: HongHaHepB;
+        font-size: 20px;
+        color: #920000;
+    }
+
+.c-block-intro-summary {
+    float: left;
+    width: 100%;
+    font-family: Arial;
+    font-size: 0.95vw;
+    color: #000;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.c-block-intro-read-more {
+    float: left;
+    width: 101px;
+    height: 31px;
+    margin-top: 25px;
+    border-radius: 2px;
+    background-color: #dc8100;
+}
+
+    .c-block-intro-read-more:hover {
+        background-color: #fa9a13;
+    }
+
+    .c-block-intro-read-more a {
+        float: left;
+        width: 100%;
+        padding-bottom: 8px;
+        padding-top: 9px;
+        font-family: Arial;
+        font-size: 11px;
+        font-style: italic;
+        text-align: center;
+        color: #FFF;
+    }
+
 /*CSS for Coffee site - End*/

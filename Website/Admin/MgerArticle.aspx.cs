@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataAccess.Classes;
+using DataAccess.Help;
 
 public partial class Admin_MgerArticle : System.Web.UI.Page
 {
@@ -119,12 +120,26 @@ public partial class Admin_MgerArticle : System.Web.UI.Page
         switch (colunmName)
         {
             case "ID":
-                if (data.ID == 14 || data.ID == 15)//Thuoc xu ly cua he thong
+                if (data.ID == 14 || data.ID == 15 || data.ID == 16)//Thuoc xu ly cua he thong
                     return String.Format("<input type='button' class='lock' title='Bài viết này thuộc quản lý của hệ thống' />");
                 else
                     return String.Format("<input type='checkbox' name='cid' value='{0}'/>", data.ID);
             default:
                 return "";
+        }
+    }
+
+    protected void drlWebsite_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int idWebsite = ConvertType.ToInt32(drlWebsite.SelectedValue);
+        if (idWebsite > 0)
+        {
+            ddlTheLoai.Items.Clear();
+            ddlTheLoai.Items.Add(new ListItem("-- Chọn xem theo thể loại -- ", "0"));
+            ddlTheLoai.DataValueField = "ID";
+            ddlTheLoai.DataTextField = "TieuDe_Vn";
+            ddlTheLoai.DataSource = TheLoai.LayTheoModuleVaWebsite("1", idWebsite);
+            ddlTheLoai.DataBind();
         }
     }
     #endregion

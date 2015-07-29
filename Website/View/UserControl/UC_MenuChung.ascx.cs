@@ -9,11 +9,13 @@ using System.Text;
 
 public partial class View_UserControl_UC_MenuChung : System.Web.UI.UserControl
 {
+    //Vị trí của menu trên layout
     public string MenuType
     {
         get;
         set;
     }
+    // Website chứa menu
     public int Website
     {
         get;

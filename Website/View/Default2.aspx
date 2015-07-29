@@ -21,6 +21,31 @@
         </div>
 
     </div>
+
+    <div class="spa-main-block">
+        <div class="spa-main-block-wrap">
+
+            <asp:Repeater runat="server" ID="rptProduct">
+                <ItemTemplate>
+
+                    <div class="spa-block">
+                        <img src="<%#Eval("HinhAnh") %>" alt="Restaurant" class="img" />
+                        <a href="<%#ShowMainMenu(Container.DataItem,"MenuDuongDan") %>" class="link">
+                            <div class="spa-block-title">
+                                <div class="spa-block-hoavan">
+                                    <img src="/Design/thoavan.png" alt="hoa van" class="img" />
+                                </div>
+                                <h3><%#ShowMainMenu(Container.DataItem,"MenuTieuDe") %></h3>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </ItemTemplate>
+            </asp:Repeater>
+
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="SpaFootCPH" runat="Server">
 </asp:Content>

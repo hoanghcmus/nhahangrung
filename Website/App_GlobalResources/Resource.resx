@@ -264,4 +264,7 @@
   <data name="spa_booking" xml:space="preserve">
     <value>Đặt phòng Spa</value>
   </data>
+  <data name="coff_booking" xml:space="preserve">
+    <value />
+  </data>
 </root>
