@@ -34,6 +34,8 @@
                         Thông tin bài viết
                     </p>
                     <div class="toolbar">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
                         <table class="Edit">
                             <tr>
                                 <td colspan="2">
@@ -42,15 +44,34 @@
                                     <asp:Label ID="lblId" runat="server" Visible="false" />
                                 </td>
                             </tr>
+
+
                             <tr>
                                 <td class="text" valign="top">Thể loại bài viết:
                                 </td>
                                 <td>
-                                    <asp:DropDownList runat="server" ID="ddlLoaiMenu" AppendDataBoundItems="true" CssClass="drl">
-                                        <asp:ListItem Value="0">-- Chọn thể loại bài viết -- </asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="ddlLoaiMenu"
-                                        SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Chọn thể loại bài viết)</asp:RequiredFieldValidator>
+                                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                        <ContentTemplate>
+
+                                            <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl" AutoPostBack="true" OnSelectedIndexChanged="drlWebsite_SelectedIndexChanged">
+
+                                                <asp:ListItem Value="0">- Lọc thể loại theo website -</asp:ListItem>
+                                                <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                                <asp:ListItem Value="2">Spa</asp:ListItem>
+                                                <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                            </asp:DropDownList>
+
+
+                                            <asp:DropDownList runat="server" ID="ddlLoaiMenu" AppendDataBoundItems="true" CssClass="drl">
+                                                <asp:ListItem Value="0">-- Chọn thể loại bài viết -- </asp:ListItem>
+                                            </asp:DropDownList>
+
+
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="ddlLoaiMenu"
+                                                SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server">(Chọn thể loại bài viết)</asp:RequiredFieldValidator>
+
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
                                 </td>
                             </tr>
                             <tr>
@@ -87,7 +108,7 @@
                                         runat="server" OnServerValidate="valTieuDeRu_ServerValidate" />
                                 </td>
                             </tr>
-                           
+
                             <tr>
                                 <td class="text" valign="top">Tóm tắt(Tiếng việt):
                                 </td>
@@ -121,7 +142,7 @@
                                         ErrorMessage="->Nhập tóm tắt" CssClass="red">( * )</asp:RequiredFieldValidator>--%>
                                 </td>
                             </tr>
-                           
+
                             <tr class="text">
                                 <td>Hình ảnh:
                                 </td>
@@ -166,7 +187,7 @@
                                     <br />
                                 </td>
                             </tr>
-                          
+
                             <tr>
                                 <td colspan="2">
                                     <asp:Button ID="btnLuu" runat="server" Text="Lưu" CssClass="btnedit" />

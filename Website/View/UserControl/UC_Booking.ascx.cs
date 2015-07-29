@@ -41,11 +41,11 @@ public partial class En_En_Control_UC_CheckRate : System.Web.UI.UserControl
         if (rs > 0)
         {
             refesh();
-            lbBookingMess.Text = "Đã đặt bàn, xin cảm ơn";
+            lbBookingMess.Text = "Success, thank you!";
         }
         else
         {
-            lbBookingMess.Text = "Không thể đặt bàn";
+            lbBookingMess.Text = "Cannot book";
         }
 
     }

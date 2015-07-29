@@ -154,7 +154,7 @@
     <value>Ẩm thực</value>
   </data>
   <data name="design" xml:space="preserve">
-    <value>Thiết kế bởi &lt;b&gt;&lt;a href="http://www.tinhthanh.com/" target="_blank"&gt;Tính Thành&lt;/a&gt;&lt;/b&gt;</value>
+    <value>Thiết kế bởi &lt;a href="http://tinhthanh.com" target="_blank"&gt;Tính Thành&lt;/a&gt;</value>
   </data>
   <data name="detail_article" xml:space="preserve">
     <value>BÀI VIẾT CHI TIẾT</value>
@@ -242,5 +242,29 @@
   </data>
   <data name="please_contact" xml:space="preserve">
     <value>Vui lòng liên hệ</value>
+  </data>
+  <data name="intro" xml:space="preserve">
+    <value>GIỚITHIỆU</value>
+  </data>
+  <data name="footer_line1" xml:space="preserve">
+    <value>© Copy right 2015 Forestmuine All right reserved.</value>
+  </data>
+  <data name="footer_line2" xml:space="preserve">
+    <value>Địa chỉ: 65A Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</value>
+  </data>
+  <data name="footer_line3" xml:space="preserve">
+    <value>Điện thoại: 098.399.8749  -  Email: forest_muine@yahoo.com</value>
+  </data>
+  <data name="r_footer_line2" xml:space="preserve">
+    <value>Địa chỉ: 179 Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, Bình Thuận</value>
+  </data>
+  <data name="r_footer_line3" xml:space="preserve">
+    <value>Tel: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lâm)  -  Email: forest_muine@yahoo.com</value>
+  </data>
+  <data name="spa_booking" xml:space="preserve">
+    <value>Đặt phòng Spa</value>
+  </data>
+  <data name="coff_booking" xml:space="preserve">
+    <value />
   </data>
 </root>

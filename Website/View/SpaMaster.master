@@ -1,20 +1,199 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SpaMaster.master.cs" Inherits="View_SpaMaster" %>
 
+<%@ Register Src="~/View/UserControl/UC_SlideShow.ascx" TagPrefix="uc1" TagName="UC_SlideShow" %>
+<%@ Register Src="~/View/UserControl/UC_Choose_Language.ascx" TagPrefix="uc1" TagName="UC_Choose_Language" %>
+<%@ Register Src="~/View/UserControl/UC_MenuChung.ascx" TagPrefix="uc1" TagName="UC_MenuChung" %>
+<%@ Register Src="~/View/UserControl/UC_Spa_Booking.ascx" TagPrefix="uc1" TagName="UC_Spa_Booking" %>
+
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Forest Spa</title>
+
+    <meta name="Keywords" content="<%= System.Configuration.ConfigurationManager.AppSettings["keywords"]%>" />
+    <meta name="description" content="<%= System.Configuration.ConfigurationManager.AppSettings["description"]%>" />
+    <meta name="generator" content="<%= System.Configuration.ConfigurationManager.AppSettings["generator"]%>" />
+    <meta name="og:type" content="Spa" />
+    <meta name="og:url" content="nhahangrung.com" />
+    <meta name="og:title" content="Forest Spa tại Mũi Né" />
+    <meta name="og:description" content="Forest Spa tại Mũi Né" />
+
+    <link rel="Shurtcut Icon" href="/Design/favico.ico" type="image/x-icon" />
+
+    <link href="/Styles/CSS/Reset.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Global.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Content.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Album.css" rel="stylesheet" />
+    <link href="/Styles/CSS/Desktop.Contact.css" rel="stylesheet" />
+
+    <%-- Fancybox --%>
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
+
+    <link type="text/css" href="/Styles/flexslider/css/flexslider.css" rel="stylesheet" />
+    <link type="text/css" href="/Styles/highslide/highslide.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/Styles/JS/jquery-10.2.min.js"></script>
     <asp:ContentPlaceHolder ID="SpaHeadCPH" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="SpaForm" runat="server">
-        <div class="spa-container">
-            <asp:ContentPlaceHolder ID="SpaMainCPH" runat="server">
-            </asp:ContentPlaceHolder>
+
+        <asp:ScriptManager ID="ResScriptManager" runat="server"></asp:ScriptManager>
+
+        <div class="r-container">
+            <div class="r-slideshow">
+                <uc1:UC_SlideShow runat="server" ID="UC_SlideShow" />
+            </div>
+            <%-- Top content --%>
+            <div class="r-header">
+                <div class="r-top">
+                    <div class="r-top-wrap">
+                        <div class="r-social-network-bar">
+                            <div class="r-social-item">
+                                <a href="https://facebook.com" target="_blank" class="link">
+                                    <img src="/Design/face.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                            <div class="r-social-item">
+                                <a href="http://www.skype.com/" target="_blank" class="link">
+                                    <img src="/Design/skype.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                            <div class="r-social-item">
+                                <a href="https://twitter.com" target="_blank" class="link">
+                                    <img src="/Design/twitter.png" alt="Facebook" class="img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="r-lang-bar">
+                            <uc1:UC_Choose_Language runat="server" ID="UC_Choose_Language" />
+                        </div>
+                        <div class="r-top-nav">
+                            <uc1:UC_MenuChung runat="server" ID="UC_MenuChung" />
+                        </div>
+
+                    </div>
+                </div>
+                <%-- Main menu content --%>
+                <div class="r-virtical-menu ">
+                    <div class="r-virtical-wrap nav">
+                        <uc1:UC_MenuChung runat="server" ID="UC_MenuChung1" />
+                    </div>
+                </div>
+            </div>
+            <%-- Logo --%>
+            <div class="r-logo s-logo">
+                <a href="/<%=Session["lang"].ToString() %>/home.html" class="link">
+                    <img src="/Design/spa-logo.png" alt="Logo" class="img" />
+                </a>
+            </div>
+            <%-- Booking content --%>
+            <div class="r-booking">
+                <div class="r-booking-wrap">
+                    <uc1:UC_Spa_Booking runat="server" ID="UC_Spa_Booking" />
+                </div>
+            </div>
+
+            <%-- Body content --%>
+            <div class="r-body">
+                <div class="r-body-wrap">
+                    <asp:ContentPlaceHolder ID="SpaMainCPH" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <%-- Footer content --%>
+            <div class="r-footer">
+                <div class="r-footer-wrap">
+                    <p><%=Resources.Resource.footer_line1 %></p>
+                    <p><%=Resources.Resource.r_footer_line2 %></p>
+                    <p><%=Resources.Resource.r_footer_line3 %></p>
+                    <p><%=Resources.Resource.design %></p>
+                </div>
+            </div>
         </div>
+
+
+        <%-- Script cho slideshow hinh anh --%>
+        <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="/Styles/flexslider/js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    slideshowSpeed: 5000
+                });
+            });
+        </script>
+
+        <%-- Script cho html scrollbar --%>
+        <script src="/Styles/nicescroll/jquery.nicescroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("html").niceScroll();
+            });
+
+        </script>
+
+        <%-- FancyBox library --%>
+        <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-media.js" type="text/javascript"></script>
+        <script src="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+
+        <%-- Show anh dùng fancybox --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".imgshow").fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    helpers: {
+                        title: {
+                            type: 'outside'
+                        },
+                        thumbs: {
+                            width: 50,
+                            height: 50
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <%-- Fancy for video popup --%>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.fancybox-media').fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    helpers: {
+                        media: {}
+                    }
+                });
+            });
+        </script>
+
+        <script src="/Styles/ScrollBox/jquery.scrollbox.js"></script>
+        <script type="text/javascript">
+            $('#r-gallery').scrollbox({
+                direction: 'h',
+                distance: 140,
+                autoPlay: true
+            });
+            $('#gallery-backward').click(function () {
+                $('#r-gallery').trigger('backward');
+            });
+            $('#gallery-forward').click(function () {
+                $('#r-gallery').trigger('forward');
+            });
+        </script>
 
         <asp:ContentPlaceHolder ID="SpaFootCPH" runat="server">
         </asp:ContentPlaceHolder>

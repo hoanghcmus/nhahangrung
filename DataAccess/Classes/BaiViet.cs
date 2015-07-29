@@ -35,6 +35,7 @@ namespace DataAccess.Classes
         public int TrangThai { get; set; }
         public Boolean TrangChu { get; set; }
         public int IDTheLoai { get; set; }
+        public int Website { get; set; }
         //Anh xa tu bang the loai
 
         public string TenTheLoai_Vn { get; set; }

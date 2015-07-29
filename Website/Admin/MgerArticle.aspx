@@ -19,46 +19,62 @@
             <div class="row-fluid">
                 <div class="content_right">
                     <div class="toolbar">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
                         <div>
-                            <asp:DropDownList runat="server" ID="ddlTheLoai" AutoPostBack="true" AppendDataBoundItems="true"
-                                OnSelectedIndexChanged="ddlTheLoai_SelectedIndexChanged" CssClass="drl">
-                                <asp:ListItem>-- Chọn xem theo thể loại -- </asp:ListItem>
-                            </asp:DropDownList>
+
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+
+                                    <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl" AutoPostBack="true" OnSelectedIndexChanged="drlWebsite_SelectedIndexChanged">
+
+                                        <asp:ListItem Value="0">- Lọc thể loại theo website -</asp:ListItem>
+                                        <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                        <asp:ListItem Value="2">Spa</asp:ListItem>
+                                        <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                    </asp:DropDownList>
+
+
+                                    <asp:DropDownList runat="server" ID="ddlTheLoai" AutoPostBack="true" AppendDataBoundItems="true"
+                                        OnSelectedIndexChanged="ddlTheLoai_SelectedIndexChanged" CssClass="drl">
+                                        <asp:ListItem>-- Chọn xem theo thể loại -- </asp:ListItem>
+                                    </asp:DropDownList>
+
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+
+
+
                         </div>
                     </div>
                     <hr />
                     <div class="content_mid">
-                        <input type="button" value="Thêm bài viết" class="btnedit" onclick="location.href='EditArticle.aspx'" />
+                        <input type="button" value="Thêm bài viết" class="btnedit" onclick="location.href = 'EditArticle.aspx'" />
                         <asp:Button Text="Xóa bài đã chọn" runat="server" ID="btnDelete" CssClass="multidelete" />
                         |&nbsp;<asp:TextBox ID="txtTimKiem" runat="server" CssClass="txtsreach" />
                         <asp:Button Text=" Tìm" runat="server" ID="btnTimKiem" CssClass="btnsreach" />
-                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href='MgerArticle.aspx?Status=1'" />
+                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href = 'MgerArticle.aspx?Status=1'" />
                         <div class="block">
                             <p class="block-heading">
-                                Danh sách bài viết</p>
+                                Danh sách bài viết
+                            </p>
                             <table class="list">
                                 <thead>
                                     <tr>
                                         <th class="id">
                                             <input type="checkbox" id="chkAll" />
                                         </th>
-                                        <th class="img">
-                                            Hình Ảnh
+                                        <th class="img">Hình Ảnh
                                         </th>
-                                        <th class="titlemax">
-                                            Tiêu đề(Tiếng việt)
+                                        <th class="titlemax">Tiêu đề(Tiếng việt)
                                         </th>
-                                        <th class="smallmax">
-                                            Ngày tạo
+                                        <th class="smallmax">Ngày tạo
                                         </th>
-                                        <th class="smallmax">
-                                            Người tạo
+                                        <th class="smallmax">Người tạo
                                         </th>
-                                        <th class="id">
-                                            ID
+                                        <th class="id">ID
                                         </th>
-                                        <th class="idmax">
-                                            Sửa
+                                        <th class="idmax">Sửa
                                         </th>
                                     </tr>
                                 </thead>
@@ -66,7 +82,7 @@
                                     <AlternatingItemTemplate>
                                         <tr class="eventop">
                                             <td class="id">
-                                                <input type="checkbox" name='cid' value='<%#Eval("ID") %>' />
+                                                <%#ShowCategory(Container.DataItem,"ID") %>
                                             </td>
                                             <td align="center">
                                                 <asp:Image runat="server" ID="img" ImageUrl='<%# DataAccess.Connect.Link.Toimages(Eval("HinhAnh").ToString()) %>'
@@ -93,7 +109,7 @@
                                     <ItemTemplate>
                                         <tr class="evenbottom">
                                             <td class="id">
-                                                <input type="checkbox" name='cid' value='<%#Eval("ID") %>' />
+                                                <%#ShowCategory(Container.DataItem,"ID") %>
                                             </td>
                                             <td align="center">
                                                 <asp:Image runat="server" ID="img" ImageUrl='<%# DataAccess.Connect.Link.Toimages(Eval("HinhAnh").ToString()) %>'

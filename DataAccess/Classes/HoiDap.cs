@@ -21,6 +21,7 @@ namespace DataAccess.Classes
         public string DiaChi { get; set; }
         public DateTime NgayGui { get; set; }
         public int TrangThai { get; set; }
+        public int Website { get; set; }
 
         public HoiDap() { }
         #endregion

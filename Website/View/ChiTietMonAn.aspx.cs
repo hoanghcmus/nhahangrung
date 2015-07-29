@@ -30,7 +30,7 @@ public partial class View_ChiTietMonAn : BasePage
     protected void PopulateControls(MonAn pr)
     {
         if (pr.Gia != null && pr.Gia > 0)
-            ltrPrice.Text = showMoney(pr.Gia).ToString()+" VNĐ";
+            ltrPrice.Text = showMoney(pr.Gia).ToString() + " VNĐ";
         else
             ltrPrice.Text = Resources.Resource.please_contact;
 

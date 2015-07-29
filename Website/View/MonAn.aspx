@@ -1,18 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true" CodeFile="MonAn.aspx.cs" Inherits="View_MonAn" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true" CodeFile="MonAn.aspx.cs" Inherits="View_MonAn" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadExtender" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ResHeadCPH" runat="Server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="Server">
-
-    <div class="galery-title-bar">
-        <div class="gallery-title">
-            <div class="galery-title-bar-icon">
-                <img src="/Design/cachua.png" alt="pic" class="img" />
-            </div>
-            <h1>
-                <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,list_article %>"></asp:Literal>
-            </h1>
-        </div>
+<asp:Content ID="Content3" ContentPlaceHolderID="ResMainCPH" runat="Server">
+    <div class="article-category-title">
+        <h1>
+            <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal>
+        </h1>
     </div>
     <div class="body-right-content">
         <div class="menu-wrap">
@@ -60,7 +54,7 @@
     </div>
 
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="FootExtender" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ResFootCPH" runat="Server">
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>
@@ -82,7 +76,13 @@
                 closeEffect: 'none'
             });
         });
+    </script>
 
+    <%--Scroll down ...px  --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scrollTop(400);
+        });
     </script>
 </asp:Content>
 

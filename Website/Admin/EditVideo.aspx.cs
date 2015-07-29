@@ -84,6 +84,7 @@ public partial class Admin_EditVideo : System.Web.UI.Page
         txtmoTaRu.Text = data.MoTa_Ru;
         txtAnhDaiDien.Text = data.HinhAnh;
         txtHinhAnh.Text = data.ImgOrClip;
+        drlWebsite.SelectedValue = data.Website.ToString();
     }
     private ImageAndClips GetData()
     {
@@ -110,6 +111,7 @@ public partial class Admin_EditVideo : System.Web.UI.Page
         data.NgayTao = DateTime.Now.ToShortDateString();
         data.HinhAnh = txtAnhDaiDien.Text;
         data.ImgOrClip = txtHinhAnh.Text;
+        data.Website = Convert.ToInt32(drlWebsite.SelectedValue);
         return data;
     }
     protected override void OnInit(EventArgs e)

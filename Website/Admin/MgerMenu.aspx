@@ -21,46 +21,55 @@
                             <a href="EditMenu.aspx" class="linkAdd">Thêm menu</a>
                         </div>
                         <hr />
+
+
                         <asp:DropDownList runat="server" ID="ddlLoadLoaimodule" AutoPostBack="true" AppendDataBoundItems="true"
                             OnSelectedIndexChanged="ddlLoadLoaimodule_SelectedIndexChanged" CssClass="drl">
                             <asp:ListItem>-- Chọn loại module -- </asp:ListItem>
                         </asp:DropDownList>
+
+
+
                         <asp:DropDownList runat="server" ID="ddlLoadLoaiMenu" AutoPostBack="true" AppendDataBoundItems="true"
                             OnSelectedIndexChanged="ddlLoadLoaiMenu_SelectedIndexChanged" CssClass="drl">
                             <asp:ListItem>-- Chọn loại menu -- </asp:ListItem>
                         </asp:DropDownList>
+
+
+
+                        <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl" AutoPostBack="true" OnSelectedIndexChanged="drlWebsite_SelectedIndexChanged">
+                            <asp:ListItem>-- Chọn website --</asp:ListItem>
+                            <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                            <asp:ListItem Value="2">Spa</asp:ListItem>
+                            <asp:ListItem Value="3">Coffee</asp:ListItem>
+                        </asp:DropDownList>
+
                         <asp:Button Text="Xóa thể loại đã chọn" runat="server" ID="btnDelete" CssClass="multidelete" />
-                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href='MgerMenu.aspx'" />
+                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href = 'MgerMenu.aspx'" />
                     </div>
                     <div class="block">
                         <p class="block-heading">
-                            Danh sách thể loại của website</p>
+                            Danh sách thể loại của website
+                        </p>
                         <table class="list">
                             <thead>
                                 <tr>
                                     <th class="cid">
                                         <input type="checkbox" id="chkAll" />
                                     </th>
-                                    <th class="id">
-                                        ID
+                                    <th class="id">ID
                                     </th>
-                                    <th class="titlemin">
-                                        Tiêu đề
+                                    <th class="titlemin">Tiêu đề
                                     </th>
-                                    <th class="titlemin">
-                                        Loại menu
+                                    <th class="titlemin">Loại menu
                                     </th>
-                                    <th class="titlemin">
-                                        Loại Module
+                                    <th class="titlemin">Loại Module
                                     </th>
-                                    <th class="titlemin">
-                                        Hiển thị Footer
+                                    <th class="titlemin">Thuộc website
                                     </th>
-                                    <th class="title3">
-                                        Vị trí
+                                    <th class="title3">Vị trí
                                     </th>
-                                    <th class="small">
-                                        Sửa
+                                    <th class="small">Sửa
                                     </th>
                                 </tr>
                             </thead>
@@ -85,16 +94,14 @@
                                             <%#Eval("TenLoaiModule")%>
                                         </td>
                                         <td class="titlemin">
-                                            <asp:LinkButton ID="lnkFooter" runat="server" CommandArgument='<%#Eval("ID")+"_"+Eval("Footer") %>'
-                                                Text='<%#Eval("Footer")%>' CommandName="UpdateFooter" class='lnk'></asp:LinkButton>
+                                            <%#ShowCategory(Container.DataItem,"web") %>
                                         </td>
                                         <td class="title3">
                                             <asp:TextBox runat="server" Enabled="false" ID="txtfrmViTri" Text='<%#Eval("ViTri")%>'
                                                 CssClass="txtnumbermin" />
                                         </td>
                                         <td class="small">
-                                            <a href='EditMenu.aspx?ID=<%#Eval("ID").ToString()%>' class='lnk'><i class="icon-pencil">
-                                            </i></a>
+                                            <a href='EditMenu.aspx?ID=<%#Eval("ID").ToString()%>' class='lnk'><i class="icon-pencil"></i></a>
                                         </td>
                                     </tr>
                                 </AlternatingItemTemplate>
@@ -118,16 +125,14 @@
                                             <%#Eval("TenLoaiModule")%>
                                         </td>
                                         <td class="titlemin">
-                                            <asp:LinkButton ID="lnkFooter" runat="server" CommandArgument='<%#Eval("ID")+"_"+Eval("Footer") %>'
-                                                Text='<%#Eval("Footer")%>' CommandName="UpdateFooter" class='lnk'></asp:LinkButton>
+                                            <%#ShowCategory(Container.DataItem,"web") %>
                                         </td>
                                         <td class="title3">
                                             <asp:TextBox runat="server" Enabled="false" ID="txtfrmViTri" Text='<%#Eval("ViTri")%>'
                                                 CssClass="txtnumbermin" />
                                         </td>
                                         <td class="small">
-                                            <a href='EditMenu.aspx?ID=<%#Eval("ID").ToString()%>' class='lnk'><i class="icon-pencil">
-                                            </i></a>
+                                            <a href='EditMenu.aspx?ID=<%#Eval("ID").ToString()%>' class='lnk'><i class="icon-pencil"></i></a>
                                         </td>
                                     </tr>
                                 </ItemTemplate>

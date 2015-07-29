@@ -1,20 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/MasterNoneCuisineBlock.master" AutoEventWireup="true" CodeFile="ChiTietMonAn.aspx.cs" Inherits="View_ChiTietMonAn" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true" CodeFile="ChiTietMonAn.aspx.cs" Inherits="View_ChiTietMonAn" %>
 
-<asp:Content ID="Header" ContentPlaceHolderID="HeadExtender" runat="Server">
+<asp:Content ID="Header" ContentPlaceHolderID="ResHeadCPH" runat="Server">
     <link href="/Styles/Magiczoom/magiczoom.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Left" ContentPlaceHolderID="LeftBlockContentPlaceHolder" runat="Server">
-</asp:Content>
-<asp:Content ID="Main" ContentPlaceHolderID="MainContent" runat="Server">
-    <div class="galery-title-bar">
-        <div class="gallery-title">
-            <div class="galery-title-bar-icon">
-                <img src="/Design/cachua.png" alt="pic" class="img" />
-            </div>
-            <h1>
-                <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,list_article %>"></asp:Literal>
-            </h1>
-        </div>
+
+<asp:Content ID="Main" ContentPlaceHolderID="ResMainCPH" runat="Server">
+    <div class="article-category-title">
+        <h1 style="text-align: left; text-transform: uppercase;">
+            <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal>
+        </h1>
     </div>
     <div class="body-right-content">
         <div class="product-detail">
@@ -23,7 +17,7 @@
                 <div class="figure">
                     <div class="figure-wrapper">
 
-                        <a href="/img/r6-mix-1000.jpg" class="MagicZoom link" id="figureLarge" rel="zoom-width:400px; zoom-height:400px; zoom-distance:40" runat="server">
+                        <a href="/img/r6-mix-1000.jpg" class="MagicZoom link" id="figureLarge" rel="zoom-width:0px; zoom-height:0px; zoom-distance:40" runat="server">
                             <img src="/img/r6-mix-290.jpg" id="figureThumb" class="" runat="server" /></a>
                     </div>
 
@@ -72,7 +66,7 @@
                 </div>
 
                 <div class="related-product">
-                    <div class="detail-title" style="border-top: 1px dotted #C0C0C0;">
+                    <div class="detail-title" sss>
                         <h1 style="text-transform: uppercase;"><%=Resources.Resource.related_cuisine %></h1>
                     </div>
                     <div class="related-product-wraper">
@@ -98,7 +92,7 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Footer" ContentPlaceHolderID="FootExtender" runat="Server">
+<asp:Content ID="Footer" ContentPlaceHolderID="ResFootCPH" runat="Server">
     <script src="/Styles/Magiczoom/magiczoomplus.js"></script>
     <%-- Load page content when click item on the right --%>
     <script type="text/javascript">
@@ -107,6 +101,12 @@
                 $(".thumb-active").removeClass("thumb-active");
                 $(this).parent().addClass("thumb-active");
             });
+        });
+    </script>
+    <%--Scroll down ...px  --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scrollTop(400);
         });
     </script>
 </asp:Content>

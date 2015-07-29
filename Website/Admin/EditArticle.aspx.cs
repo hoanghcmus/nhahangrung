@@ -305,4 +305,17 @@ public partial class Admin_EditArticle : System.Web.UI.Page
         }
     }
     #endregion
+    protected void drlWebsite_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int idWebsite = ConvertType.ToInt32(drlWebsite.SelectedValue);
+        if (idWebsite > 0)
+        {
+            ddlLoaiMenu.Items.Clear();
+            ddlLoaiMenu.Items.Add(new ListItem("-- Chọn thể loại bài viết --", "0"));
+            ddlLoaiMenu.DataValueField = "ID";
+            ddlLoaiMenu.DataTextField = "TieuDe_Vn";
+            ddlLoaiMenu.DataSource = TheLoai.LayTheoModuleVaWebsite("1", idWebsite);
+            ddlLoaiMenu.DataBind();
+        }
+    }
 }

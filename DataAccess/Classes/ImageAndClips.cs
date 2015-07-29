@@ -26,6 +26,7 @@ namespace DataAccess.Classes
         public string HinhAnh { get; set; }
         public string ImgOrClip { get; set; }
         public int IDTheLoai { get; set; }
+        public int Website { get; set; }
         public ImageAndClips() { }
         #endregion
 
@@ -35,7 +36,7 @@ namespace DataAccess.Classes
             try
             {
                 object rs = DataProvider.Instance.ExecuteNonQueryWithOutput("@ID", "ImageAndClips_Them",
-                    imgorclip.ID, imgorclip.Ten_Vn, imgorclip.Ten_En, imgorclip.Ten_Ru, imgorclip.NgayTao, imgorclip.MoTa_Vn, imgorclip.MoTa_En, imgorclip.MoTa_Ru, imgorclip.LuotXem, imgorclip.HinhAnh, imgorclip.ImgOrClip, imgorclip.IDTheLoai, imgorclip.Ten_Cn, imgorclip.MoTa_Cn);
+                    imgorclip.ID, imgorclip.Ten_Vn, imgorclip.Ten_En, imgorclip.Ten_Ru, imgorclip.NgayTao, imgorclip.MoTa_Vn, imgorclip.MoTa_En, imgorclip.MoTa_Ru, imgorclip.LuotXem, imgorclip.HinhAnh, imgorclip.ImgOrClip, imgorclip.IDTheLoai, imgorclip.Ten_Cn, imgorclip.MoTa_Cn, imgorclip.Website);
                 return Convert.ToInt32(rs);
             }
             catch
@@ -48,7 +49,7 @@ namespace DataAccess.Classes
             try
             {
                 object rs = DataProvider.Instance.ExecuteNonQuery("ImageAndClips_Sua",
-                    imgorclip.ID, imgorclip.Ten_Vn, imgorclip.Ten_En, imgorclip.Ten_Ru, imgorclip.NgayTao, imgorclip.MoTa_Vn, imgorclip.MoTa_En, imgorclip.MoTa_Ru, imgorclip.LuotXem, imgorclip.HinhAnh, imgorclip.ImgOrClip, imgorclip.IDTheLoai, imgorclip.Ten_Cn, imgorclip.MoTa_Cn);
+                    imgorclip.ID, imgorclip.Ten_Vn, imgorclip.Ten_En, imgorclip.Ten_Ru, imgorclip.NgayTao, imgorclip.MoTa_Vn, imgorclip.MoTa_En, imgorclip.MoTa_Ru, imgorclip.LuotXem, imgorclip.HinhAnh, imgorclip.ImgOrClip, imgorclip.IDTheLoai, imgorclip.Ten_Cn, imgorclip.MoTa_Cn, imgorclip.Website);
                 return Convert.ToInt32(rs) > 0;
             }
             catch
@@ -94,6 +95,17 @@ namespace DataAccess.Classes
                 return 0;
             }
         }
+        public static int ImageAndClips_GetLastID()
+        {
+            try
+            {
+                return Convert.ToInt32(DataProvider.Instance.ExecuteScalar("ImageAndClips_GetLastID"));
+            }
+            catch
+            {
+                return 0;
+            }
+        }
         public static ImageAndClips ImageAndClipsTop1(string idTheLoai)
         {
             try
@@ -125,6 +137,18 @@ namespace DataAccess.Classes
             catch
             { return null; }
         }
+
+
+        public static List<ImageAndClips> ImageAndClips_LayTatCa(string idTheLoai, int Website)
+        {
+            try
+            {
+                return CBO.FillCollection<ImageAndClips>(DataProvider.Instance.ExecuteReader("ImageAndClips_LayTatCa", ConvertType.ToInt32(idTheLoai), Website));
+            }
+            catch
+            { return null; }
+        }
+
         public static List<ImageAndClips> LayTheoTheLoai(string theLoai, string page, out int howManyPages)
         {
             IDataReader reader = null;
