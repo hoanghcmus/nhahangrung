@@ -594,11 +594,9 @@ html, body, #DefaultForm, .intro-container, .img, .link, .full {
 .booking-mess {
     float: left;
     width: 100%;
-    text-align: center;
-    font-family: UTM_Facebook;
+    font-family: HongHaHep;
     color: orange;
-    position: absolute;
-    top: 9px;
+    margin-top: -18px;
 }
 
 .info-input {
@@ -1396,7 +1394,7 @@ a.nextpre {
         margin-top: 9px;
         text-indent: 9px;
         font-family: HongHaHepB;
-        font-size: 20px;
+        font-size: 1.55vw; /*20px*/
         color: #920000;
     }
 
@@ -1454,7 +1452,7 @@ a.nextpre {
                 .v-nav ul li a span {
                     float: left;
                     width: 95%;
-                    padding: 7px 0;
+                    padding: 5px 0;
                     color: #FFF;
                     text-indent: 5px;
                 }
@@ -1703,6 +1701,7 @@ a.nextpre {
     float: left;
     width: 100%;
     background-color: #FFF;
+    margin-bottom: 20px;
 }
 
 .c-block-intro-wrap {
@@ -1726,7 +1725,7 @@ a.nextpre {
         position: relative;
         color: #940000;
         font-family: HongHaHepB;
-        font-size: 20px;
+        font-size: 1.55vw; /*20px*/
     }
 
         .c-block-intro-left > a > img {
@@ -1735,13 +1734,13 @@ a.nextpre {
 
 .c-block-intro-left-title {
     float: left;
-    width: 100%;
+    width: 94%;
     height: 29.74%;
     background-color: rgba(255,255,255,0.5);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
 }
 
@@ -1762,7 +1761,7 @@ a.nextpre {
     float: left;
     width: 100%;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #920000;
 }
 
@@ -1778,7 +1777,6 @@ a.nextpre {
     font-family: Arial;
     font-size: 0.95vw;
     color: #000;
-    line-height: 20px;
     text-align: justify;
 }
 
@@ -1786,25 +1784,227 @@ a.nextpre {
     float: left;
     width: 101px;
     height: 31px;
-    margin-top: 25px;
+    margin-top: 5px;
     border-radius: 2px;
-    background-color: #dc8100;
+    background-color: #920000;
 }
 
     .c-block-intro-read-more:hover {
-        background-color: #fa9a13;
+        background-color: #c40a0a;
     }
 
     .c-block-intro-read-more a {
         float: left;
         width: 100%;
         padding-bottom: 8px;
-        padding-top: 9px;
+        padding-top: 6px;
         font-family: Arial;
         font-size: 11px;
         font-style: italic;
         text-align: center;
         color: #FFF;
+    }
+
+.c-block-intro-head {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    padding-top: 22px;
+    padding-bottom: 10px;
+}
+
+    .c-block-intro-head h1 {
+        float: left;
+        width: 95%;
+        margin-left: 1.455%;
+        font-family: HongHaHepB;
+        font-size: 17px;
+        color: #920000;
+    }
+
+.c-block-special {
+    float: left;
+    width: auto;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 1.455%;
+    margin-bottom: 11px;
+    padding-right: 54px;
+    background: #740404;
+    font-family: Arial;
+    font-size: 1vw;
+    text-indent: 9px;
+    color: #FFF;
+    position: relative;
+}
+
+    .c-block-special h1 {
+        float: left;
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .c-block-special:after {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .c-block-special:after {
+        border-left-color: #740404;
+        border-width: 11px;
+        margin-top: -11px;
+    }
+
+.c-block-intro-content {
+    float: left;
+    width: 100%;
+}
+
+.c-block-intro-content-wrap {
+    float: left;
+    width: 98.2%;
+    margin-left: 1.8%;
+}
+
+.c-special-item {
+    float: left;
+    width: 31%;
+    margin-right: 2.3%;
+    margin-bottom: 12px;
+    outline: 1px solid #dcdcdc;
+}
+
+.c-special-item-wrap {
+    float: left;
+    width: 95.3%;
+    height: 157px;
+    margin: 2.347%;
+    position: relative;
+}
+
+    .c-special-item-wrap > a {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .c-special-item-wrap:hover > a {
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+        .c-special-item-wrap:hover > a .c-special-item-title {
+            background-color: rgba(0,0,0, 0.4);
+        }
+
+.c-special-item-title {
+    float: left;
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    font-family: Arial;
+    font-size: 14px;
+    color: #FFF;
+    background-color: rgba(0,0,0, 0);
+}
+
+    .c-special-item-title > h1 {
+        float: left;
+        width: 100%;
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .c-special-item-title > p {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+.c-cuisin-wrap {
+    float: left;
+    width: 95.342%;
+    margin-left: 2.329%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.c-cuisine-block {
+    float: left;
+    width: 32.213%;
+    height: 287px;
+    overflow: hidden;
+    margin-left: 0.559%;
+    margin-right: 0.559%;
+}
+
+.c-cuisine-block-figure {
+    float: left;
+    width: 100%;
+    height: 150px;
+}
+
+.c-cuisine-block-title {
+    float: left;
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+}
+
+    .c-cuisine-block-title h1 {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        font-family: HongHaHepB;
+        font-size: 17px;
+        color: #ba0000;
+        text-align: center;
+    }
+
+
+.c-cuisine-block-des {
+    float: left;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+    .c-cuisine-block-des p {
+        float: left;
+        width: 100%;
+        font-family: Arial;
+        font-size: 13px;
+        color: #3b3b3b;
+        text-align: center;
+    }
+
+
+.c-cuisine-block-price {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5px;
+    border-top: 1px solid #afafaf;
+}
+
+    .c-cuisine-block-price p {
+        float: left;
+        width: 100%;
+        font-family: HongHaHepB;
+        font-size: 17px;
+        color: #ba0000;
+        text-align: center;
     }
 
 /*CSS for Coffee site - End*/
