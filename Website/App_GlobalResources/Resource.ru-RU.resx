@@ -133,7 +133,7 @@
     <value>контакт</value>
   </data>
   <data name="contact_message" xml:space="preserve">
-    <value>По вопросам, обратная связь на ресторан, Tomato . Пожалуйста, отправьте содержание, свяжитесь с нами, пожалуйста, введите информацию, ясно, внятно.</value>
+    <value>Если у вас есть какие-либо вопросы, пожалуйста, отправьте содержание, свяжитесь с нами, пожалуйста, введите информацию, ясно, внятно.</value>
   </data>
   <data name="content" xml:space="preserve">
     <value>содержание</value>
@@ -184,7 +184,7 @@
     <value>Главное меню</value>
   </data>
   <data name="map_info" xml:space="preserve">
-    <value>Квартал 15, Хюинь Тан Фат, Муи, Фантьет, Бинь Туан &lt;br/&gt; &amp;nbsp; &amp; NBSP; &amp; NBSP; Телефон: 0937.239.915 &lt;br/&gt;</value>
+    <value>65A Нгуен Динь ТЬЕН Улица, Хам Тянь Уорд, Фантьет, &lt;br/&gt; Бинь Туан &amp;nbsp;&amp;nbsp;&amp;nbsp; Тел: 098.399.8749 &lt;br/&gt;</value>
   </data>
   <data name="menu" xml:space="preserve">
     <value>МЕНЮ</value>
@@ -214,7 +214,7 @@
     <value>Связанные еды</value>
   </data>
   <data name="restaurant_name" xml:space="preserve">
-    <value>Tomato ресторан</value>
+    <value>Forest</value>
   </data>
   <data name="res_add" xml:space="preserve">
     <value>Адрес: Блок 15, Хюинь Тан Фат, Муи, Фантьет Город</value>
@@ -263,5 +263,14 @@
   </data>
   <data name="spa_booking" xml:space="preserve">
     <value>Бронирование Спа</value>
+  </data>
+  <data name="map_info1" xml:space="preserve">
+    <value>179 Нгуен Динь ТЬЕН Улица, Хам Тянь Уорд, Фантьет, &lt;br/&gt; Бинь Туан &amp;nbsp;&amp;nbsp;&amp;nbsp; Тел: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lam) &lt;br/&gt;</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>ЧАВО</value>
+  </data>
+  <data name="what_search" xml:space="preserve">
+    <value>Какая пища вам искать ...</value>
   </data>
 </root>

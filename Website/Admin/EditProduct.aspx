@@ -58,12 +58,27 @@
                                 <td class="text" valign="top">Thể loại món ăn:
                                 </td>
                                 <td>
-                                    <asp:DropDownList runat="server" ID="ddlLoaiMenu" AppendDataBoundItems="true" CssClass="drl">
-                                        <asp:ListItem Value="0">---  Chọn thể loại món ăn  ---</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ErrorMessage="->Chọn thể loại món ăn"
-                                        ControlToValidate="ddlLoaiMenu" SetFocusOnError="true" Display="Static" CssClass="red"
-                                        InitialValue="0" runat="server">( Chọn thể loại món ăn cần thêm )</asp:RequiredFieldValidator>
+
+                                    <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                                        <ContentTemplate>
+
+                                            <asp:DropDownList runat="server" ID="drlWebsite" AppendDataBoundItems="true" CssClass="drl" AutoPostBack="true" OnSelectedIndexChanged="drlWebsite_SelectedIndexChanged">
+
+                                                <asp:ListItem Value="0">- Lọc thể loại theo website -</asp:ListItem>
+                                                <asp:ListItem Value="1">Nhà hàng</asp:ListItem>
+                                                <asp:ListItem Value="3">Coffee</asp:ListItem>
+                                            </asp:DropDownList>
+
+
+                                            <asp:DropDownList runat="server" ID="ddlLoaiMenu" AppendDataBoundItems="true" CssClass="drl">
+                                                <asp:ListItem Value="0">---  Chọn thể loại món ăn  ---</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ErrorMessage="->Chọn thể loại món ăn" ControlToValidate="ddlLoaiMenu" SetFocusOnError="true" Display="Static" CssClass="red" InitialValue="0" runat="server"> ( Chọn thể loại món ăn cần thêm )</asp:RequiredFieldValidator>
+
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+
+
                                 </td>
                             </tr>
 

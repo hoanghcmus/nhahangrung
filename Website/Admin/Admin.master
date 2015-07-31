@@ -131,8 +131,20 @@
 
             <asp:HyperLink ID="hlDatTiec" class="nav-header" NavigateUrl="MgerDatTiec.aspx?Status=0"
                 runat="server">
-                <i class="icon-shopping-cart"></i>Đặt bàn trực tuyến<span class="label label-info">
+                <i class="icon-shopping-cart"></i>Đặt bàn Nhà hàng<span class="label label-info">
                     <asp:Label ID="lbdt" runat="server" Text="0" /></span>
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="hlDatBan" class="nav-header" NavigateUrl="MgerDatBan.aspx?Status=0"
+                runat="server">
+                <i class="icon-shopping-cart"></i>Đặt bàn Coffee<span class="label label-info">
+                    <asp:Label ID="lbdb" runat="server" Text="0" /></span>
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="hlDatSpa" class="nav-header" NavigateUrl="MgerDatSpa.aspx?Status=0"
+                runat="server">
+                <i class="icon-shopping-cart"></i>Đặt phòng Spa<span class="label label-info">
+                    <asp:Label ID="lbds" runat="server" Text="0" /></span>
             </asp:HyperLink>
 
 

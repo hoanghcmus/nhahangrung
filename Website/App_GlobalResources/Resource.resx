@@ -181,7 +181,7 @@
     <value>Liên hệ</value>
   </data>
   <data name="contact_message" xml:space="preserve">
-    <value>Nếu có thắc mắc, phản hồi về Nhà Hàng Tomato. Xin vui lòng gửi nội dung để liên hệ với chúng tôi, vui lòng nhập thông tin rõ ràng, rành mạch.</value>
+    <value>Nếu quý khách có thắc mắc, xin vui lòng gửi nội dung để liên hệ với chúng tôi, vui lòng nhập thông tin rõ ràng, rành mạch.</value>
   </data>
   <data name="content" xml:space="preserve">
     <value>Nội dung</value>
@@ -196,10 +196,10 @@
     <value>Danh sách bài viết</value>
   </data>
   <data name="map_info" xml:space="preserve">
-    <value>Khu phố 15, Huỳnh Tấn Phát, Mũi Né, TP. Phan Thiết, &lt;br/&gt;Bình Thuận &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 0937.239.915&lt;br/&gt;</value>
+    <value>65A Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, &lt;br/&gt;Bình Thuận &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 098.399.8749&lt;br/&gt;</value>
   </data>
   <data name="restaurant_name" xml:space="preserve">
-    <value>Nhà hàng Tomato</value>
+    <value>Forest</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Tiêu đề</value>
@@ -266,5 +266,14 @@
   </data>
   <data name="coff_booking" xml:space="preserve">
     <value />
+  </data>
+  <data name="map_info1" xml:space="preserve">
+    <value>179 Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết, &lt;br/&gt;Bình Thuận &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lam)&lt;br/&gt;</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>Hỏi đáp</value>
+  </data>
+  <data name="what_search" xml:space="preserve">
+    <value>Bạn tìm món gì ...</value>
   </data>
 </root>

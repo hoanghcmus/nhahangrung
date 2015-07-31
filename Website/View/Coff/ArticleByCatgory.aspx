@@ -1,13 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true" CodeFile="ArticleByCatgory.aspx.cs" Inherits="En_ArticleByCatgory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/CofMaster.master" AutoEventWireup="true" CodeFile="ArticleByCatgory.aspx.cs" Inherits="En_ArticleByCatgory" %>
 
 <%@ Import Namespace="DataAccess.Help" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ResHeadCPH" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="CofHeadCPH" runat="Server">
     <link href="/Styles/CSS/Desktop.Module.css" rel="stylesheet" />
     <link href="/Styles/CSS/SmartPhone.Module.css" rel="stylesheet" />
     <link href="/Styles/CSS/Tablet.Module.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
-    <div class="article-category-title">
+<asp:Content ID="Content2" ContentPlaceHolderID="CofMainCPH" runat="Server">
+    <div class="article-category-title c-article-category-title">
         <h1 style="text-transform: uppercase;">
             <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal>
         </h1>
@@ -66,7 +66,7 @@
     </div>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ResFootCPH" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="CofFootCPH" runat="Server">
     <%--Scroll down ...px  --%>
     <script type="text/javascript">
         $(document).ready(function () {

@@ -95,21 +95,21 @@ public partial class Vn_DetailArticle : BasePage
             case "RelatedArticleDuongDan":
                 if (Session["lang"].ToString().Equals("vn"))
                 {
-                    return "/vn/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/vn/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
                 else if (Session["lang"].ToString().Equals("en"))
                 {
-                    return "/en/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/en/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
                 else if (Session["lang"].ToString().Equals("ru"))
                 {
-                    return "/ru/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/ru/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
                 else if (Session["lang"].ToString().Equals("cn"))
                 {
-                    return "/cn/article/" + Helper.RejectMarks(Eval("TieuDe_Cn").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/cn/c-article/" + Helper.RejectMarks(Eval("TieuDe_Cn").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
-                return "/vn/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html"; ;
+                return "/vn/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html"; ;
 
             case "RelatedArticleTieuDe":
                 if (Session["lang"].ToString().Equals("vn")) { return HttpUtility.HtmlEncode(Eval("TieuDe_Vn").ToString()); }

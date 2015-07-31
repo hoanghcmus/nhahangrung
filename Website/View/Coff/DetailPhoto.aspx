@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/CofMaster.master" AutoEventWireup="true"
     CodeFile="DetailPhoto.aspx.cs" Inherits="Vn_DetailPhoto" %>
 
-<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="ResHeadCPH">
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="CofHeadCPH">
     <%-- Fancybox --%>
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
@@ -9,7 +9,7 @@
 
     <link href="/Styles/highslide/highslide.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CofMainCPH" runat="Server">
     <div class="article-category-title">
         <h1>
             <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,picture %>"></asp:Literal>
@@ -29,7 +29,7 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ResFootCPH">
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="CofFootCPH">
 
     <%-- FancyBox library --%>
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>

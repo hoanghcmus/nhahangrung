@@ -30,8 +30,19 @@
                 </p>
                 <p class="stat">
                     <span class="number">
-                        <asp:Label ID="lbdt" runat="server" Text="0" /></span>Đặt bàn -
+                        <asp:Label ID="lbdb" runat="server" Text="0" /></span>Đặt bàn Coffee -
                 </p>
+                <p class="stat">
+                    <span class="number">
+                        <asp:Label ID="lbds" runat="server" Text="0" /></span>Đặt phòng Spa -
+                </p>
+
+                <p class="stat">
+                    <span class="number">
+                        <asp:Label ID="lbdt" runat="server" Text="0" /></span>Đặt bàn Nhà hàng -
+                </p>
+
+
 
 
             </div>

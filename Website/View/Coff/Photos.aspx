@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/CofMaster.master" AutoEventWireup="true"
     CodeFile="Photos.aspx.cs" Inherits="Vn_Photos" %>
 
 <%@ Register Src="~/View/UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CofMainCPH" runat="Server">
 
-    <div class="article-category-title">
+    <div class="article-category-title c-article-category-title">
         <h1>
             <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,picture %>"></asp:Literal>
         </h1>
@@ -27,7 +27,7 @@
 
                     <ItemTemplate>
 
-                        <div class="menu-item">
+                        <div class="menu-item c-menu-item">
                             <a href="<%#ShowImg(Container.DataItem,"ImageDuongDan") %>" class="link">
                                 <div class="menu-figure">
                                     <%#ShowImg(Container.DataItem,"ImgOrClip") %>
@@ -59,7 +59,7 @@
 
 
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ResFootCPH" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="CofFootCPH" runat="Server">
 
     <%--Scroll down ...px  --%>
     <script type="text/javascript">

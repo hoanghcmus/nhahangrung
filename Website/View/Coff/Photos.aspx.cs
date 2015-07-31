@@ -52,12 +52,12 @@ public partial class Vn_Photos : BasePage
             case "ImageDuongDan":
                 if (Session["lang"].ToString().Equals("vn"))
                 {
-                    return "/vn/gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html";
+                    return "/vn/c-gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html";
                 }
-                else if (Session["lang"].ToString().Equals("en")) { return "/en/gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
-                else if (Session["lang"].ToString().Equals("ru")) { return "/ru/gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
-                else if (Session["lang"].ToString().Equals("cn")) { return "/cn/gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
-                return "/vn/gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + data.ID + ".html";
+                else if (Session["lang"].ToString().Equals("en")) { return "/en/c-gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
+                else if (Session["lang"].ToString().Equals("ru")) { return "/ru/c-gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
+                else if (Session["lang"].ToString().Equals("cn")) { return "/cn/c-gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + "-" + data.ID + ".html"; }
+                return "/vn/c-gallery/" + DataAccess.Help.Helper.RejectMarks(data.Ten_En) + data.ID + ".html";
 
             case "ImageTieuDe":
                 if (Session["lang"].ToString().Equals("vn")) { return data.Ten_Vn; }

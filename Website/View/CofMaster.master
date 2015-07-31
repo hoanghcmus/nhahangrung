@@ -113,7 +113,8 @@
                                         <img src="/Design/title-logo.jpg" alt="Block icon" class="img" />
                                     </div>
                                     <div class="c-block-title">
-                                        <h1>THỰC ĐƠN CHÍNH
+                                        <h1>
+                                            <%=Resources.Resource.main_menu %>
                                         </h1>
                                     </div>
                                 </div>
@@ -136,40 +137,19 @@
                                         <img src="/Design/title-logo.jpg" alt="Block icon" class="img" />
                                     </div>
                                     <div class="c-block-title">
-                                        <h1>HÌNH ẢNH
+                                        <h1>
+                                            <%=Resources.Resource.picture %>
                                         </h1>
                                     </div>
                                 </div>
                                 <div class="c-block-content">
                                     <div class="cl-gallery">
-                                        <div class="cl-gallery-wrap">
-                                            <a href="/Design/s1.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s1.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s1.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s1.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s1.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s1.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s2.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s2.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s2.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s2.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s2.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s2.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s3.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s3.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s3.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s3.jpg" alt="Gallery item" class="img" />
-                                            </a>
-                                            <a href="/Design/s3.jpg" class="cl-gallery-item imgshow link" rel="main-gallery">
-                                                <img src="/Design/s3.jpg" alt="Gallery item" class="img" />
-                                            </a>
+                                        <div class="cl-gallery-wrap" id="galery-content">
+
+                                            <ul>
+                                                <asp:Literal ID="ltrListImages" runat="server"></asp:Literal>
+                                            </ul>
+
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +161,8 @@
                                         <img src="/Design/title-logo.jpg" alt="Block icon" class="img" />
                                     </div>
                                     <div class="c-block-title">
-                                        <h1>HỎI ĐÁP
+                                        <h1>
+                                             <%=Resources.Resource.qa %>
                                         </h1>
                                     </div>
                                 </div>
@@ -225,14 +206,15 @@
                             </div>
 
                             <div class="c-block qc">
-                                <a href="javascript:void()" class="link">
-                                    <img src="/Design/kfc.jpg" alt="KFC" class="img" />
-                                </a>
+                                <asp:HyperLink ID="hlPrmo" runat="server" CssClass="link">
+                                    <%--<img src="/Design/kfc.jpg" alt="KFC" class="img" />--%>
+                                    <asp:Image ID="desImage" runat="server" CssClass="img" alt="KFC" />
+                                </asp:HyperLink>
                             </div>
 
                         </div>
                         <div class="c-right">
-                           
+
                             <asp:ContentPlaceHolder ID="CofMainCPH" runat="server">
                             </asp:ContentPlaceHolder>
                         </div>
@@ -313,20 +295,24 @@
             });
         </script>
 
+
+        <%-- Scrollbox slide show --%>
+
         <script src="/Styles/ScrollBox/jquery.scrollbox.js"></script>
         <script type="text/javascript">
-            $('#r-gallery').scrollbox({
-                direction: 'h',
-                distance: 140,
-                autoPlay: true
-            });
-            $('#gallery-backward').click(function () {
-                $('#r-gallery').trigger('backward');
-            });
-            $('#gallery-forward').click(function () {
-                $('#r-gallery').trigger('forward');
+            $(function () {
+                $('#galery-content').scrollbox({
+                    switchItems: 1,
+                    onMouseOverPause: true,
+                    distance: 93,
+                    linear: true,
+                    step: 1,
+                    delay: 0,
+                    speed: 100
+                });
             });
         </script>
+
 
         <asp:ContentPlaceHolder ID="CofFootCPH" runat="server">
         </asp:ContentPlaceHolder>

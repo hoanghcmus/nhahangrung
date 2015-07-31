@@ -64,18 +64,18 @@ public partial class En_ArticleByCatgory : BasePage
             case "ArticleCatDuongDan":
                 if (Session["lang"].ToString().Equals("vn"))
                 {
-                    return "/vn/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/vn/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
                 else if (Session["lang"].ToString().Equals("en"))
                 {
-                    return "/en/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/en/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
                 else if (Session["lang"].ToString().Equals("ru"))
                 {
-                    return "/ru/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
+                    return "/ru/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html";
                 }
 
-                return "/vn/article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html"; ;
+                return "/vn/c-article/" + Helper.RejectMarks(Eval("TieuDe_En").ToString()) + "-" + baiviet.ID + "-" + baiviet.IDTheLoai + ".html"; ;
 
             case "ArticleCatTieuDe":
                 if (Session["lang"].ToString().Equals("vn")) { return HttpUtility.HtmlEncode(Eval("TieuDe_Vn").ToString()); }

@@ -45,7 +45,7 @@
                             <asp:ListItem Value="2">Đặt bàn đã hủy</asp:ListItem>
                         </asp:DropDownList>
                         <asp:Button Text="Xóa đặt bàn đã chọn" runat="server" ID="btnDelete" CssClass="multidelete" />
-                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href = 'MgerDatTiec.aspx'" />
+                        <input type="button" value="Làm mới" class="btnedit" onclick="location.href = 'MgerDatBan.aspx'" />
                     </div>
                     <div class="block">
                         <p class="block-heading">
@@ -109,7 +109,7 @@
                                             <%#ShowDatTour(Container.DataItem, "NgayGui")%>
                                         </td>
                                         <td class="smallmax" style="text-align: center;">
-                                            <a href="javascript:void(0)" target="_blank" class="btnlinkaddlist" onclick='window.open("MgerXuLyDatTiec.aspx?id=<%#Eval("ID") %>","Upload","height=480,width=640,");return false;'>
+                                            <a href="javascript:void(0)" target="_blank" class="btnlinkaddlist" onclick='window.open("MgerXuLyDatBan.aspx?id=<%#Eval("ID") %>","Upload","height=480,width=640,");return false;'>
                                                 <i class="icon-pencil"></i></a>
                                         </td>
                                     </tr>
@@ -143,7 +143,7 @@
                                             <%#ShowDatTour(Container.DataItem, "NgayGui")%>
                                         </td>
                                         <td class="smallmax" style="text-align: center;">
-                                            <a href="javascript:void(0)" target="_blank" class="btnlinkaddlist" onclick='window.open("MgerXuLyDatTiec.aspx?id=<%#Eval("ID") %>","Upload","height=480,width=640,");return false;'>
+                                            <a href="javascript:void(0)" target="_blank" class="btnlinkaddlist" onclick='window.open("MgerXuLyDatBan.aspx?id=<%#Eval("ID") %>","Upload","height=480,width=640,");return false;'>
                                                 <i class="icon-pencil"></i></a>
                                         </td>
                                     </tr>

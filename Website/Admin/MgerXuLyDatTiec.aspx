@@ -20,7 +20,7 @@
                 <table class="GuiYkien">
                     <tr>
                         <td colspan="2">
-                            <asp:Label ID="title" runat="server" Text="Thông tin khách hàng đặt tour" CssClass="title" />
+                            <asp:Label ID="title" runat="server" Text="Thông tin khách hàng đặt bàn Nhà hàng" CssClass="title" />
                             <asp:Label ID="succesfull" runat="server" Text="Label" Visible="false" CssClass="succesfull" />
                             <asp:Label ID="lbtitle" runat="server" Text="Label" Visible="false" CssClass="titletb" />
                             <asp:Label ID="lbID" runat="server" Text="ID" Visible="false" />

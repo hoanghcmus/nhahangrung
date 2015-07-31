@@ -44,6 +44,13 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
 
         string dattiec = DatTiec.DemTheoTrangThai("0").ToString();
         lbdt.Text = "+ " + dattiec;
+
+        string datban = DatBan.DemTheoTrangThai("0").ToString();
+        lbdb.Text = "+ " + datban;
+
+        string datspa = DatSpa.DemTheoTrangThai("0").ToString();
+        lbds.Text = "+ " + datspa;
+
         lbma.Text = MonAn.Count().ToString();
         //lbdttt.Text = "+ " + dattiec;
 

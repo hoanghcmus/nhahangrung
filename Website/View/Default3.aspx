@@ -40,117 +40,31 @@
             <h1>THỰC ĐƠN</h1>
         </div>
         <div class="c-block-special">
-            <h1>Nổi bật</h1>
+            <h1>
+                <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal></h1>
         </div>
         <div class="c-block-intro-content">
             <div class="c-block-intro-content-wrap">
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s1.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Cà rốt ép</h1>
-                                <p><b>Giá 36.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s1.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Cà rốt ép</h1>
-                                <p><b>Giá 36.000 VNĐ</b></p>
+                <asp:Repeater runat="server" ID="rptMonNoiBat">
+                    <ItemTemplate>
+                        <div class="c-special-item">
+                            <div class="c-special-item-wrap">
+                                <img src="<%#Eval("AnhDaiDien") %>" alt="Special item" class="img" />
+                                <a href="<%#ShowArticleCat(Container.DataItem,"ArticleCatDuongDan") %>" class="link">
+                                    <div class="c-special-item-title">
+                                        <h1><%#ShowArticleCat(Container.DataItem,"ArticleCatTenMon") %></h1>
+                                        <p>
+                                            <b>
+                                                <%#Convert.ToDecimal(Eval("Gia")) > 0 ? showMoney(Convert.ToDecimal(Eval("Gia")))+" VNĐ" : Resources.Resource.please_contact %>
+                                            </b>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s1.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Cà rốt ép</h1>
-                                <p><b>Giá 36.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s2.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Trà chanh</h1>
-                                <p><b>Giá 25.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s2.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Trà chanh</h1>
-                                <p><b>Giá 25.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s2.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Trà chanh</h1>
-                                <p><b>Giá 25.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s3.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Dâu tây</h1>
-                                <p><b>Giá 40.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s3.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Dâu tây</h1>
-                                <p><b>Giá 40.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="c-special-item">
-                    <div class="c-special-item-wrap">
-                        <img src="/Design/s3.jpg" alt="Special item" class="img" />
-                        <a href="javascript:void" class="link">
-                            <div class="c-special-item-title">
-                                <h1>Dâu tây</h1>
-                                <p><b>Giá 40.000 VNĐ</b></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
 
             </div>
         </div>
@@ -158,75 +72,42 @@
 
     <div class="c-block-intro">
         <div class="c-block-intro-head">
-            <h1>MÓN ĂN NHẸ</h1>
+            <h1>
+                <asp:Literal ID="ltrMonAnNhe" runat="server"></asp:Literal>
+            </h1>
         </div>
         <div class="c-block-intro-content">
             <div class="c-cuisin-wrap">
-                <div class="c-cuisine-block">
-                    <a href="javascript:void();" class="link">
-                        <div class="c-cuisine-block-figure">
-                            <img src="/Design/n1.jpg" alt="Cuisine item" class="img" />
-                        </div>
-                        <div class="c-cuisine-block-title">
-                            <h1>Khoai tây chiên
-                            </h1>
-                        </div>
-                        <div class="c-cuisine-block-des">
-                            <p>
-                                Được làm từ những trái khoai tây to, ngon và tươi, món ăn nhẹ này chắc chắc sẽ làm cho bạn ...
-                            </p>
-                        </div>
-                        <div class="c-cuisine-block-price">
-                            <p>
-                                <b>Giá: 54.000 VNĐ </b>
-                            </p>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="c-cuisine-block">
-                    <a href="javascript:void();" class="link">
-                        <div class="c-cuisine-block-figure">
-                            <img src="/Design/n2.jpg" alt="Cuisine item" class="img" />
-                        </div>
-                        <div class="c-cuisine-block-title">
-                            <h1>Hamburger
-                            </h1>
-                        </div>
-                        <div class="c-cuisine-block-des">
-                            <p>
-                                Bánh mì tròn, thịt bò, xà lách, cà chua, hành tây, sốt cà ketchup, hương vị đậm đà ...
-                            </p>
-                        </div>
-                        <div class="c-cuisine-block-price">
-                            <p>
-                                <b>Giá: 45.000 VNĐ </b>
-                            </p>
-                        </div>
-                    </a>
-                </div>
+                <asp:Repeater runat="server" ID="rptMonAnNhe">
+                    <ItemTemplate>
 
-                <div class="c-cuisine-block">
-                    <a href="javascript:void();" class="link">
-                        <div class="c-cuisine-block-figure">
-                            <img src="/Design/n3.jpg" alt="Cuisine item" class="img" />
+                        <div class="c-cuisine-block">
+                            <a href="<%#ShowArticleCat(Container.DataItem,"ArticleCatDuongDan") %>" class="link">
+                                <div class="c-cuisine-block-figure">
+                                    <img src="<%#Eval("AnhDaiDien") %>" alt="Cuisine item" class="img" />
+                                </div>
+                                <div class="c-cuisine-block-title">
+                                    <h1><%#ShowArticleCat(Container.DataItem,"ArticleCatTenMon") %></h1>
+                                </div>
+                                <div class="c-cuisine-block-des">
+                                    <p>
+                                        <%#ShowArticleCat(Container.DataItem,"laytomtat") %>
+                                    </p>
+                                </div>
+                                <div class="c-cuisine-block-price">
+                                    <p>
+                                        <b>
+                                            <%#Convert.ToDecimal(Eval("Gia")) > 0 ? showMoney(Convert.ToDecimal(Eval("Gia")))+" VNĐ" : Resources.Resource.please_contact %>
+                                        </b>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="c-cuisine-block-title">
-                            <h1>Mỳ ý
-                            </h1>
-                        </div>
-                        <div class="c-cuisine-block-des">
-                            <p>
-                                Là một món ăn khó bỏ qua đối với những tín đồ của ẩm thực nước Ý, món mì Ý là sự kết hợp ...
-                            </p>
-                        </div>
-                        <div class="c-cuisine-block-price">
-                            <p>
-                                <b>Giá: 86.000 VNĐ </b>
-                            </p>
-                        </div>
-                    </a>
-                </div>
+
+
+                    </ItemTemplate>
+                </asp:Repeater>
 
             </div>
         </div>

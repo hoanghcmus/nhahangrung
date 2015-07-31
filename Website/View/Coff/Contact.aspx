@@ -1,22 +1,22 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/CofMaster.master" AutoEventWireup="true"
     CodeFile="Contact.aspx.cs" Inherits="Vn_Contact" %>
 
 <%@ Register Src="~/View/UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc1" %>
-<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="ResHeadCPH">
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="CofHeadCPH">
     <link href="/Styles/CSS/Desktop.Contact.css" rel="stylesheet" />
 
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
     <link href="/Styles/FancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="ContentMain" ContentPlaceHolderID="ResMainCPH" runat="Server">
+<asp:Content ID="ContentMain" ContentPlaceHolderID="CofMainCPH" runat="Server">
 
-    <div class="article-category-title">
+    <div class="article-category-title c-article-category-title">
         <h1>
             <asp:Literal ID="ltrCtTitle" runat="server" Text="<%$Resources:Resource,contact %>"></asp:Literal>
         </h1>
     </div>
-    <div class="body-right-content">
+    <div class="body-right-content c-body-right-content">
         <p>
             <%=Resources.Resource.contact_message %>
         </p>
@@ -37,7 +37,7 @@
                             <td><%=Resources.Resource.fullname %> :
                             </td>
                             <td>
-                                <asp:TextBox ID="txtHoTen" runat="server" CssClass="txt"></asp:TextBox>
+                                <asp:TextBox ID="txtHoTen" runat="server" CssClass="txt c-txt"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtHoTen"
                                     ValidationGroup="contact" ErrorMessage="->Vui lòng nhập họ tên!" CssClass="titletb">*</asp:RequiredFieldValidator>
                             </td>
@@ -46,7 +46,7 @@
                             <td><%=Resources.Resource.email %> :
                             </td>
                             <td>
-                                <asp:TextBox ID="txtEmail" runat="server" CssClass="txt" />
+                                <asp:TextBox ID="txtEmail" runat="server" CssClass="txt c-txt" />
                                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail"
                                     ValidationGroup="contact" ErrorMessage="Email Không đúng!" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                                     CssClass="titletb">*</asp:RegularExpressionValidator>
@@ -58,7 +58,7 @@
                             <td><%=Resources.Resource.address %> :
                             </td>
                             <td>
-                                <asp:TextBox ID="txtDiaChi" runat="server" CssClass="txt" />
+                                <asp:TextBox ID="txtDiaChi" runat="server" CssClass="txt c-txt" />
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtDiaChi"
                                     ValidationGroup="contact" ErrorMessage="->Vui lòng nhập địa chỉ!" CssClass="titletb">*</asp:RequiredFieldValidator>
                             </td>
@@ -67,7 +67,7 @@
                             <td><%=Resources.Resource.title %> :
                             </td>
                             <td>
-                                <asp:TextBox ID="txtTieuDe" runat="server" CssClass="txt" />
+                                <asp:TextBox ID="txtTieuDe" runat="server" CssClass="txt c-txt" />
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtTieuDe"
                                     ValidationGroup="contact" ErrorMessage="->Vui lòng nhập tiêu đề!" CssClass="titletb">*</asp:RequiredFieldValidator>
                             </td>
@@ -76,7 +76,7 @@
                             <td valign="top"><%=Resources.Resource.content %>:
                             </td>
                             <td valign="top">
-                                <asp:TextBox ID="txtNoiDung" runat="server" TextMode="MultiLine" CssClass="txtnd"></asp:TextBox>
+                                <asp:TextBox ID="txtNoiDung" runat="server" TextMode="MultiLine" CssClass="txtnd c-txtnd"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtNoiDung"
                                     ValidationGroup="contact" ErrorMessage="->Vui lòng nhập nội dung!" CssClass="titletb">*</asp:RequiredFieldValidator>
                             </td>
@@ -91,7 +91,7 @@
                             <td valign="bottom"><%=Resources.Resource.confirm_code %>:
                             </td>
                             <td style="position: relative;">
-                                <asp:TextBox ID="txtInputString" runat="server" CssClass="txtmin"></asp:TextBox>
+                                <asp:TextBox ID="txtInputString" runat="server" CssClass="txtmin c-txtmin"></asp:TextBox>
                                 <asp:Image ID="captchaImage" runat="server" CssClass="capcha" />
                                 <asp:Button ID="btnRedefine" runat="server" Text="" CssClass="btnrefresh" OnClick="btnRedefine_Click" />
 
@@ -136,7 +136,7 @@
 
 </asp:Content>
 
-<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="ResFootCPH">
+<asp:Content ID="ContentFooter" runat="server" ContentPlaceHolderID="CofFootCPH">
     <script src="/Styles/FancyBox-2.1.5/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.pack.js" type="text/javascript"></script>
     <script src="/Styles/FancyBox-2.1.5/source/jquery.fancybox.js" type="text/javascript"></script>

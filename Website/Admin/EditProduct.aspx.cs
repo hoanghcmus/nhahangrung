@@ -278,6 +278,21 @@ public partial class Admin_EditProduct : System.Web.UI.Page
             }
         }
     }
+
+    protected void drlWebsite_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int idWebsite = ConvertType.ToInt32(drlWebsite.SelectedValue);
+        if (idWebsite > 0)
+        {
+            ddlLoaiMenu.Items.Clear();
+            ddlLoaiMenu.Items.Add(new ListItem("-- Chọn thể loại bài viết --", "0"));
+            ddlLoaiMenu.DataValueField = "ID";
+            ddlLoaiMenu.DataTextField = "TieuDe_Vn";
+            ddlLoaiMenu.DataSource = TheLoai.LayTheoModuleVaWebsite("4", idWebsite);
+            ddlLoaiMenu.DataBind();
+        }
+    }
+
     protected void valTieuDeVn_ServerValidate(object source, ServerValidateEventArgs args)
     {
         if (args.Value.Length > 150)

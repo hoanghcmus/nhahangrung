@@ -1027,9 +1027,18 @@ a.nextpre {
     margin-bottom: 20px;
 }
 
-    .menu-item > a {
-        position: relative;
-    }
+.c-menu-item {
+    float: left;
+    width: 30.5%;
+    height: 152px;
+    margin-right: 1.5%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+}
+
+.menu-item > a {
+    position: relative;
+}
 
 .menu-figure {
     float: left;
@@ -1094,6 +1103,10 @@ a.nextpre {
     color: #FFF;
     text-align: justify;
     line-height: 20px;
+}
+
+.c-body-right-content {
+    color: #000;
 }
 
 .menu-wrap {
@@ -1200,7 +1213,7 @@ a.nextpre {
     margin-top: 9px;
     font-family: Tahoma,Arial,sans-serif;
     font-size: 14px;
-    color: #FFF;
+    color: #000;
 }
 
 .product-label {
@@ -1245,6 +1258,10 @@ a.nextpre {
         color: #B2B2B2;
     }
 
+.c-detail-title h1 {
+    color: #920000;
+}
+
 .detail-info-wraper {
     float: left;
     width: 98%;
@@ -1252,6 +1269,10 @@ a.nextpre {
     font-family: Tahoma,Arial,sans-serif;
     font-size: 14px;
     color: #FFF;
+}
+
+.c-detail-info-wraper {
+    color: #000;
 }
 
 .related-product {
@@ -1395,6 +1416,7 @@ a.nextpre {
         text-indent: 9px;
         font-family: HongHaHepB;
         font-size: 1.55vw; /*20px*/
+        text-transform: uppercase;
         color: #920000;
     }
 
@@ -2007,4 +2029,14 @@ a.nextpre {
         text-align: center;
     }
 
+.cl-gallery-wrap ul {
+    float: left;
+    width: 100%;
+    height: 319px;
+}
+
+    .cl-gallery-wrap ul li {
+        float: left;
+        width: 100%;
+    }
 /*CSS for Coffee site - End*/

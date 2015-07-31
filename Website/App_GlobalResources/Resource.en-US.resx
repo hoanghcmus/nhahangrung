@@ -133,7 +133,7 @@
     <value>Contact</value>
   </data>
   <data name="contact_message" xml:space="preserve">
-    <value>For questions, feedback on Tomato Restaurant. Please send content to contact us, please enter the information clearly, articulately.</value>
+    <value>If you have any questions, please send content to contact us, please enter the information clearly, articulately.</value>
   </data>
   <data name="content" xml:space="preserve">
     <value>Content</value>
@@ -184,7 +184,7 @@
     <value>Main menu</value>
   </data>
   <data name="map_info" xml:space="preserve">
-    <value>Quarter 15, Huynh Tan Phat, Mui Ne, Phan Thiet city, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 0937.239.915&lt;br/&gt;</value>
+    <value>65A Nguyen Dinh Chieu Street, Ham Tien Ward, Phan Thiet, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 098.399.8749&lt;br/&gt;</value>
   </data>
   <data name="menu" xml:space="preserve">
     <value>MENU</value>
@@ -214,7 +214,7 @@
     <value>Related dishes</value>
   </data>
   <data name="restaurant_name" xml:space="preserve">
-    <value>Tomato Restaurant</value>
+    <value>Forest</value>
   </data>
   <data name="res_add" xml:space="preserve">
     <value>Address: Quarter 15, Huynh Tan Phat, Mui Ne, Phan Thiet City.</value>
@@ -263,5 +263,14 @@
   </data>
   <data name="spa_booking" xml:space="preserve">
     <value>Booking spa room</value>
+  </data>
+  <data name="map_info1" xml:space="preserve">
+    <value>179 Nguyen Dinh Chieu Street, Ham Tien Ward, Phan Thiet, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lam)&lt;br/&gt;</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="what_search" xml:space="preserve">
+    <value>What food do you search ...</value>
   </data>
 </root>
