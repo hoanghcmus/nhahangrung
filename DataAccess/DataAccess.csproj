@@ -69,6 +69,7 @@
     <Compile Include="Classes\TheLoai.cs" />
     <Compile Include="Classes\ThongKeTruyCap.cs" />
     <Compile Include="Classes\ThongTinNguoiDung.cs" />
+    <Compile Include="Classes\TimKiem.cs" />
     <Compile Include="Classes\Tour.cs" />
     <Compile Include="Connect\ConnectData.cs" />
     <Compile Include="Connect\GlobalConfiguration.cs" />

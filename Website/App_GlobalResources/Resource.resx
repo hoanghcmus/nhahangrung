@@ -274,6 +274,9 @@
     <value>Hỏi đáp</value>
   </data>
   <data name="what_search" xml:space="preserve">
-    <value>Bạn tìm món gì ...</value>
+    <value>Bạn tìm gì ...</value>
+  </data>
+  <data name="search_result" xml:space="preserve">
+    <value>Kết quả tìm kiếm</value>
   </data>
 </root>

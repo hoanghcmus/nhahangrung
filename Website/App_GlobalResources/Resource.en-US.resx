@@ -271,6 +271,9 @@
     <value>FAQ</value>
   </data>
   <data name="what_search" xml:space="preserve">
-    <value>What food do you search ...</value>
+    <value>What things do you search ...</value>
+  </data>
+  <data name="search_result" xml:space="preserve">
+    <value>Search results</value>
   </data>
 </root>

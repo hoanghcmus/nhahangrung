@@ -185,6 +185,16 @@ namespace DataAccess.Classes
                 return null;
             }
         }
+        public static List<HoiDap> GetByStatus(int status)
+        {
+            try
+            {
+                return CBO.FillCollection<HoiDap>(DataProvider.Instance.ExecuteReader("HoiDap_GetByStatus", status));
+            }
+            catch
+            { return null; }
+        }
+
         public static int Dem()
         {
             try

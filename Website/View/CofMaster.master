@@ -6,6 +6,8 @@
 <%@ Register Src="~/View/UserControl/UC_MenuChung.ascx" TagPrefix="uc1" TagName="UC_MenuChung" %>
 <%@ Register Src="~/View/UserControl/UC_Coff_Booking.ascx" TagPrefix="uc1" TagName="UC_Coff_Booking" %>
 <%@ Register Src="~/View/UserControl/UC_Menu_Doc.ascx" TagPrefix="uc1" TagName="UC_Menu_Doc" %>
+<%@ Register Src="~/View/UserControl/UC_Search.ascx" TagPrefix="uc1" TagName="UC_Search" %>
+
 
 
 
@@ -124,8 +126,7 @@
                                             <uc1:UC_Menu_Doc runat="server" ID="UC_Menu_Doc" />
                                         </div>
                                         <div class="search-bar">
-                                            <input type="text" placeholder="Bạn tìm món gì ..." class="search" />
-                                            <input type="button" class="search-btn" />
+                                            <uc1:UC_Search runat="server" ID="UC_Search" />
                                         </div>
                                     </div>
                                 </div>

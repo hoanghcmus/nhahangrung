@@ -210,6 +210,11 @@
                 </li>
             </ul>
 
+            <asp:HyperLink ID="lnkLetter" class="nav-header" NavigateUrl="MgerLetter.aspx?Status=0"
+                runat="server">
+                <i class="icon-tag"></i>Hỏi đáp<span class="label label-info">
+                    <asp:Label ID="lbLetter" runat="server" Text="0" /></span>
+            </asp:HyperLink>
 
             <asp:HyperLink ID="lnkMgerContact" class="nav-header" NavigateUrl="MgerContact.aspx?Status=0"
                 runat="server">

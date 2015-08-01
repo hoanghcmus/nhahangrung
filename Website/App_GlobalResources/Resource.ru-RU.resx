@@ -273,4 +273,7 @@
   <data name="what_search" xml:space="preserve">
     <value>Какая пища вам искать ...</value>
   </data>
+  <data name="search_result" xml:space="preserve">
+    <value>Результаты Поиска</value>
+  </data>
 </root>
