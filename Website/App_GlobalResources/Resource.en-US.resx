@@ -133,7 +133,7 @@
     <value>Contact</value>
   </data>
   <data name="contact_message" xml:space="preserve">
-    <value>For questions, feedback on Tomato Restaurant. Please send content to contact us, please enter the information clearly, articulately.</value>
+    <value>If you have any questions, please send content to contact us, please enter the information clearly, articulately.</value>
   </data>
   <data name="content" xml:space="preserve">
     <value>Content</value>
@@ -184,7 +184,7 @@
     <value>Main menu</value>
   </data>
   <data name="map_info" xml:space="preserve">
-    <value>Quarter 15, Huynh Tan Phat, Mui Ne, Phan Thiet city, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Điện thoại: 0937.239.915&lt;br/&gt;</value>
+    <value>65A Nguyen Dinh Chieu Street, Ham Tien Ward, Phan Thiet, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Phone: 0983.99.8749&lt;br/&gt;</value>
   </data>
   <data name="menu" xml:space="preserve">
     <value>MENU</value>
@@ -214,7 +214,7 @@
     <value>Related dishes</value>
   </data>
   <data name="restaurant_name" xml:space="preserve">
-    <value>Tomato Restaurant</value>
+    <value>Forest</value>
   </data>
   <data name="res_add" xml:space="preserve">
     <value>Address: Quarter 15, Huynh Tan Phat, Mui Ne, Phan Thiet City.</value>
@@ -253,15 +253,69 @@
     <value>Address: 65A Nguyen Dinh Chieu st, Ham Tien ward, PhanThiet city, Binh Thuan province</value>
   </data>
   <data name="footer_line3" xml:space="preserve">
-    <value>Phone: 098.399.8749  -  Email: forest_muine@yahoo.com</value>
+    <value>Phone: 098.399.8749 (Mr. Lam)  -  Email: forest_muine@yahoo.com</value>
   </data>
   <data name="r_footer_line2" xml:space="preserve">
-    <value>Address: 179 Nguyen Đinh Chieu st, Ham Tien ward, Phan Thiet city, Binh Thuan.</value>
+    <value>Address: 179A Nguyen Đinh Chieu st, Ham Tien ward, Phan Thiet city, Binh Thuan.</value>
   </data>
   <data name="r_footer_line3" xml:space="preserve">
-    <value>Tel: 0918 821 699 (Mr.Hung) - 098 399 8749 (Mr.Lam)  -  Email: forest_muine@yahoo.com</value>
+    <value>Tel: 0983.239.000 (Mr. Cuong)</value>
   </data>
   <data name="spa_booking" xml:space="preserve">
     <value>Booking spa room</value>
+  </data>
+  <data name="map_info_spa" xml:space="preserve">
+    <value>179A Nguyen Dinh Chieu Street, Ham Tien Ward, Phan Thiet, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Phone: 0982.329.000&lt;br/&gt;</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="what_search" xml:space="preserve">
+    <value>What things do you search ...</value>
+  </data>
+  <data name="search_result" xml:space="preserve">
+    <value>Search results</value>
+  </data>
+  <data name="confirm_code_errror" xml:space="preserve">
+    <value>Incoreect code</value>
+  </data>
+  <data name="detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="qa_success_mess" xml:space="preserve">
+    <value>Your contact has been sent to Forest coffee. We will answer your contact as soon as possible</value>
+  </data>
+  <data name="send_date" xml:space="preserve">
+    <value>sent</value>
+  </data>
+  <data name="sent_fail" xml:space="preserve">
+    <value>Send failed!</value>
+  </data>
+  <data name="c_footer_line3" xml:space="preserve">
+    <value>Tel: 0989.008.901 (Mr. Tho)</value>
+  </data>
+  <data name="go_back_faq" xml:space="preserve">
+    <value>Go back FAQ</value>
+  </data>
+  <data name="has" xml:space="preserve">
+    <value>Has</value>
+  </data>
+  <data name="map_info_cof" xml:space="preserve">
+    <value>179A Nguyen Dinh Chieu Street, Ham Tien Ward, Phan Thiet, &lt;br/&gt;Binh Thuan provice &amp;nbsp;&amp;nbsp;&amp;nbsp; Phone: 0989.008.901&lt;br/&gt;</value>
+  </data>
+  <data name="no_result_search_match" xml:space="preserve">
+    <value>Nothing match search keyword</value>
+  </data>
+  <data name="result_search_match" xml:space="preserve">
+    <value>results match</value>
+  </data>
+  <data name="s_faq" xml:space="preserve">
+    <value>Faq</value>
+  </data>
+  <data name="s_info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="s_menu" xml:space="preserve">
+    <value>Menu</value>
   </data>
 </root>

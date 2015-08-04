@@ -25,13 +25,13 @@
         function init_map() {
             var myOptions = {
                 zoom: 14,
-                center: new google.maps.LatLng(10.9382607, 108.2870921),
+                center: new google.maps.LatLng(10.9459652,108.1982117),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
             marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(10.9382607, 108.2870921)
+                position: new google.maps.LatLng(10.9459652,108.1982117)
             });
             infowindow = new google.maps.InfoWindow({
                 content: "<b><%=Resources.Resource.restaurant_name%></b><br/>"

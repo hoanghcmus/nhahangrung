@@ -34,6 +34,86 @@
             </div>
         </div>
     </div>
+
+    <div class="c-block-intro">
+        <div class="c-block-intro-head">
+            <h1><%=Resources.Resource.menu %></h1>
+        </div>
+        <div class="c-block-special">
+            <h1>
+                <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal></h1>
+        </div>
+        <div class="c-block-intro-content">
+            <div class="c-block-intro-content-wrap">
+
+                <asp:Repeater runat="server" ID="rptMonNoiBat">
+                    <ItemTemplate>
+                        <div class="c-special-item">
+                            <div class="c-special-item-wrap">
+                                <img src="<%#Eval("AnhDaiDien") %>" alt="Special item" class="img" />
+                                <a href="<%#ShowArticleCat(Container.DataItem,"ArticleCatDuongDan") %>" class="link">
+                                    <div class="c-special-item-title">
+                                        <h1><%#ShowArticleCat(Container.DataItem,"ArticleCatTenMon") %></h1>
+                                        <p>
+                                            <b>
+                                                <%#Convert.ToDecimal(Eval("Gia")) > 0 ? showMoney(Convert.ToDecimal(Eval("Gia")))+" VNĐ" : Resources.Resource.please_contact %>
+                                            </b>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="c-block-intro">
+        <div class="c-block-intro-head">
+            <h1>
+                <asp:Literal ID="ltrMonAnNhe" runat="server"></asp:Literal>
+            </h1>
+        </div>
+        <div class="c-block-intro-content">
+            <div class="c-cuisin-wrap">
+
+                <asp:Repeater runat="server" ID="rptMonAnNhe">
+                    <ItemTemplate>
+
+                        <div class="c-cuisine-block">
+                            <a href="<%#ShowArticleCat(Container.DataItem,"ArticleCatDuongDan") %>" class="link">
+                                <div class="c-cuisine-block-figure">
+                                    <img src="<%#Eval("AnhDaiDien") %>" alt="Cuisine item" class="img" />
+                                </div>
+                                <div class="c-cuisine-block-title">
+                                    <h1><%#ShowArticleCat(Container.DataItem,"ArticleCatTenMon") %></h1>
+                                </div>
+                                <div class="c-cuisine-block-des">
+                                    <p>
+                                        <%#ShowArticleCat(Container.DataItem,"laytomtat") %>
+                                    </p>
+                                </div>
+                                <div class="c-cuisine-block-price">
+                                    <p>
+                                        <b>
+                                            <%#Convert.ToDecimal(Eval("Gia")) > 0 ? showMoney(Convert.ToDecimal(Eval("Gia")))+" VNĐ" : Resources.Resource.please_contact %>
+                                        </b>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </ItemTemplate>
+                </asp:Repeater>
+
+            </div>
+        </div>
+    </div>
+
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="CofFootCPH" runat="Server">
 </asp:Content>

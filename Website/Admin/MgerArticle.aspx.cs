@@ -120,7 +120,7 @@ public partial class Admin_MgerArticle : System.Web.UI.Page
         switch (colunmName)
         {
             case "ID":
-                if (data.ID == 14 || data.ID == 15 || data.ID == 16)//Thuoc xu ly cua he thong
+                if (data.ID == 14 || data.ID == 15 || data.ID == 16 || data.ID == 20)//Thuoc xu ly cua he thong
                     return String.Format("<input type='button' class='lock' title='Bài viết này thuộc quản lý của hệ thống' />");
                 else
                     return String.Format("<input type='checkbox' name='cid' value='{0}'/>", data.ID);

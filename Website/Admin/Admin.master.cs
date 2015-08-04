@@ -39,11 +39,20 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
         string shop = "+ " + DatPhong.DemTheoTrangThai("0").ToString();
         lbUser.Text = Session["TenNguoiDung"].ToString();
         lblh.Text = "+ " + LienHe.DemTheoTrangThaiVaTheLoai(0, 1).ToString();
+        lbLetter.Text = "+ " + HoiDap.DemTheoTrangThai(0).ToString();
+
         //lbgh.Text = shop;
         //lbphong.Text = shop;
 
         string dattiec = DatTiec.DemTheoTrangThai("0").ToString();
         lbdt.Text = "+ " + dattiec;
+
+        string datban = DatBan.DemTheoTrangThai("0").ToString();
+        lbdb.Text = "+ " + datban;
+
+        string datspa = DatSpa.DemTheoTrangThai("0").ToString();
+        lbds.Text = "+ " + datspa;
+
         lbma.Text = MonAn.Count().ToString();
         //lbdttt.Text = "+ " + dattiec;
 

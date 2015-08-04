@@ -133,7 +133,7 @@
     <value>контакт</value>
   </data>
   <data name="contact_message" xml:space="preserve">
-    <value>По вопросам, обратная связь на ресторан, Tomato . Пожалуйста, отправьте содержание, свяжитесь с нами, пожалуйста, введите информацию, ясно, внятно.</value>
+    <value>Если у вас есть какие-либо вопросы, пожалуйста, отправьте содержание, свяжитесь с нами, пожалуйста, введите информацию, ясно, внятно.</value>
   </data>
   <data name="content" xml:space="preserve">
     <value>содержание</value>
@@ -184,7 +184,7 @@
     <value>Главное меню</value>
   </data>
   <data name="map_info" xml:space="preserve">
-    <value>Квартал 15, Хюинь Тан Фат, Муи, Фантьет, Бинь Туан &lt;br/&gt; &amp;nbsp; &amp; NBSP; &amp; NBSP; Телефон: 0937.239.915 &lt;br/&gt;</value>
+    <value>65A Нгуен Динь ТЬЕН Улица, Хам Тянь Уорд, Фантьет, &lt;br/&gt; Бинь Туан &amp;nbsp;&amp;nbsp;&amp;nbsp; Тел: 0983.99.8749 &lt;br/&gt;</value>
   </data>
   <data name="menu" xml:space="preserve">
     <value>МЕНЮ</value>
@@ -214,7 +214,7 @@
     <value>Связанные еды</value>
   </data>
   <data name="restaurant_name" xml:space="preserve">
-    <value>Tomato ресторан</value>
+    <value>Forest</value>
   </data>
   <data name="res_add" xml:space="preserve">
     <value>Адрес: Блок 15, Хюинь Тан Фат, Муи, Фантьет Город</value>
@@ -253,15 +253,69 @@
     <value>Адрес: 65A Нгуен Динь ТЬЕН Улица, Хам Тянь, Фантхиет</value>
   </data>
   <data name="footer_line3" xml:space="preserve">
-    <value>Телефон: 098.399.8749 - E-mail: forest_muine@yahoo.com</value>
+    <value>Телефон: 0983.239.000 (Mr. Cuong) </value>
   </data>
   <data name="r_footer_line2" xml:space="preserve">
-    <value>Адрес: 179 Нгуен Динь ТЬЕН Улица, Хам Тянь, Фантхиет</value>
+    <value>Адрес: 179A Нгуен Динь ТЬЕН Улица, Хам Тянь, Фантхиет</value>
   </data>
   <data name="r_footer_line3" xml:space="preserve">
     <value>Тел: 0918 821 699 (Mr.Hưng) - 098 399 8749 (Mr.Lam) - E-mail: forest_muine@yahoo.c</value>
   </data>
   <data name="spa_booking" xml:space="preserve">
     <value>Бронирование Спа</value>
+  </data>
+  <data name="map_info_spa" xml:space="preserve">
+    <value>179A Нгуен Динь ТЬЕН Улица, Хам Тянь Уорд, Фантьет, &lt;br/&gt; Бинь Туан &amp;nbsp;&amp;nbsp;&amp;nbsp; Тел: 0982.329.000&lt;br/&gt;</value>
+  </data>
+  <data name="qa" xml:space="preserve">
+    <value>ЧАВО</value>
+  </data>
+  <data name="what_search" xml:space="preserve">
+    <value>Какая пища вам искать ...</value>
+  </data>
+  <data name="search_result" xml:space="preserve">
+    <value>Результаты Поиска</value>
+  </data>
+  <data name="confirm_code_errror" xml:space="preserve">
+    <value>неверный код</value>
+  </data>
+  <data name="detail" xml:space="preserve">
+    <value>подробно</value>
+  </data>
+  <data name="qa_success_mess" xml:space="preserve">
+    <value>Контакты ваш контент был послан лесной кофе. Мы ответим на Ваши контакты в кратчайшие сроки</value>
+  </data>
+  <data name="send_date" xml:space="preserve">
+    <value>послал</value>
+  </data>
+  <data name="sent_fail" xml:space="preserve">
+    <value>Отправить неудачу</value>
+  </data>
+  <data name="c_footer_line3" xml:space="preserve">
+    <value>Тел: 0989.008.901 (Mr. Tho)</value>
+  </data>
+  <data name="go_back_faq" xml:space="preserve">
+    <value>Вернуться Справка</value>
+  </data>
+  <data name="has" xml:space="preserve">
+    <value>имеет</value>
+  </data>
+  <data name="map_info_cof" xml:space="preserve">
+    <value>179A Нгуен Динь ТЬЕН Улица, Хам Тянь Уорд, Фантьет, &lt;br/&gt; Бинь Туан &amp;nbsp;&amp;nbsp;&amp;nbsp; Тел: 0989.008.901&lt;br/&gt;</value>
+  </data>
+  <data name="no_result_search_match" xml:space="preserve">
+    <value>результаты матча</value>
+  </data>
+  <data name="result_search_match" xml:space="preserve">
+    <value>результаты матча</value>
+  </data>
+  <data name="s_faq" xml:space="preserve">
+    <value>ЧАВО</value>
+  </data>
+  <data name="s_info" xml:space="preserve">
+    <value>данные</value>
+  </data>
+  <data name="s_menu" xml:space="preserve">
+    <value>меню</value>
   </data>
 </root>

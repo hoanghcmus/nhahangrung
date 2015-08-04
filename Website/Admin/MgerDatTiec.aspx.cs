@@ -48,13 +48,13 @@ public partial class Admin_MgerDatTiec : System.Web.UI.Page
             switch (int.Parse(tinhTrang))
             {
                 case 0:
-                    Label1.Text = "Danh sách liên hệ đặt bàn đang đợi duyệt";
+                    Label1.Text = "Danh sách liên hệ đặt bàn Nhà hàng đang đợi duyệt";
                     break;
                 case 1:
-                    Label1.Text = "Danh sách liên hệ đặt bàn đã duyệt";
+                    Label1.Text = "Danh sách liên hệ đặt bàn Nhà hàng đã duyệt";
                     break;
                 case 2:
-                    Label1.Text = "Danh sách liên hệ đặt bàn đã hủy";
+                    Label1.Text = "Danh sách liên hệ đặt bàn Nhà hàng đã hủy";
                     break;
                 default:
                     Label1.Text = "Không tìm thấy trang thái liên hệ đặt bàn!";

@@ -10,7 +10,7 @@ using DataAccess.StringUtil;
 
 namespace DataAccess.Help
 {
-    public class Helper
+    public static class Helper
     {
         public static string ToAlias(string text)
         {
@@ -287,6 +287,29 @@ namespace DataAccess.Help
             }
             return source;
         }
-
+        public static string ToUnsigned(this string source)
+        {
+            var pattern = new string[7];
+            pattern[0] = "a|(á|ả|à|ạ|ã|ă|ắ|ẳ|ằ|ặ|ẵ|â|ấ|ẩ|ầ|ậ|ẫ)";
+            pattern[1] = "o|(ó|ỏ|ò|ọ|õ|ô|ố|ổ|ồ|ộ|ỗ|ơ|ớ|ở|ờ|ợ|ỡ)";
+            pattern[2] = "e|(é|è|ẻ|ẹ|ẽ|ê|ế|ề|ể|ệ|ễ)";
+            pattern[3] = "u|(ú|ù|ủ|ụ|ũ|ư|ứ|ừ|ử|ự|ữ)";
+            pattern[4] = "i|(í|ì|ỉ|ị|ĩ)";
+            pattern[5] = "y|(ý|ỳ|ỷ|ỵ|ỹ)";
+            pattern[6] = "d|đ";
+            foreach (var t in pattern)
+            {
+                var replaceChar = t[0];
+                var matchs = Regex.Matches(source, t);
+                source = matchs.Cast<Match>().Aggregate(source, (current, m) => current.Replace(m.Value[0], replaceChar));
+            }
+            return source;
+        }
+        public static string ToSeoString(this string source)
+        {
+            var c = new List<string> { "[", "~", "#", "%", "&", "*", "{", "}", "(", ")", "/", "<", ">", "?", "|", "\",", "-", "]", "+", ",", "\"", ":", ".", "'", "”", "“", "’", "‘", "–" };
+            source = c.Aggregate(source, (current, s) => current.Replace(s, ""));
+            return source.ToLower().ToUnsigned().Replace(" ", "-");
+        }
     }
 }

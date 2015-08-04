@@ -39,6 +39,8 @@ public partial class Admin_Admin : System.Web.UI.Page
         lblienHe.Text = LienHe.Dem().ToString();
         lbbaiViet.Text = BaiViet.DemTheoModule("1").ToString();
         lbdt.Text = DatTiec.DemTheoTrangThai("0").ToString();
+        lbdb.Text = DatBan.DemTheoTrangThai("0").ToString();
+        lbds.Text = DatSpa.DemTheoTrangThai("0").ToString();
         lbma.Text = MonAn.Count().ToString();
         //lbshop.Text = DatPhong.DemTheoTrangThai("0").ToString();
         //lbTour.Text = DatTour.DemTheoTrangThai("0").ToString();

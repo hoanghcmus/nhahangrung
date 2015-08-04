@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/SpaMaster.master" AutoEventWireup="true"
     CodeFile="Photos.aspx.cs" Inherits="Vn_Photos" %>
 
 <%@ Register Src="~/View/UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc1" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="SpaMainCPH" runat="Server">
 
     <div class="article-category-title">
         <h1>
@@ -32,7 +32,7 @@
                                 <div class="menu-figure">
                                     <%#ShowImg(Container.DataItem,"ImgOrClip") %>
                                 </div>
-                                
+
                                 <div class="menu-title">
                                     <h1><%#ShowImg(Container.DataItem,"ImageTieuDe") %></h1>
                                 </div>
@@ -59,7 +59,7 @@
 
 
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ResFootCPH" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="SpaFootCPH" runat="Server">
 
     <%--Scroll down ...px  --%>
     <script type="text/javascript">

@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/ResMaster.master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/SpaMaster.master" AutoEventWireup="true"
     CodeFile="Videos.aspx.cs" Inherits="View_Videos" %>
 
 <%@ Register Src="~/View/UserControl/UC_Paging.ascx" TagName="UC_Paging" TagPrefix="uc1" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ResHeadCPH" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="SpaHeadCPH" runat="Server">
     <link href="/Styles/CSS/Desktop.Module.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ResMainCPH" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="SpaMainCPH" runat="Server">
     <div class="body-right-content">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
             <ContentTemplate>
@@ -54,7 +54,7 @@
 
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ResFootCPH" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="SpaFootCPH" runat="Server">
     <%--Scroll down ...px  --%>
     <script type="text/javascript">
         $(document).ready(function () {

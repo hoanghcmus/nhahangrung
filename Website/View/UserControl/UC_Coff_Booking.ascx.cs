@@ -22,7 +22,7 @@ public partial class En_En_Control_UC_CheckRate : System.Web.UI.UserControl
         //lbBookingMess.Text = "Đặt bàn";
         int rs = 0;
 
-        DatTiec data = new DatTiec();
+        DatBan data = new DatBan();
 
         data.Ten = custumerName.Text;
         data.DiaChi = Address.Text;
@@ -37,7 +37,7 @@ public partial class En_En_Control_UC_CheckRate : System.Web.UI.UserControl
         data.NgayGui = DateTime.Now;
         data.TrangThai = 0;
 
-        rs = DatTiec.Them(data);
+        rs = DatBan.Them(data);
         if (rs > 0)
         {
             refesh();

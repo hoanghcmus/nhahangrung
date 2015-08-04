@@ -14,6 +14,10 @@
         text-transform: uppercase;
     }
 
+.c-article-category-title h1 {
+    color: #920000;
+}
+
 .content-detail {
     float: left;
     width: 100%;
@@ -31,6 +35,10 @@
         font-family: HongHaHepB;
         font-size: 16px;
     }
+
+.c-content-detail {
+    color: #000;
+}
 
 .meta {
     color: #B2B2B2;
@@ -73,6 +81,10 @@
         padding-bottom: 2px;
     }
 
+.c-articlerang h4 {
+    color: #920000;
+}
+
 .item {
     float: left;
     width: 100%;
@@ -113,3 +125,7 @@
         width: 100px;
         margin-top: 2px;
     }
+
+.c-Description a {
+    color: #000;
+}
