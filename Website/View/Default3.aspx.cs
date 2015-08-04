@@ -14,7 +14,7 @@ public partial class View_Default3 : BasePage
         if (!IsPostBack)
         {
 
-            BaiViet baiviet = BaiViet.LayTheoID("14");
+            BaiViet baiviet = BaiViet.LayTheoID("20");
             if (baiviet != null)
             {
                 if (Session["lang"].ToString().Equals("vn"))
