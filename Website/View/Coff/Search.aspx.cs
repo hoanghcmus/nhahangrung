@@ -85,43 +85,43 @@ public partial class View_Search : BasePage
                     {
                         return String.Format("/ru/c-cuisine/{0}-{1}-{2}.html", Helper.RejectMarks(data.TieuDe_Ru), data.ID, data.IDTheLoai);
                     }
-                return String.Format("/vn/c-cuisine/{0}-{1}-{2}.html", Helper.RejectMarks(data.TieuDe_Ru), data.ID, data.IDTheLoai);                
+                return String.Format("/vn/c-cuisine/{0}-{1}-{2}.html", Helper.RejectMarks(data.TieuDe_Ru), data.ID, data.IDTheLoai);
             case "hienthinoidung":
                 if (data.Module.Equals("baiviet"))
                 {
                     if (Session["lang"].ToString().Equals("vn"))
                     {
-                        return "<span class='bv'>[.::Thông tin::.]  </span>" + data.TieuDe_Vn;
+                        return "<span class='bv'>[.::" + Resources.Resource.s_info + "::.]  </span>" + data.TieuDe_Vn;
                     }
                     else if (Session["lang"].ToString().Equals("en"))
                     {
-                        return "<span class='bv'>[.::Thông tin::.]  </span>" + data.TieuDe_En;
+                        return "<span class='bv'>[.::" + Resources.Resource.s_info + "::.]  </span>" + data.TieuDe_En;
                     }
                     else if (Session["lang"].ToString().Equals("ru"))
                     {
-                        return "<span class='bv'>[.::Thông tin::.]  </span>" + data.TieuDe_Ru;
+                        return "<span class='bv'>[.::" + Resources.Resource.s_info + "::.]  </span>" + data.TieuDe_Ru;
                     }
-                    return "<span class='bv'>[.::Thông tin::.]  </span>" + data.TieuDe_Vn;
+                    return "<span class='bv'>[.::" + Resources.Resource.s_info + "::.]  </span>" + data.TieuDe_Vn;
                 }
                 else if (data.Module.Equals("hoidap"))
                 {
-                    return "<span class='hd'>[.::Hỏi & đáp::.]  </span>" + data.NoiDung_Vn;
+                    return "<span class='hd'>[.::" + Resources.Resource.s_faq + "::.]  </span>" + data.NoiDung_Vn;
                 }
                 else
                 {
                     if (Session["lang"].ToString().Equals("vn"))
                     {
-                        return "<span class='ma'>[.::Thực đơn::.]  </span>" + data.NoiDung_Vn;
+                        return "<span class='ma'>[.::" + Resources.Resource.s_menu + "::.]  </span>" + data.NoiDung_Vn;
                     }
                     else if (Session["lang"].ToString().Equals("en"))
                     {
-                        return "<span class='ma'>[.::Thực đơn::.]  </span>" + data.NoiDung_En;
+                        return "<span class='ma'>[.::" + Resources.Resource.s_menu + "::.]  </span>" + data.NoiDung_En;
                     }
                     else if (Session["lang"].ToString().Equals("ru"))
                     {
-                        return "<span class='ma'>[.::Thực đơn::.]  </span>" + data.NoiDung_Ru;
+                        return "<span class='ma'>[.::" + Resources.Resource.s_menu + "::.]  </span>" + data.NoiDung_Ru;
                     }
-                    return "<span class='ma'>[.::Thực đơn::.]  </span>" + data.NoiDung_Vn;
+                    return "<span class='ma'>[.::" + Resources.Resource.s_menu + "::.]  </span>" + data.NoiDung_Vn;
                 }
             default:
                 return "";
@@ -143,11 +143,11 @@ public partial class View_Search : BasePage
             rptArticleList.DataBind();
             if (listTimKiem.Count != 0)
             {
-                lbMessage.Text = "<b class='tb'>Có " + listTimKiem.Count() + " kết quả được tìm thấy</b>";
+                lbMessage.Text = "<b class='tb'>" + Resources.Resource.has + " " + listTimKiem.Count() + " " + Resources.Resource.result_search_match + "</b>";
             }
             else
             {
-                lbMessage.Text = "<b class='tb'>Không có kết quả nào phù hợp với nội dung tìm kiếm :: <i style='color:blue;'>" + keyword + "</i> ::</b>";
+                lbMessage.Text = "<b class='tb'>" + Resources.Resource.no_result_search_match + " :: <i class='rs'>" + keyword + "</i> ::</b>";
             }
         }
     }

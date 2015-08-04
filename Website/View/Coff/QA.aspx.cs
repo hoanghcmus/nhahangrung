@@ -56,19 +56,19 @@ public partial class View_QA : BasePage
                 {
                     succesfull.Visible = true;
                     refesh();
-                    succesfull.Text = "Nội dung liên hệ của bạn đã được gủi đến Forest coffee. Chúng tôi sẽ trả lời liên hệ của bạn trong thời gian sớm nhất!";
+                    succesfull.Text = Resources.Resource.qa_success_mess;
                 }
                 else
                 {
                     succesfull.Visible = true;
-                    succesfull.Text = "Gửi ý kiến thất bại!";
+                    succesfull.Text = Resources.Resource.sent_fail;
                 }
             }
             else
             {
                 lbcapcha.Visible = true;
                 succesfull.Visible = false;
-                lbcapcha.Text = "Sai mã xác nhận!";
+                lbcapcha.Text = Resources.Resource.confirm_code_errror;
             }
         }
     }

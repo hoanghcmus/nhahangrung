@@ -36,20 +36,20 @@
 
                 <div class="product-infos">
                     <div class="line-fix-parent-width border-bot-pr">
-                        <div class="product-label"><%=Resources.Resource.cuisine_name %>:</div>
-                        <div class="product-info">
+                        <div class="product-label c-product-label"><%=Resources.Resource.cuisine_name %>:</div>
+                        <div class="product-info c-product-info">
                             <asp:Literal ID="ltrTenSanPham" runat="server"></asp:Literal>
                         </div>
                     </div>
                     <div class="line-fix-parent-width border-bot-pr">
-                        <div class="product-label"><%=Resources.Resource.price %>:</div>
-                        <div class="product-info">
+                        <div class="product-label c-product-label"><%=Resources.Resource.price %>:</div>
+                        <div class="product-info c-product-info">
                             <asp:Literal ID="ltrPrice" runat="server"></asp:Literal>
                         </div>
                     </div>
                     <div class="line-fix-parent-width">
-                        <div class="product-label"><%=Resources.Resource.description %>:</div>
-                        <div class="product-info">
+                        <div class="product-label c-product-label"><%=Resources.Resource.description %>:</div>
+                        <div class="product-info c-product-info">
                             <asp:Literal ID="ltrMoTa" runat="server"></asp:Literal>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="detail-info">
                     <div class="detail-title c-detail-title">
-                        <h1><%=Resources.Resource.cuisine_detail %></h1>
+                        <h1><%=Resources.Resource.detail %></h1>
                     </div>
                     <div class="detail-info-wraper c-detail-info-wraper">
                         <asp:Literal ID="ltrChiTietSanPham" runat="server">
@@ -72,7 +72,7 @@
                     <div class="c-block-intro-content-wrap">
                         <asp:Repeater ID="rptRelatedProduct" runat="server">
                             <ItemTemplate>
-                               
+
                                 <div class="c-special-item">
                                     <div class="c-special-item-wrap">
                                         <img src="<%#Eval("AnhDaiDien") %>" alt="Special item" class="img" />

@@ -6,7 +6,7 @@
 
     <div class="article-category-title c-article-category-title">
         <h1>
-            <asp:Literal ID="ltrCtTitle" runat="server" ></asp:Literal>
+            <asp:Literal ID="ltrCtTitle" runat="server"></asp:Literal>
         </h1>
     </div>
     <div class="product-container">
@@ -16,7 +16,7 @@
                 <asp:Label ID="lbNoiDungHoi" runat="server"></asp:Label>
                 <i style="font-size: 12px;">
                     <asp:Label ID="lbHoTen" runat="server"></asp:Label>
-                    gửi ngày 
+                    <%=Resources.Resource.send_date %>
                     <asp:Label ID="lbNgayGui" runat="server"></asp:Label></i>
 
             </div>
@@ -28,7 +28,8 @@
             <div class="qa-detail question">
 
                 <a href="/<%=Session["lang"].ToString() %>/hoi-dap.html">
-                    <img src="/Design/undo.png" alt="Turnback Icon" style="width: 18px; height: 18px;" />Quay lại mục hỏi đáp</a>
+                    <img src="/Design/undo.png" alt="Turnback Icon" style="width: 18px; height: 18px;" />
+                    <%=Resources.Resource.go_back_faq %></a>
             </div>
         </div>
     </div>

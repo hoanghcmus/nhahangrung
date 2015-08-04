@@ -25,18 +25,18 @@
         function init_map() {
             var myOptions = {
                 zoom: 14,
-                center: new google.maps.LatLng(10.9382607, 108.2870921),
+                center: new google.maps.LatLng(10.9485163,108.203974),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
             marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(10.9382607, 108.2870921)
+                position: new google.maps.LatLng(10.9485163,108.203974)
             });
             infowindow = new google.maps.InfoWindow({
                 content: "<b><%=Resources.Resource.restaurant_name%></b><br/>"
-            + "<img src='/Design/logo.png' width='300px' height='100px'/>	<br/>"
-            + "<%=Resources.Resource.map_info%>"
+            + "<img src='/Design/coff-logo.png' width='300px' height='100px'/>	<br/>"
+            + "<%=Resources.Resource.map_info_cof%>"
             });
             google.maps.event.addListener(marker, "click", function () {
                 infowindow.open(map, marker);

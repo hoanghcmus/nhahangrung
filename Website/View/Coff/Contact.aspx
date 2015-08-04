@@ -23,7 +23,7 @@
 
         <div class="contact">
             <%-- View maps --%>
-            <a class="map-direction" data-fancybox-type="iframe" href="/<%=Session["lang"].ToString() %>/map.html"><%=Resources.Resource.view_map %></a>
+            <a class="map-direction" data-fancybox-type="iframe" href="/<%=Session["lang"].ToString() %>/c-map.html"><%=Resources.Resource.view_map %></a>
             <asp:UpdatePanel ID="UpdatePanelContact" runat="server">
                 <ContentTemplate>
                     <table>

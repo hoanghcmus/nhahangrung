@@ -120,13 +120,18 @@
                     <ItemTemplate>
                         <div class="question bot5">
                             <img src="/Design/answer.png" alt="Question Icon" />
-                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>"><%#Eval("NoiDungHoi") %> (<i style="font-size: 12px;"> <%#Eval("HoTen") %> gửi ngày <%#Showinfo(Container.DataItem,"ngaygui") %></i> )</a>
+                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>"><%#Eval("NoiDungHoi") %> (<i style="font-size: 12px;">
+                                <%#Eval("HoTen") %>
+                                <%=Resources.Resource.send_date %>
+                                <%#Showinfo(Container.DataItem,"ngaygui") %></i> )</a>
 
                         </div>
 
                         <div class="answer bot10">
                             <%#Showinfo(Container.DataItem,"laytomtat") %>
-                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>">Chi tiết</a>
+                            <a href="<%#Showinfo(Container.DataItem,"hienthilink") %>">
+                                <%=Resources.Resource.detail %>
+                            </a>
                         </div>
 
                     </ItemTemplate>

@@ -1208,11 +1208,18 @@ a.nextpre {
 }
 
 .product-label, .product-info {
-    border-bottom: 1px dashed #c6cacc;
+    /*border-bottom: 1px dashed #c6cacc;*/
     padding-bottom: 5px;
     margin-top: 9px;
     font-family: Tahoma,Arial,sans-serif;
     font-size: 14px;
+    color: #FFF;
+}
+
+.s-product-label, .s-product-info {
+}
+
+.c-product-label, .c-product-info {
     color: #000;
 }
 
@@ -1234,6 +1241,11 @@ a.nextpre {
     .product-info .discount {
         width: 14%;
     }
+
+
+.border-bot-pr {
+    border-bottom: 1px dashed #c6cacc;
+}
 
 .detail-info {
     float: left;

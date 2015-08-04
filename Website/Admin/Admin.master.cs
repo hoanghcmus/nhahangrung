@@ -39,6 +39,8 @@ public partial class Admin_Admin : System.Web.UI.MasterPage
         string shop = "+ " + DatPhong.DemTheoTrangThai("0").ToString();
         lbUser.Text = Session["TenNguoiDung"].ToString();
         lblh.Text = "+ " + LienHe.DemTheoTrangThaiVaTheLoai(0, 1).ToString();
+        lbLetter.Text = "+ " + HoiDap.DemTheoTrangThai(0).ToString();
+
         //lbgh.Text = shop;
         //lbphong.Text = shop;
 

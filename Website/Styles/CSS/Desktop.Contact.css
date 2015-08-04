@@ -164,19 +164,21 @@
     font-size: 13px;
     font-family: Tahoma;
     margin-left: 5%;
-    background-color: #dee9e4;
+    /*background-color: #dee9e4;*/
+    background-color: rgba(146, 0, 0, 0.2);
     border-radius: 5px;
     padding: 1%;
     position: relative;
 }
 
 .qa-detail.answer {
-    background-color: #FFF;
-    border: 1px solid #D0D0D0;
+    /*background-color: #FFF;*/
+    background-color: rgba(146, 0, 0, 0.2);
+    /*border: 1px solid #D0D0D0;*/
 }
 
     .qa-detail.answer:hover {
-        background-color: #FFF;
+        /*background-color: rgba(146, 0, 0, 0.2);*/
     }
 
     .qa-detail.answer p {
@@ -196,7 +198,7 @@
 }
 
 .answer:hover {
-    background-color: #FFFFC6;
+    /*background-color: #FFFFC6;*/
 }
 
 .answer a {
@@ -223,4 +225,8 @@
     margin-bottom: 5px;
     float: left;
     font-family: HongHaHep;
+}
+
+.rs {
+    color: blue;
 }

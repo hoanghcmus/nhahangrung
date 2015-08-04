@@ -37,7 +37,7 @@
 
     <div class="c-block-intro">
         <div class="c-block-intro-head">
-            <h1>THỰC ĐƠN</h1>
+            <h1><%=Resources.Resource.menu %></h1>
         </div>
         <div class="c-block-special">
             <h1>

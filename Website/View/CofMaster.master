@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="c-block-title">
                                         <h1>
-                                             <%=Resources.Resource.qa %>
+                                            <%=Resources.Resource.qa %>
                                         </h1>
                                     </div>
                                 </div>
@@ -171,35 +171,26 @@
                                     <div class="cl-gallery">
                                         <div class="qa-block-wrap">
 
-                                            <div class="qa-block-item">
-                                                <div class="qa-block-q">
-                                                    <p>
-                                                        <a href="javascript:void()">
-                                                            <i class="qa-block-meta">Hoàng Linh:</i>
-                                                            Quán có tổ chức tiệc cưới, sinh nhật không?
-                                                        </a>
-                                                    </p>
-                                                </div>
-                                                <div class="qa-block-a">
-                                                    <i class="qa-block-meta">FOREST:</i>
-                                                    Chào bạn, hiện quán có cho khách hàng đặc tiệc, sinh nhật, liên hoan, cưới hỏi,... Bạn có thể liên hệ với quầy Lễ tân để biết rõ hơn nhé. Thân chào bạn !
-                                                </div>
-                                            </div>
+                                            <asp:Repeater ID="rptListHoiDap" runat="server">
+                                                <ItemTemplate>
+                                                    <div class="qa-block-item">
+                                                        <div class="qa-block-q">
+                                                            <p>
+                                                                <a href="<%#ShowInfo(Container.DataItem,"hdlink") %>">
+                                                                    <i class="qa-block-meta"><%#Eval("HoTen") %>:</i>
+                                                                    <%#Eval("NoiDungHoi") %>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="qa-block-a">
+                                                            <i class="qa-block-meta">FOREST:</i>
+                                                            <%#Eval("NoiDungDap") %>
+                                                        </div>
+                                                    </div>
 
-                                            <div class="qa-block-item">
-                                                <div class="qa-block-q">
-                                                    <p>
-                                                        <a href="javascript:void()">
-                                                            <i class="qa-block-meta">Hoàng Linh:</i>
-                                                            Quán có tổ chức tiệc cưới, sinh nhật không?
-                                                        </a>
-                                                    </p>
-                                                </div>
-                                                <div class="qa-block-a">
-                                                    <i class="qa-block-meta">FOREST:</i>
-                                                    Chào bạn, hiện quán có cho khách hàng đặc tiệc, sinh nhật, liên hoan, cưới hỏi,... Bạn có thể liên hệ với quầy Lễ tân để biết rõ hơn nhé. Thân chào bạn !
-                                                </div>
-                                            </div>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+
 
                                         </div>
                                     </div>
@@ -227,8 +218,8 @@
             <div class="r-footer c-footer">
                 <div class="r-footer-wrap c-footer-wrap">
                     <p><%=Resources.Resource.footer_line1 %></p>
-                    <p><%=Resources.Resource.footer_line2 %></p>
-                    <p><%=Resources.Resource.footer_line3 %></p>
+                    <p><%=Resources.Resource.r_footer_line2 %></p>
+                    <p><%=Resources.Resource.c_footer_line3 %></p>
                     <p><%=Resources.Resource.design %></p>
                 </div>
             </div>
